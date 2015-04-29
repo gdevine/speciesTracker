@@ -59,7 +59,7 @@ RSpec.describe "Users", type: :feature do
         let(:user) { User.find_by(email: 'user@example.com') }
                
         it { should have_link('Sign In') }  # As the account has not been approved yet therefore unable to log in
-        it { should have_content('Base App 3') }
+        it { should have_content('Species Tracker') }
         it { should have_selector('div.alert.alert-notice', text: 'You have signed up successfully but your account has not been approved by your administrator yet') }
       end      
     end        

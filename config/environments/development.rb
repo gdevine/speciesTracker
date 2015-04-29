@@ -20,7 +20,7 @@ Rails.application.configure do
   config.action_mailer.smtp_settings = {
     :address              => "smtp.gmail.com",
     :port                 => "587",
-    :domain               => "baseapp3.com",
+    :domain               => "speciestracker.com",
     :user_name            => "hiedatamanager",
     :password             => "DM_Hawkesbury1",
     :authentication       => "plain",
