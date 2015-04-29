@@ -1,5 +1,4 @@
-# Base App 3
+# Species Tracker
 
-A Ruby on Rails 4.2 skeleton application running on Ruby 2.2.
+Web application for community driven sightings of different species
 
-CanCanCan abilities embedded.
