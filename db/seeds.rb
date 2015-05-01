@@ -29,6 +29,6 @@ FactoryGirl.create :admin
 
 
 # Create some species
-10.times do
+15.times do
   FactoryGirl.create :species
 end

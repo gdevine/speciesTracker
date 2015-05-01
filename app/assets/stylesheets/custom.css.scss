@@ -233,3 +233,15 @@ background-color: rgba(200,220,255,0.2); // I don't know the .well color, so I u
   border:5px solid #444;  
 }
 
+
+/* For reducing the spacing on datatables pagination */
+.dataTables_wrapper .dataTables_paginate .paginate_button {
+    padding : 0px;
+    margin-left: 0px;
+    display: inline;
+    border: 0px;
+}
+.dataTables_wrapper .dataTables_paginate .paginate_button:hover {
+    border: 0px;
+}
+

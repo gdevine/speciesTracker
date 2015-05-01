@@ -22,6 +22,8 @@ gem 'devise'
 gem 'activeadmin', github: 'activeadmin'
 gem 'cancancan', '~> 1.10'
 gem 'factory_girl_rails'
+gem 'jquery-datatables-rails', '~> 3.3.0'
+gem 'jquery-ui-rails'
 
 
 group :development, :test do
