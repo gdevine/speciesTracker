@@ -26,3 +26,9 @@ end
 
 # Create an admin user
 FactoryGirl.create :admin
+
+
+# Create some species
+10.times do
+  FactoryGirl.create :species
+end

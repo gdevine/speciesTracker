@@ -126,7 +126,7 @@ RSpec.describe "Static Pages", type: :feature do
       
       it { should have_content('Sign Out, '+ superuser.firstname.capitalize) }
       it { should_not have_content('Sign In') }
-      it { should have_title(full_title('Home')) }
+      it { should have_title(full_title('Superuser Only Page')) }
     end
 
     describe "when logged in as admin" do
@@ -139,7 +139,7 @@ RSpec.describe "Static Pages", type: :feature do
       
       it { should have_content('Sign Out, '+ admin.firstname.capitalize) }
       it { should_not have_content('Sign In') }
-      it { should have_title(full_title('Superuser')) }
+      it { should have_title(full_title('Superuser Only Page')) }
     end
     
   end
@@ -192,7 +192,7 @@ RSpec.describe "Static Pages", type: :feature do
       
       it { should have_content('Sign Out, '+ admin.firstname.capitalize) }
       it { should_not have_content('Sign In') }
-      it { should have_title(full_title('Admin')) }
+      it { should have_title(full_title('Admin Only Page')) }
     end
     
     describe "when logged in as an unapproved user" do
