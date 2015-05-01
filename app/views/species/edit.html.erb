@@ -1,0 +1,41 @@
+<% provide(:title, 'Edit Species') %>
+<% provide(:pageheading, 'Edit Species '+@species.id.to_s) %>
+
+<%= form_for @species, :html => {:class => "form-horizontal"} do |f| %>
+  <%= render 'shared/error_messages', object: f.object %>
+  
+  <div class="form-group">
+    <%= f.label :genus, 'Genus *', :class => "col-lg-2 control-label" %>
+    <div class="col-lg-8">
+      <%= f.text_field :genus, :class => "form-control" %>
+    </div>
+  </div>
+  
+  <div class="form-group">
+    <%= f.label :species, "Species *", :class => "col-lg-2 control-label" %>
+    <div class="col-lg-8">
+      <%= f.text_field :species, :class => "form-control" %>
+    </div>
+  </div>
+  
+  <div class="form-group">
+    <%= f.label :common_name, "Common Name", :class => "col-lg-2 control-label" %>
+    <div class="col-lg-8">
+      <%= f.text_field :common_name, :class => "form-control" %>
+    </div>
+  </div>
+  
+  <div class="form-group">
+    <%= f.label :description, "Description", :class => "col-lg-2 control-label" %>
+    <div class="col-lg-8">
+      <%= f.text_area :description, :class => "form-control" %>
+    </div>
+  </div>
+  
+  <div class="form-group">
+    <div class="col-md-4 col-md-offset-4 topspace50 bottomspace">
+      <%= f.submit "Update", :class => "btn btn-large btn-primary" %>
+    </div>
+  </div>
+  
+<% end %>
