@@ -19,7 +19,7 @@ Rails.application.routes.draw do
   
   resources :users
   resources :species
-
+  resources :sites
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
