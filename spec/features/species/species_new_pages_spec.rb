@@ -38,7 +38,7 @@ RSpec.describe "Species", type: :feature do
         visit new_species_path
       end
               
-      describe "should be given access to add a new analysis type" do
+      describe "should be given access to add a new species" do
         it { should have_title('Species Tracker | New Species') }
         it { should have_selector('h2', text: "Create New Species") }
         it { should have_content('Genus') }
@@ -59,6 +59,7 @@ RSpec.describe "Species", type: :feature do
         end
       end
 
+
       describe "providing invalid information" do   
         before do
           fill_in 'species_genus'  , with: 'a'*81
@@ -67,7 +68,7 @@ RSpec.describe "Species", type: :feature do
           fill_in 'species_description', with: 'This is a description'   
         end
         
-        it "should not create an analysis type" do
+        it "should not create a species" do
           expect{ click_button "Submit" }.to change{Species.count}.by(0)
         end             
         
@@ -77,6 +78,34 @@ RSpec.describe "Species", type: :feature do
           it { should have_selector('h2', text: "Create New Species") }
         end
       end
+      
+      
+      describe "providing duplicate genus-species" do   
+        before do
+          #Create a species with info that will be duplicated
+          @dupspecies = FactoryGirl.build(:species)
+          @dupspecies.genus='dupgenus'
+          @dupspecies.species='dupspecies'
+          @dupspecies.save
+
+          fill_in 'species_genus'  , with: 'dupgenus'
+          fill_in 'species_species'  , with: 'dupspecies'
+          fill_in 'species_common_name', with: 'a common name'   
+          fill_in 'species_description', with: 'This is a description'   
+        end
+        
+        it "should not create a Species" do
+          expect{ click_button "Submit" }.to change{Species.count}.by(0)
+        end             
+        
+        describe "should return an error and revert back" do
+          before { click_button "Submit" }
+          it { should have_content('1 error') }
+          it { should have_content('This genus-species already exists') }
+          it { should have_selector('h2', text: "Create New Species") }
+        end
+      end
+           
            
       describe "with valid information" do 
         before do

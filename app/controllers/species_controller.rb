@@ -4,7 +4,6 @@ class SpeciesController < ApplicationController
   load_and_authorize_resource
   
   def index
-    # @species = Species.all
   end
 
   def new
@@ -13,7 +12,7 @@ class SpeciesController < ApplicationController
   def create
     @species = Species.new(species_params)
     if @species.save
-      flash[:success] = "Species created!"
+      flash[:link] = "Species created!"
       redirect_to @species
     else
       render 'species/new'
@@ -21,21 +20,25 @@ class SpeciesController < ApplicationController
   end
     
   def show
-    @species = Species.find(params[:id])
   end
   
   def edit
-    # @species = Species.find(params[:id])
   end
 
   def update
     @species = Species.find(params[:id])
     if @species.update_attributes(species_params)
-      flash[:success] = "Species Updated!"
+      flash[:link] = "Species Updated!"
       redirect_to @species
     else
       render 'edit'
     end
+  end
+  
+  def destroy
+    @species.destroy
+    flash[:link] = "Species Deleted!"
+    redirect_to species_index_path
   end
   
   private

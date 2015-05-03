@@ -80,6 +80,33 @@ RSpec.describe "Species", type: :feature do
           it { should have_selector('h2', text: "Edit Species "+@species.id.to_s) }
         end
       end
+      
+      describe "providing duplicate genus-species" do   
+        before do
+          #Create a species with info that will be duplicated
+          @dupspecies = FactoryGirl.build(:species)
+          @dupspecies.genus='dupgenus'
+          @dupspecies.species='dupspecies'
+          @dupspecies.save
+
+          fill_in 'species_genus'  , with: 'dupgenus'
+          fill_in 'species_species'  , with: 'dupspecies'
+          fill_in 'species_common_name', with: 'a common name'   
+          fill_in 'species_description', with: 'This is a description'   
+        end
+        
+        it "should not create a Species" do
+          expect{ click_button "Update" }.to change{Species.count}.by(0)
+        end             
+        
+        describe "should return an error and revert back" do
+          before { click_button "Update" }
+          it { should have_content('1 error') }
+          it { should have_content('This genus-species already exists') }
+          it { should have_selector('h2', text: "Edit Species") }
+        end
+      end
+           
            
       describe "with valid information" do 
         before do
@@ -177,31 +204,6 @@ RSpec.describe "Species", type: :feature do
     end  
         
   end
-  
-  
-  # describe "Analysis Type Deletion" do
-#     
-    # before do 
-      # @analysis_type = FactoryGirl.build(:analysis_type) 
-      # @analysis_type.technicians << technician
-      # @analysis_type.save
-      # sign_in superuser
-      # visit analysis_type_path(@analysis_type)
-    # end
-#     
-    # it "should delete" do
-      # expect { click_link "Delete Analysis Type" }.to change(AnalysisType, :count).by(-1)
-    # end
-#     
-    # describe "should revert to analysis type list page with success message and updated info" do
-      # before { click_link "Delete Analysis Type" }
-      # it { should have_content('Analysis Type Deleted!') }
-      # it { should have_content('No Analysis Types found') }
-      # it { should have_title(full_title('Analysis Types')) }  
-      # it { should_not have_link('View', :href => analysis_type_path(@analysis_type)) }
-    # end
-#   
-  # end
-  
+ 
   
 end
