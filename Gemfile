@@ -26,6 +26,7 @@ gem 'jquery-datatables-rails', '~> 3.3.0'
 gem 'jquery-ui-rails'
 gem 'underscore-rails'
 gem 'gmaps4rails'
+gem 'jquery-turbolinks'
 
 
 group :development, :test do

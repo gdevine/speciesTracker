@@ -1,0 +1,19 @@
+<% if @sites.any? %>
+  <table class="table table-bordered table-striped table-hover display responsive no-wrap" id="species">
+    <thead>
+      <tr>
+        <th>Site ID</th>
+        <th>Name</th>
+        <th>Street</th>
+        <th>Suburb</th>
+        <th>View?</th>
+      </tr>
+    </thead>
+    <tbody>
+      <%= render partial: 'sites/sites_table', collection: @sites, as: :site %>
+    </tbody>
+  </table>
+  
+<% else %>
+  <p>No Sites found</p>
+<% end %>

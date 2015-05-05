@@ -13,19 +13,21 @@ class Ability
     if user.role == "user" && user.approved == true
       can [:home, :about, :contact, :help, :useronlypage], StaticPagesController
       can [:index, :show], Species
-      can [:index, :show], Site
+      can [:index, :map, :show], Site
     end    
     
     if user.role == "superuser" && user.approved == true      
       can [:home, :about, :contact, :help, :useronlypage, :superuseronlypage], StaticPagesController
       can :crud, Species
       can :crud, Site
+      can :map, Site
     end
     
     if user.role == "admin" && user.approved == true      
       can [:manage], StaticPagesController
       can :crud, Species
       can :crud, Site
+      can :map, Site
     end
         
     # if user.role == "technician" && user.approved == true

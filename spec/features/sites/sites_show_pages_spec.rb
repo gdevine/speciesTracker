@@ -39,9 +39,12 @@ RSpec.describe "Site", type: :feature do
         it { should have_content('Comments') }
         it { should have_content(@site.name) }
         it { should have_content(@site.suburb) }
-        it { should have_content(@site.centre_lat) }
-        it { should have_content(@site.centre_lon) }
-        it { should have_content(@site.centre_alt) }
+        let!(:centrelat) { "%5.2f" % @site.centre_lat }
+        let!(:centrelon) { "%5.2f" % @site.centre_lon }
+        let!(:centrealt) { "%6.2f" % @site.centre_alt }
+        it { should have_content(centrelat)}
+        it { should have_content(centrelon)}
+        it { should have_content(centrealt)}
         it { should_not have_link('Options') }
         it { should_not have_link('Edit Site') }
         it { should_not have_link('Delete Site') }
@@ -64,9 +67,12 @@ RSpec.describe "Site", type: :feature do
         it { should have_content('Comments') }
         it { should have_content(@site.name) }
         it { should have_content(@site.suburb) }
-        it { should have_content(@site.centre_lat) }
-        it { should have_content(@site.centre_lon) }
-        it { should have_content(@site.centre_alt) }
+        let!(:centrelat) { "%5.2f" % @site.centre_lat }
+        let!(:centrelon) { "%5.2f" % @site.centre_lon }
+        let!(:centrealt) { "%6.2f" % @site.centre_alt }
+        it { should have_content(centrelat)}
+        it { should have_content(centrelon)}
+        it { should have_content(centrealt)}
         it { should have_link('Options') }
         it { should have_link('Edit Site') }
         it { should have_link('Delete Site') }
@@ -113,9 +119,12 @@ RSpec.describe "Site", type: :feature do
         it { should have_content('Comments') }
         it { should have_content(@site.name) }
         it { should have_content(@site.suburb) }
-        it { should have_content(@site.centre_lat) }
-        it { should have_content(@site.centre_lon) }
-        it { should have_content(@site.centre_alt) }
+        let!(:centrelat) { "%5.2f" % @site.centre_lat }
+        let!(:centrelon) { "%5.2f" % @site.centre_lon }
+        let!(:centrealt) { "%6.2f" % @site.centre_alt }
+        it { should have_content(centrelat)}
+        it { should have_content(centrelon)}
+        it { should have_content(centrealt)}
         it { should have_link('Options') }
         it { should have_link('Edit Site') }
         it { should have_link('Delete Site') }

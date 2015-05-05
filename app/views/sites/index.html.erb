@@ -1,0 +1,18 @@
+<% provide(:title, 'Sites') %>
+<% provide(:pageheading, 'Available Sites') %>
+
+<% if @sites.any? %>
+	<div class="row topspace20 bottomspace">  
+	  <div class="col-xs-12 col-sm-2 col-sm-push-10">
+      <%= link_to "View Map Mode", map_sites_path, :class => "btn btn-block btn-default" %>
+		</div>
+	</div>
+<% end %>
+
+
+
+<div class="row">
+  <div class="col-xs-12">
+    <%= render 'sites/sites' %>
+  </div>
+</div>

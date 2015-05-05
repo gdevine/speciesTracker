@@ -32,3 +32,8 @@ FactoryGirl.create :admin
 15.times do
   FactoryGirl.create :species
 end
+
+# Create some sites
+15.times do
+  FactoryGirl.create :site
+end
