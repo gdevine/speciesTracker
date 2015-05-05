@@ -31,7 +31,6 @@ class SitesController < ApplicationController
     @hash = Gmaps4rails.build_markers(@site) do |site, marker|
       marker.lat @site.centre_lat
       marker.lng @site.centre_lon
-      marker.infowindow @site.name
     end
   end
   
@@ -46,6 +45,13 @@ class SitesController < ApplicationController
     else
       render 'edit'
     end
+  end
+  
+  
+  def destroy
+    @site.destroy
+    flash[:link] = "Site Deleted!"
+    redirect_to sites_path
   end
 
   private
