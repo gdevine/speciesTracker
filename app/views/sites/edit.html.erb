@@ -1,5 +1,5 @@
-<% provide(:title, 'New Site') %>
-<% provide(:pageheading, 'Create New Site') %>
+<% provide(:title, 'Edit Site') %>
+<% provide(:pageheading, 'Edit Site '+@site.id.to_s) %>
 
 <%= form_for @site, :html => {:class => "form-horizontal"} do |f| %>
   <%= render 'shared/error_messages', object: f.object %>
@@ -55,7 +55,7 @@
   
   <div class="form-group">
     <div class="col-md-4 col-md-offset-4 topspace50 bottomspace">
-      <%= f.submit "Submit", :class => "btn btn-large btn-primary" %>
+      <%= f.submit "Update", :class => "btn btn-large btn-primary" %>
     </div>
   </div>
   

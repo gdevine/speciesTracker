@@ -34,6 +34,19 @@ class SitesController < ApplicationController
       marker.infowindow @site.name
     end
   end
+  
+  def edit
+  end
+
+  def update
+    @site = Site.find(params[:id])
+    if @site.update_attributes(site_params)
+      flash[:link] = "Site Updated!"
+      redirect_to @site
+    else
+      render 'edit'
+    end
+  end
 
   private
 
