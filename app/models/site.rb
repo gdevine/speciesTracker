@@ -1,5 +1,7 @@
 class Site < ActiveRecord::Base
-
+  
+  has_many :sightings, :class_name => 'Sighting', :foreign_key => 'species_id', :dependent => :restrict_with_exception
+  
   validates :name, :uniqueness => {:message => "This name already exists"}, :presence => { :message => "A name is required" }, length: { maximum: 80 }
   validates :street, length: { maximum: 80 }
   validates :suburb, :presence => { :message => "A suburb is required" }, length: { maximum: 80 }

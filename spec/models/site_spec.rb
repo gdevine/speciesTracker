@@ -2,7 +2,7 @@ require 'rails_helper'
 
 RSpec.describe Site, type: :model do
 
-   before do 
+  before do 
     @site = FactoryGirl.build(:site) 
   end
   
@@ -68,6 +68,42 @@ RSpec.describe Site, type: :model do
     end
     
     it { should_not be_valid } 
+  end
+  
+  #Sensible co-ordinates
+  describe "when latitude is too high" do
+    before { @site.centre_lat = 100.03 }
+    it { should_not be_valid }
+  end
+  
+  describe "when latitude is too low" do
+    before { @site.centre_lat = -120.03 }
+    it { should_not be_valid }
+  end
+
+  describe "when latitude is alphabetic" do
+    before { @site.centre_lat = 'aabb' }
+    it { should_not be_valid }
+  end
+
+  describe "when longitude is too high" do
+    before { @site.centre_lon = 400.03 }
+    it { should_not be_valid }
+  end
+  
+  describe "when longitude is too low" do
+    before { @site.centre_lon = -12.03 }
+    it { should_not be_valid }
+  end
+
+  describe "when longitude is alphabetic" do
+    before { @site.centre_lon = 'bbaa' }
+    it { should_not be_valid }
+  end
+  
+  describe "when altitude is alphabetic" do
+    before { @site.centre_alt = 'bbaa' }
+    it { should_not be_valid }
   end
   
 end

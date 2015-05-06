@@ -1,6 +1,6 @@
 FactoryGirl.define do
     
- factory :user do
+ factory :user, aliases: [:spotter] do
     firstname { Faker::Name.first_name }
     surname { Faker::Name.last_name }
     email { Faker::Internet.free_email }
@@ -13,7 +13,7 @@ FactoryGirl.define do
       approved false
     end
 
-    factory :superuser do
+    factory :superuser, aliases: [:creator] do
       role "superuser"
     end
     

@@ -1,4 +1,9 @@
 class User < ActiveRecord::Base
+  
+  has_many :sightings, :class_name => 'Sighting', :foreign_key => 'spotter_id', :dependent => :restrict_with_exception
+  has_many :sightings, :class_name => 'Sighting', :foreign_key => 'creator_id', :dependent => :restrict_with_exception
+  
+  
   # Include default devise modules. Others available are:
   # :confirmable, :lockable, :timeoutable and :omniauthable
   devise :database_authenticatable, :registerable,
