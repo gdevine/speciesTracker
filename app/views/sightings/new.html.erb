@@ -1,0 +1,73 @@
+<% provide(:title, 'New Sighting') %>
+<% provide(:pageheading, 'Create New Sighting') %>
+
+<%= form_for @sighting, :html => {:class => "form-horizontal"} do |f| %>
+  <%= render 'shared/error_messages', object: f.object %>
+  
+  <div class="form-group">
+    <%= f.label :species_id, 'Species *', :class => "col-lg-2 control-label" %>
+    <div class="col-lg-8">
+      <%= collection_select(:sighting, :species_id, Species.all, :id, :fullname, {include_blank: 'None selected'}, {:class=>"form-control", :id=>'species'} ) %>
+    </div>
+  </div>
+  
+  <div class="form-group">
+    <%= f.label :site_id, 'Site *', :class => "col-lg-2 control-label" %>
+    <div class="col-lg-8">
+      <%= collection_select(:sighting, :site_id, Site.all, :id, :name, {include_blank: 'None selected'}, {:class=>"form-control", :id=>'sites'} ) %>
+    </div>
+  </div>  
+  
+  <div class="form-group">
+    <%= f.label :datetime_sighted, 'Date/Time of Sighting *', :class => "col-lg-2 control-label" %>
+    <div class="col-lg-8">
+      <%= f.datetime_field :datetime_sighted, :class => "form-control" %>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <%= f.label :latitude, "Latitude", :class => "col-lg-2 control-label" %>
+    <div class="col-lg-8">
+      <%= f.number_field :latitude, :class => "form-control", :min => -90.0, :max => 90.0, :step => 'any' %>
+    </div>
+  </div>
+  
+  <div class="form-group">
+    <%= f.label :longitude, "Longitude", :class => "col-lg-2 control-label" %>
+    <div class="col-lg-8">
+      <%= f.number_field :longitude, :class => "form-control", :min => 0.0, :max => 360.0, :step => 'any' %>
+    </div>
+  </div>
+  
+  <div class="form-group">
+    <%= f.label :altitude, "Altitude (m)", :class => "col-lg-2 control-label" %>
+    <div class="col-lg-8">
+      <%= f.number_field :altitude, :class => "form-control", :min => 0.0, :max => 10000.0, :step => 'any' %>
+    </div>
+  </div>
+    
+  <div class="form-group">
+    <%= f.label :comments, "Comments", :class => "col-lg-2 control-label" %>
+    <div class="col-lg-8">
+      <%= f.text_area :comments, :class => "form-control" %>
+    </div>
+  </div>
+  
+  <div class="form-group">
+    <div class="col-md-4 col-md-offset-4 topspace50 bottomspace">
+      <%= f.submit "Submit", :class => "btn btn-large btn-primary" %>
+    </div>
+  </div>
+  
+<% end %>
+
+
+<script type="text/javascript">
+$('#species, #sites').multiselect({
+    buttonClass : "form-control",
+    buttonWidth: "50%",
+    maxHeight: 400,
+    enableCaseInsensitiveFiltering: true,
+    buttonWidth: '350px'
+});
+</script>

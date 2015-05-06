@@ -1,7 +1,6 @@
 Rails.application.routes.draw do
 
 
-  resources :sightings
 
   devise_for :admin_users, ActiveAdmin::Devise.config
   ActiveAdmin.routes(self)
@@ -20,6 +19,7 @@ Rails.application.routes.draw do
   get 'adminonlypage' => 'static_pages#adminonlypage'
   
   resources :users
+  resources :sightings
   resources :species
   resources :sites do
     collection do

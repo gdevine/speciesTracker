@@ -6,8 +6,8 @@ class Sighting < ActiveRecord::Base
   belongs_to :spotter, :class_name => 'User', :foreign_key => 'spotter_id'
   
   ## Validations
-  validates :site_id, presence: true
-  validates :species_id, presence: true
+  validates :site_id, :presence => { :message => "You must select a Site" }
+  validates :species_id, :presence => { :message => "You must select a Species" }
   validates :creator_id, presence: true
   validates :spotter_id, presence: true
   

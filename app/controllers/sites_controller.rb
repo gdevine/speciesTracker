@@ -46,8 +46,7 @@ class SitesController < ApplicationController
       render 'edit'
     end
   end
-  
-  
+    
   def destroy
     @site.destroy
     flash[:link] = "Site Deleted!"
