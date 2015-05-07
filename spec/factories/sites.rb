@@ -8,5 +8,4 @@ FactoryGirl.define do
     centre_lon { Faker::Number.between(from=150.2, to=150.6) } 
     centre_alt { Faker::Number.number(3) }
   end
-
 end

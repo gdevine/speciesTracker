@@ -99,7 +99,7 @@ RSpec.describe "Sighting", type: :feature do
         before do
           find('#species').find(:xpath, 'option[2]').select_option  
           find('#sites').find(:xpath, 'option[2]').select_option 
-          fill_in 'sighting_datetime_sighted', with: DateTime.new(2014, 07, 11, 20, 10, 0)
+          fill_in 'sighting_datetime_sighted', with: Time.zone.local(2014, 07, 11)
           fill_in 'sighting_latitude', with: -30.0   
           fill_in 'sighting_longitude', with: 150.0   
           fill_in 'sighting_altitude', with: 150.0  

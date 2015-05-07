@@ -10,6 +10,11 @@ class SitesController < ApplicationController
     @hash = Gmaps4rails.build_markers(@sites) do |site, marker|
       marker.lat site.centre_lat
       marker.lng site.centre_lon
+      marker.picture({
+        :url => view_context.image_path("marker_pink.png"),
+        :width   => 32,
+        :height  => 32
+      })
       marker.infowindow render_to_string(:partial => "sites/info_window", :locals => { :site => site})
     end
   end
@@ -31,6 +36,11 @@ class SitesController < ApplicationController
     @hash = Gmaps4rails.build_markers(@site) do |site, marker|
       marker.lat @site.centre_lat
       marker.lng @site.centre_lon
+      marker.picture({
+        :url => view_context.image_path("marker_pink.png"),
+        :width   => 32,
+        :height  => 32
+      })
     end
   end
   

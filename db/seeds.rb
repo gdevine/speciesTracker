@@ -37,3 +37,8 @@ end
 15.times do
   FactoryGirl.create :site
 end
+
+# Create sightings
+30.times do
+  FactoryGirl.create :sighting
+end

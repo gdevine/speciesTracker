@@ -20,11 +20,18 @@
 
 
 <div class="row topspace20">
+	
   <div class="col-md-6">	
 	  <!-- Add map view of sighting -->
 	  <div class='topspace20 bottomspace', 'width: 100%;'>
 		  <div id="map" style='width: 100%; height: 400px;'></div>
 		</div>
+		<div class="row">
+        <div class="col-md-6">
+          <%= image_tag("marker_blue.png")%> Sighting 
+          <%= image_tag("marker_pink.png")%> Site Centre 
+        </div>			
+		</div>	
   </div>
   
   <div class="col-md-6 topspace20">	
@@ -52,7 +59,7 @@
 		    <p class="text-left">Date/Time of Sighting</p>
 		  </div>   
 		  <div class="col-md-7">
-		    <p class="text-muted"><%= @sighting.datetime_sighted %></p>
+		    <p class="text-muted"><%= @sighting.datetime_sighted.to_formatted_s(:long_ordinal) %></p>
 		  </div>
 		</div>
 		
@@ -109,6 +116,7 @@ handler.buildMap({
   markers = handler.addMarkers(<%=raw @hash.to_json %>);
   handler.bounds.extendWith(markers);
   handler.fitMapToBounds();
-  handler.getMap().setZoom(10);
+  handler.map.centerOn(markers[0]);
+  handler.getMap().setZoom(9);
 });
 </script>

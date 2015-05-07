@@ -7,7 +7,7 @@ class Species < ActiveRecord::Base
   validates :genus, :uniqueness => {:scope => [:species], message: "This genus-species already exists"}
   
   def fullname
-    self.genus << " " << self.species
+    self.genus.humanize << " " << self.species.humanize
   end
   
 end
