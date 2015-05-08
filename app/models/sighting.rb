@@ -10,6 +10,7 @@ class Sighting < ActiveRecord::Base
   validates :species_id, :presence => { :message => "You must select a Species" }
   validates :creator_id, presence: true
   validates :spotter_id, presence: true
+  validates :datetime_sighted, :presence => { :message => "You must state when a sighting was made" }
   
   validates :latitude, :numericality => { :greater_than_or_equal_to => -90.0, :less_than_or_equal_to => 90 }, :allow_nil => true
   validates :longitude, :numericality => { :greater_than_or_equal_to => 0.0, :less_than_or_equal_to => 360.0 }, :allow_nil => true
@@ -22,6 +23,7 @@ class Sighting < ActiveRecord::Base
   validate :validate_spotter_id
   validate :validate_creator_id
   validate :creator_spotter_same_if_user
+  validate :date_is_date?
   
   
   private
@@ -33,11 +35,15 @@ class Sighting < ActiveRecord::Base
   end  
   
   def validate_species_id
-    errors.add(:species_id, "is invalid") unless Species.exists?(self.species_id)
+    if !self.species_id.nil?
+      errors.add(:species_id, "Species given is invalid") unless Species.exists?(self.species_id)
+    end
   end
 
   def validate_site_id
-    errors.add(:site_id, "is invalid") unless Site.exists?(self.site_id)
+    if !self.site_id.nil?
+      errors.add(:site_id, "Site given is invalid") unless Site.exists?(self.site_id)
+    end
   end
 
   def validate_spotter_id
@@ -55,6 +61,14 @@ class Sighting < ActiveRecord::Base
       end
     end
   end 
+  
+  def date_is_date?
+    if !self.datetime_sighted.nil?
+      if !self.datetime_sighted.to_datetime.is_a?(DateTime)
+        errors.add(:datetime_sighted, 'must be a valid date/time') 
+      end
+    end
+  end
   
     
 end

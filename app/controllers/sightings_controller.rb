@@ -9,7 +9,11 @@ class SightingsController < ApplicationController
   def create
     @sighting = Sighting.new(sighting_params)
     @sighting.creator = current_user
-    @sighting.spotter = current_user
+    # if user role then spotter is automatically set to be the current user
+    if current_user.role == 'user'
+      @sighting.spotter = current_user
+    end 
+    
     if @sighting.save
       flash[:link] = "Sighting created!"
       redirect_to @sighting
@@ -32,11 +36,27 @@ class SightingsController < ApplicationController
     @hash.push({:lat=>@sighting.site.centre_lat, :lng=>@sighting.site.centre_lon, :picture=>{:url=>"/assets/marker_pink.png", :width=>32, :height=>32}})
   end
   
+  def edit
+  end
+
+  def update
+    @sighting = Sighting.find(params[:id])
+    if @sighting.update_attributes(sighting_params)
+      flash[:link] = "Sighting Updated!"
+      redirect_to @sighting
+    else
+      render 'edit'
+    end
+  end
+  
   
   private
-
     def sighting_params
-      params.require(:sighting).permit(:species_id, :site_id, :datetime_sighted, :comments, :latitude, :longitude, :altitude)
-    end
+        if current_user.role != 'user'
+          params.require(:sighting).permit(:species_id, :site_id, :datetime_sighted, :comments, :latitude, :longitude, :altitude, :spotter_id)
+        else
+          params.require(:sighting).permit(:species_id, :site_id, :datetime_sighted, :comments, :latitude, :longitude, :altitude)
+        end
+    end  
   
 end

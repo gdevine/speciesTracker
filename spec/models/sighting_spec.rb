@@ -47,18 +47,17 @@ RSpec.describe Sighting, type: :model do
     before { @sighting.spotter_id = " " }
     it { should_not be_valid }
   end   
-    
+
+  describe "when datetime_sighted is not present" do
+    before { @sighting.datetime_sighted = " " }
+    it { should_not be_valid }
+  end      
 
   # Sensible date sighted
-  describe "when sighting date is in the future" do
+  describe "when datetime_sighted is in the future" do
     before { @sighting.datetime_sighted = Time.now + 2.days }
     it { should_not be_valid }
   end
-  
-  describe "when sighting date is empty" do
-    before { @sighting.datetime_sighted = '' }
-    it { should be_valid }
-  end    
   
   
   #Sensible co-ordinates

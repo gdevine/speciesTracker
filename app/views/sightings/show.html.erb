@@ -3,7 +3,7 @@
 
 
 <!-- Add edit/delete buttons if authorized -->
-<% if can? :crud, @sighting %>
+<% if can? :edit, @sighting %>
 	<div class="row bottomspace">  
 	  <div class="col-xs-12 col-sm-2 col-sm-push-10">
 			<a class="btn btn-block btn-info" data-toggle="dropdown" href="#" id="options_button">
@@ -63,6 +63,15 @@
 		  </div>
 		</div>
 		
+		<div class="row">
+		  <div class="col-md-offset-1 col-md-4">
+		    <p class="text-left">Sighted by</p>
+		  </div>   
+		  <div class="col-md-7">
+		    <p class="text-muted"><%= @sighting.spotter.fullname %></p>
+		  </div>
+		</div>
+				
 		<div class="row">
 		  <div class="col-md-offset-1 col-md-4">
 		    <p class="text-left">Comments</p>
