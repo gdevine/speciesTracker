@@ -19,7 +19,11 @@ Rails.application.routes.draw do
   get 'adminonlypage' => 'static_pages#adminonlypage'
   
   resources :users
-  resources :sightings
+  resources :sightings do
+    collection do
+      get 'map'
+    end
+  end
   resources :species
   resources :sites do
     collection do

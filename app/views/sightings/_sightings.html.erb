@@ -1,0 +1,19 @@
+<% if @sightings.any? %>
+  <table class="table table-bordered table-striped table-hover display responsive no-wrap" id="sightings">
+    <thead>
+      <tr>
+        <th>Sighting ID</th>
+        <th>Site</th>
+        <th>Species</th>
+        <th>Date/Time of Sighting</th>
+        <th>View?</th>
+      </tr>
+    </thead>
+    <tbody>
+      <%= render partial: 'sightings/sightings_table', collection: @sightings, as: :sighting %>
+    </tbody>
+  </table>
+  
+<% else %>
+  <p>No Sightings found</p>
+<% end %>

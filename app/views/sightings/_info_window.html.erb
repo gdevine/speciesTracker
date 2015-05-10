@@ -1,0 +1,5 @@
+<h4>Sighting <%= sighting.id %> </h4>
+<p>Site: <%= sighting.site.name %></p>
+<p>Species: <%= sighting.species.fullname %></p>
+<p>Date/Time: <%= sighting.datetime_sighted.to_formatted_s(:long_ordinal) %></p>
+<p><%= link_to "View Sighting Details", sighting %></p>

@@ -14,8 +14,7 @@ class Ability
       can [:home, :about, :contact, :help, :useronlypage], StaticPagesController
       can [:index, :show], Species
       can [:index, :map, :show], Site
-      
-      can [:index, :show, :new, :create], Sighting
+      can [:index, :map, :show, :new, :create], Sighting
       can [:edit, :update, :delete], Sighting do |sighting|
         sighting.creator == user || sighting.spotter == user
       end
@@ -27,7 +26,7 @@ class Ability
       can :crud, Species
       can :crud, Site
       can :map, Site
-      can [:index, :show, :new, :create], Sighting
+      can [:index, :map, :show, :new, :create], Sighting
       can [:edit, :update, :delete], Sighting do |sighting|
         sighting.creator == user || sighting.spotter == user
       end
@@ -38,20 +37,9 @@ class Ability
       can :crud, Species
       can :crud, Site
       can :map, Site
+      can [:index, :map, :show, :new, :create], Sighting
       can :crud, Sighting
     end
-        
-    # if user.role == "technician" && user.approved == true
-      # can [:edit, :update], JobRequest do |job_request|
-        # job_request.analysis_type.technicians.include? user
-      # end
-    # end
-#     
-    # if user.role == "researcher" && user.approved == true
-      # can [:edit, :update, :destroy], JobRequest do |job_request|
-        # job_request.researcher_id == user.id
-      # end
-    # end
     
   end
 end

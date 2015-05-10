@@ -2,8 +2,3 @@
 # All this logic will automatically be available in application.js.
 # You can use CoffeeScript in this file: http://coffeescript.org/
 
-jQuery ->
-  $('#species').dataTable
-    pagingType: "simple"
-    responsive: false
-    bJQueryUI: false

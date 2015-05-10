@@ -2,7 +2,23 @@ class SightingsController < ApplicationController
     
   before_action :authenticate_user!, only: [:index, :map, :new, :update, :show, :edit, :create, :destroy]
   load_and_authorize_resource
+    
+  def index
+  end
   
+  def map 
+    @hash = Gmaps4rails.build_markers(@sightings) do |sighting, marker|
+      marker.lat sighting.latitude
+      marker.lng sighting.longitude
+      marker.picture({
+        :url => view_context.image_path("marker_plant.png"),
+        :width   => 32,
+        :height  => 32
+      })
+      marker.infowindow render_to_string(:partial => "sightings/info_window", :locals => { :sighting => sighting})
+    end
+  end
+
   def new
   end
   
@@ -27,13 +43,13 @@ class SightingsController < ApplicationController
       marker.lat @sighting.latitude
       marker.lng @sighting.longitude
       marker.picture({
-        :url => view_context.image_path("marker_blue.png"),
+        :url => view_context.image_path("marker_plant.png"),
         :width   => 32,
         :height  => 32
       })
     end
     # add the marker for the site 
-    @hash.push({:lat=>@sighting.site.centre_lat, :lng=>@sighting.site.centre_lon, :picture=>{:url=>"/assets/marker_pink.png", :width=>32, :height=>32}})
+    @hash.push({:lat=>@sighting.site.centre_lat, :lng=>@sighting.site.centre_lon, :picture=>{:url=>view_context.image_path("marker_pink.png"), :width=>32, :height=>32}})
   end
   
   def edit

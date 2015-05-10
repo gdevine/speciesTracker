@@ -1,0 +1,7 @@
+<tr>
+  <td><%= sighting.id %></td>
+  <td><%= sighting.site.name %> </td>
+  <td><%= sighting.species.fullname %> </td>
+  <td><%= sighting.datetime_sighted.to_formatted_s(:long_ordinal) %> </td>
+  <td><%= link_to "View", sighting %></td>
+</tr>
