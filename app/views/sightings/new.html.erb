@@ -9,14 +9,7 @@
     <div class="col-lg-8">
       <%= collection_select(:sighting, :species_id, Species.all, :id, :fullname, {include_blank: 'None selected'}, {:class=>"form-control", :id=>'species'} ) %>
     </div>
-  </div>
-  
-  <div class="form-group">
-    <%= f.label :site_id, 'Site *', :class => "col-lg-2 control-label" %>
-    <div class="col-lg-8">
-      <%= collection_select(:sighting, :site_id, Site.all, :id, :name, {include_blank: 'None selected'}, {:class=>"form-control", :id=>'sites'} ) %>
-    </div>
-  </div>  
+  </div> 
   
   <div class="form-group">
     <%= f.label :datetime_sighted, 'Date/Time of Sighting *', :class => "col-lg-2 control-label" %>
@@ -33,6 +26,13 @@
 	    </div>
 	  </div>
 	<% end %>
+	  
+  <div class="form-group">
+    <%= f.label :site_id, 'Site *', :class => "col-lg-2 control-label" %>
+    <div class="col-lg-8">
+      <%= collection_select(:sighting, :site_id, Site.all, :id, :name, {include_blank: 'None selected'}, {:class=>"form-control", :id=>'sites'} ) %>
+    </div>
+  </div> 
 
   <div class="form-group">
     <%= f.label :latitude, "Latitude", :class => "col-lg-2 control-label" %>

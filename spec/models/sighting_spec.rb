@@ -2,7 +2,7 @@ require 'rails_helper'
 
 RSpec.describe Sighting, type: :model do
   
-   before do 
+  before do 
     @sighting = FactoryGirl.create(:sighting) 
   end
   
@@ -33,11 +33,6 @@ RSpec.describe Sighting, type: :model do
     it { should_not be_valid }
   end
   
-  describe "when site id is not present" do
-    before { @sighting.site_id = " " }
-    it { should_not be_valid }
-  end
-  
   describe "when creator_id is not present" do
     before { @sighting.creator_id = " " }
     it { should_not be_valid }
@@ -59,6 +54,58 @@ RSpec.describe Sighting, type: :model do
     it { should_not be_valid }
   end
   
+  # Check different combinations of site and specific co-ordinates
+  # At minimum a site must be given or specific co-ordinates must be given
+  describe "when site id nor co-ords are not present" do
+    before do
+      @sighting.site_id = " "
+      @sighting.latitude = " "
+      @sighting.longitude = " "
+    end
+    it { should_not be_valid }
+  end  
+  
+  describe "when site is empty but co-ordinates are present" do
+    before do
+      @sighting.site_id = " "
+      @sighting.latitude = -34.1
+      @sighting.longitude = 153.2
+    end
+    it { should be_valid }
+  end 
+  
+  describe "when site is given but co-ordinates are empty" do
+    before do
+      @sighting.latitude = ""
+      @sighting.longitude = ""
+    end
+    it { should be_valid }
+  end 
+  
+  describe "when site is given and one of lat/long is empty" do
+    before do
+      @sighting.latitude = 35.0
+      @sighting.longitude = ""
+    end
+    it { should_not be_valid }
+  end 
+
+  describe "when site is empty and invalid co-ordinates are present" do
+    before do
+      @sighting.site_id = " "
+      @sighting.latitude = -340.1
+      @sighting.longitude = 153.2
+    end
+    it { should_not be_valid }
+  end 
+  
+  describe "when both site and co-ordinates are present" do
+    before do
+      @sighting.latitude = -34.1
+      @sighting.longitude = 153.2
+    end
+    it { should be_valid }
+  end 
   
   #Sensible co-ordinates
   describe "when latitude is too high" do
@@ -77,8 +124,11 @@ RSpec.describe Sighting, type: :model do
   end
   
   describe "when latitude is empty" do
-    before { @sighting.latitude = '' }
-    it { should be_valid }
+    before do
+      @sighting.latitude = '' 
+      @sighting.longitude = 131.0 
+    end
+    it { should_not be_valid }
   end
   
   describe "when longitude is too high" do
@@ -96,8 +146,20 @@ RSpec.describe Sighting, type: :model do
     it { should_not be_valid }
   end
   
-  describe "when longiitude is empty" do
-    before { @sighting.longitude = '' }
+  describe "when longitude is empty" do
+    before do 
+      @sighting.latitude = 33.9
+      @sighting.longitude = ''
+    end
+    it { should_not be_valid }
+  end
+  
+  describe "when both latitude and longitude are empty" do
+    before do
+       @sighting.latitude = '' 
+       @sighting.longitude = '' 
+    end 
+    
     it { should be_valid }
   end
 

@@ -1,6 +1,10 @@
 <tr>
   <td><%= sighting.id %></td>
-  <td><%= sighting.site.name %> </td>
+  <% if !sighting.site.nil? %>
+    <td><%= sighting.site.name %> </td>
+  <% else %>
+    <td>None given</td>
+  <% end %>
   <td><%= sighting.species.fullname %> </td>
   <td><%= sighting.datetime_sighted.to_formatted_s(:long_ordinal) %> </td>
   <td><%= link_to "View", sighting %></td>

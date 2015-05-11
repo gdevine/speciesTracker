@@ -6,7 +6,6 @@ class Sighting < ActiveRecord::Base
   belongs_to :spotter, :class_name => 'User', :foreign_key => 'spotter_id'
   
   ## Validations
-  validates :site_id, :presence => { :message => "You must select a Site" }
   validates :species_id, :presence => { :message => "You must select a Species" }
   validates :creator_id, presence: true
   validates :spotter_id, presence: true
@@ -17,6 +16,8 @@ class Sighting < ActiveRecord::Base
   validates :altitude, :numericality => { :greater_than_or_equal_to => 0.0, :less_than_or_equal_to => 10000.0 }, :allow_nil => true
   
   #custom validations
+  validate :site_andor_coords
+  validate :lat_and_lon
   validate :check_future_sighting
   validate :validate_species_id
   validate :validate_site_id
@@ -25,8 +26,38 @@ class Sighting < ActiveRecord::Base
   validate :creator_spotter_same_if_user
   validate :date_is_date?
   
+  def primary_lat
+    if self.latitude.nil?
+      self.site.centre_lat
+    else
+      self.latitude
+    end
+  end
+  
+  def primary_lon
+    if self.longitude.nil?
+      self.site.centre_lon
+    else
+      self.longitude
+    end
+  end
+  
   
   private
+  
+  def site_andor_coords
+    if (!self.latitude.nil? && self.longitude.nil? ) || (!self.longitude.nil? && self.latitude.nil? ) 
+      errors.add(:base, "If providing latitude/longitude, both must be present")
+    elsif self.site.nil?
+      errors.add(:base, "If a Site is not selected, then a specific latitude/longitude must be given") if self.latitude.nil? || self.longitude.nil?
+    end
+  end
+  
+  def lat_and_lon
+    # if (!self.latitude.nil? && self.longitude.nil? ) || (!self.longitude.nil? && self.latitude.nil? ) 
+      # errors.add(:base, "If providing latitude/longitude, both must be present")
+    # end
+  end
   
   def check_future_sighting
     if !self.datetime_sighted.nil?

@@ -12,13 +12,6 @@
   </div>
   
   <div class="form-group">
-    <%= f.label :site_id, 'Site *', :class => "col-lg-2 control-label" %>
-    <div class="col-lg-8">
-      <%= collection_select(:sighting, :site_id, Site.all, :id, :name, {include_blank: 'None selected'}, {:class=>"form-control", :id=>'sightings'} ) %>
-    </div>
-  </div>  
-  
-  <div class="form-group">
     <%= f.label :datetime_sighted, 'Date/Time of Sighting *', :class => "col-lg-2 control-label" %>
     <div class="col-lg-8">
       <%= f.datetime_local_field :datetime_sighted, :class => "form-control" %>
@@ -33,7 +26,14 @@
 	    </div>
 	  </div>
 	<% end %>
-
+  
+  <div class="form-group">
+    <%= f.label :site_id, 'Site *', :class => "col-lg-2 control-label" %>
+    <div class="col-lg-8">
+      <%= collection_select(:sighting, :site_id, Site.all, :id, :name, {include_blank: 'None selected'}, {:class=>"form-control", :id=>'sightings'} ) %>
+    </div>
+  </div>  
+  
   <div class="form-group">
     <%= f.label :latitude, "Latitude", :class => "col-lg-2 control-label" %>
     <div class="col-lg-8">

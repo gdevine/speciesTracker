@@ -8,8 +8,8 @@ class SightingsController < ApplicationController
   
   def map 
     @hash = Gmaps4rails.build_markers(@sightings) do |sighting, marker|
-      marker.lat sighting.latitude
-      marker.lng sighting.longitude
+      marker.lat sighting.primary_lat
+      marker.lng sighting.primary_lon
       marker.picture({
         :url => view_context.image_path("marker_plant.png"),
         :width   => 32,
@@ -40,16 +40,19 @@ class SightingsController < ApplicationController
   
   def show
     @hash = Gmaps4rails.build_markers(@sighting) do |sighting, marker|
-      marker.lat @sighting.latitude
-      marker.lng @sighting.longitude
+      marker.lat @sighting.primary_lat
+      marker.lng @sighting.primary_lon
       marker.picture({
         :url => view_context.image_path("marker_plant.png"),
         :width   => 32,
         :height  => 32
       })
     end
-    # add the marker for the site 
-    @hash.push({:lat=>@sighting.site.centre_lat, :lng=>@sighting.site.centre_lon, :picture=>{:url=>view_context.image_path("marker_pink.png"), :width=>32, :height=>32}})
+    # add the marker for the site if given
+    if !@sighting.site.nil?
+      @hash.push({:lat=>@sighting.site.centre_lat, :lng=>@sighting.site.centre_lon, :picture=>{:url=>view_context.image_path("marker_pink.png"), :width=>32, :height=>32}})
+    end
+    
   end
   
   def edit

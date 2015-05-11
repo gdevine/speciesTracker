@@ -100,6 +100,54 @@ RSpec.describe "Sighting", type: :feature do
           it { should have_selector('h2', text: "Create New Sighting") }
         end
       end
+      
+      describe "not providing a site but providing invalid co-ordinates" do   
+        before do
+          find('#species').find(:xpath, 'option[2]').select_option  
+          fill_in 'sighting_datetime_sighted', with: DateTime.new(2014, 07, 11, 20, 10, 0)
+          fill_in 'sighting_latitude', with: ''   
+          fill_in 'sighting_longitude', with: 150.0   
+          fill_in 'sighting_altitude', with: 150.0  
+        end
+        
+        it "should not create a Sighting" do
+          expect{ click_button "Submit" }.to change{Sighting.count}.by(0)
+        end             
+        
+        describe "should return an error and revert back" do
+          before { click_button "Submit" }
+          it { should have_content('1 error') }
+          it { should have_content("If providing latitude/longitude, both must be present") }
+          it { should have_selector('h2', text: "Create New Sighting") }
+        end
+      end
+      
+      describe "not providing a site but providing valid co-ordinates" do   
+        before do
+          find('#species').find(:xpath, 'option[2]').select_option  
+          find('#sites').find(:xpath, 'option[1]').select_option  
+          fill_in 'sighting_datetime_sighted', with: DateTime.new(2014, 07, 11, 20, 10, 0)
+          fill_in 'sighting_latitude', with: -33.0   
+          fill_in 'sighting_longitude', with: 150.0   
+          fill_in 'sighting_altitude', with: 150.0  
+        end
+        
+        it "should create a Sighting" do
+          expect{ click_button "Submit" }.to change{Sighting.count}.by(1)
+        end             
+        
+        describe "should revert to sighting view page with success message" do
+          before { click_button "Submit" }
+          it { should have_content('Sighting created!') }
+          it { should have_title(full_title('Sighting View')) }  
+          it { should have_selector('h2', "Species") }
+          it { should have_selector('h2', "Site") }
+          it { should have_content(species.fullname) }
+          it { should have_content('None given') }
+          it { should have_content('-33.00') }
+        end
+      end
+      
            
       describe "with valid information" do 
         before do
