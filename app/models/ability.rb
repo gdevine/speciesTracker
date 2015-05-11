@@ -15,7 +15,7 @@ class Ability
       can [:index, :show], Species
       can [:index, :map, :show], Site
       can [:index, :map, :show, :new, :create], Sighting
-      can [:edit, :update, :delete], Sighting do |sighting|
+      can [:edit, :update, :destroy], Sighting do |sighting|
         sighting.creator == user || sighting.spotter == user
       end
     
@@ -27,7 +27,7 @@ class Ability
       can :crud, Site
       can :map, Site
       can [:index, :map, :show, :new, :create], Sighting
-      can [:edit, :update, :delete], Sighting do |sighting|
+      can [:edit, :update, :destroy], Sighting do |sighting|
         sighting.creator == user || sighting.spotter == user
       end
     end
@@ -36,9 +36,9 @@ class Ability
       can [:manage], StaticPagesController
       can :crud, Species
       can :crud, Site
-      can :map, Site
-      can [:index, :map, :show, :new, :create], Sighting
       can :crud, Sighting
+      can :map, Site
+      can :map, Sighting
     end
     
   end

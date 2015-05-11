@@ -65,6 +65,12 @@ class SightingsController < ApplicationController
     end
   end
   
+  def destroy
+    @sighting.destroy
+    flash[:link] = "Sighting Deleted!"
+    redirect_to sightings_path
+  end
+  
   
   private
     def sighting_params

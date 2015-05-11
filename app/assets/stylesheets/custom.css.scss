@@ -31,10 +31,18 @@ textarea {
 
 .alert  {
   border: 1px solid;
-  border-color: #AA0000;
-  border-color: #AA0000;
+  border-color: #550000;
   text-align: center;
   font-size: 1.3em;
+}
+
+.alert-danger {
+  border: 1px solid;
+  border-color: #550000;
+  text-align: center;
+  font-size: 1.3em;
+  background: transparent;
+  color: #550000
 }
 
 
