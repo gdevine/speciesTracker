@@ -55,4 +55,7 @@ Rails.application.configure do
   config.action_mailer.default_url_options = { :host => "localhost:3000" }
   # Default Mailer Host
   # Rails.application.routes.default_url_options[:host] = 'domain.com'
+  
+  # Imagemagick location for paperclip
+  Paperclip.options[:command_path] = "/usr/local/bin/"
 end

@@ -1,7 +1,7 @@
 <% provide(:title, 'New Sighting') %>
 <% provide(:pageheading, 'Create New Sighting') %>
 
-<%= form_for @sighting, :html => {:class => "form-horizontal"} do |f| %>
+<%= form_for @sighting, :html => {:class => "form-horizontal", :multipart => true} do |f| %>
   <%= render 'shared/error_messages', object: f.object %>
   
   <div class="form-group topspace50">
@@ -59,6 +59,13 @@
     <%= f.label :comments, "Comments", :class => "col-lg-2 control-label" %>
     <div class="col-lg-8">
       <%= f.text_area :comments, :class => "form-control" %>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <%= f.label :photo, "Photograph", :class => "col-lg-2 control-label" %>
+    <div class="col-lg-8">
+      <%= f.file_field :photo, :class => "form-control" %>
     </div>
   </div>
   

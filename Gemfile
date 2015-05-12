@@ -27,6 +27,7 @@ gem 'jquery-ui-rails'
 gem 'underscore-rails'
 gem 'gmaps4rails'
 gem 'jquery-turbolinks'
+gem "paperclip", "~> 4.2"
 
 
 group :development, :test do
