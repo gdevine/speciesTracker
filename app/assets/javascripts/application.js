@@ -10,15 +10,13 @@
 // Read Sprockets README (https://github.com/sstephenson/sprockets#sprockets-directives) for details
 // about supported directives.
 //
-//= require bootstrap
 //= require jquery
-//= require jquery.turbolinks
-//= require jquery_ujs
 //= require jquery-ui
+//= require jquery_ujs
+//= require bootstrap
 //= require dataTables/jquery.dataTables
-//= require dataTables/extras/dataTables.responsive
 //= require dataTables/bootstrap/3/jquery.dataTables.bootstrap
-//= require turbolinks
 //= require underscore
 //= require gmaps/google
-//= require_tree .
+//= require lightbox
+//= require jasny-bootstrap

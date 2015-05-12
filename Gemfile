@@ -28,6 +28,7 @@ gem 'underscore-rails'
 gem 'gmaps4rails'
 gem 'jquery-turbolinks'
 gem "paperclip", "~> 4.2"
+gem 'lightbox2-rails'
 
 
 group :development, :test do

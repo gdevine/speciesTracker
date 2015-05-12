@@ -16,5 +16,6 @@
  *= require_self 
  *= require bootstrap
  *= require lumen 
+ *= require lightbox
  *= require custom
  */

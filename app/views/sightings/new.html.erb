@@ -64,8 +64,17 @@
 
   <div class="form-group">
     <%= f.label :photo, "Photograph", :class => "col-lg-2 control-label" %>
-    <div class="col-lg-8">
-      <%= f.file_field :photo, :class => "form-control" %>
+    <div class="col-xs-8 col-md-3">
+      <div class="fileinput fileinput-new" data-provides="fileinput">
+			  <div class="fileinput-preview" data-trigger="fileinput" style="width: 100%;"></div>
+			  <div>
+			    <span class="btn btn-default btn-file">
+			    	<span class="fileinput-new">Select Photo</span>
+			    	<%= f.file_field :photo, :class => "form-control" %>
+			    </span>
+			    <a href="#" class="btn btn-default fileinput-exists" data-dismiss="fileinput">Remove</a>
+			  </div>
+			</div>
     </div>
   </div>
   
