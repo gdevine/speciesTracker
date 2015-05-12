@@ -7,5 +7,6 @@
   <% end %>
   <td><%= sighting.species.fullname %> </td>
   <td><%= sighting.datetime_sighted.to_formatted_s(:long_ordinal) %> </td>
+  <td><%= image_tag(sighting.photo.url(:thumb), class:"img-thumbnail") %></td>
   <td><%= link_to "View", sighting %></td>
 </tr>

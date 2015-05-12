@@ -1,4 +1,5 @@
 FactoryGirl.define do
+  randnum = rand(1..5).to_s
   factory :sighting do
     species
     datetime_sighted { rand(1.year.ago..Time.now).to_datetime }
@@ -9,5 +10,6 @@ FactoryGirl.define do
     comments "My comments about this sighting"
     spotter  
     creator
+    photo File.new("#{Rails.root}/db/seed_photos/ST_Plant_#{randnum}.jpg")
   end
 end

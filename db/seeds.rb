@@ -40,5 +40,5 @@ end
 
 # Create sightings
 30.times do
-  FactoryGirl.create :sighting
+  FactoryGirl.create(:sighting)
 end

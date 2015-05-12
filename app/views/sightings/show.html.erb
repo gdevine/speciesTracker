@@ -4,13 +4,13 @@
 
 <!-- Add edit/delete buttons if authorized -->
 <% if can? :edit, @sighting %>
-	<div class="row bottomspace">  
+	<div class="row bottomspace topspace20">  
 	  <div class="col-xs-12 col-sm-2 col-sm-push-10">
 			<a class="btn btn-block btn-info" data-toggle="dropdown" href="#" id="options_button">
 			  Options
 			  <span class="caret"></span>
 			</a>
-			<ul class="dropdown-menu">
+			<ul class="dropdown-menu btn-block">
 			  <li><%= link_to "Edit Sighting", edit_sighting_path(id:@sighting.id) %> </li>
 			  <li><%= link_to "Delete Sighting", @sighting, :method => :delete, data: { confirm: "Are you sure?" }, :class=>"redtext" %></li>
 		  </ul>
@@ -103,7 +103,7 @@
   
 	<!--  Photo -->
 	<div class="col-md-4 topspace20">
-		<%= image_tag @sighting.photo.url(:medium) %>
+		<%= image_tag(@sighting.photo.url(:medium), class:"img-thumbnail") %>
 	</div>
 	
 	<!--  Map -->
