@@ -20,6 +20,7 @@ RSpec.describe Sighting, type: :model do
   it { should respond_to(:spotter) }
   it { should respond_to(:spotter_id) }
   it { should respond_to(:creator) }
+  it { should respond_to(:photo) }
   it { should respond_to(:creator_id) }
   it { should respond_to(:created_at) }
   it { should respond_to(:updated_at) }
@@ -47,7 +48,12 @@ RSpec.describe Sighting, type: :model do
     before { @sighting.datetime_sighted = " " }
     it { should_not be_valid }
   end      
-
+# 
+  # describe "when a photo is not present" do
+    # before { @sighting.photo = " " }
+    # it { should_not be_valid }
+  # end      
+  
   # Sensible date sighted
   describe "when datetime_sighted is in the future" do
     before { @sighting.datetime_sighted = Time.now + 2.days }
