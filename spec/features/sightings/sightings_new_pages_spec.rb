@@ -38,6 +38,7 @@ RSpec.describe "Sighting", type: :feature do
         it { should have_content('Latitude') }
         it { should have_content('Longitude') }
         it { should have_content('Altitude') }
+        it { should have_content('Photo') }
         it { should_not have_content('Sighted by') }
         it { should have_content('Comments') }
       end
@@ -49,10 +50,12 @@ RSpec.describe "Sighting", type: :feature do
         
         describe "should return an error and revert back" do
           before { click_button "Submit" }
-          it { should have_content('3 errors') }
+          it { should have_content('4 errors') }
           
           it { should have_content('You must select a Species') }
           it { should have_content('You must state when a sighting was made') }
+          it { should have_content('You must supply a photograph') }
+          it { should have_content('If a Site is not selected, then a specific latitude/longitude must be given') }
           it { should have_selector('h2', text: "Create New Sighting") }
         end
       end
@@ -65,6 +68,7 @@ RSpec.describe "Sighting", type: :feature do
           fill_in 'sighting_latitude', with: -50.0   
           fill_in 'sighting_longitude', with: 150.0   
           fill_in 'sighting_altitude', with: 150.0   
+          attach_file "sighting_photo", Rails.root.join("db/seed_photos/ST_Plant.jpg")
         end
         
         it "should not create a sighting" do
@@ -87,6 +91,7 @@ RSpec.describe "Sighting", type: :feature do
           fill_in 'sighting_latitude', with: 150.0   
           fill_in 'sighting_longitude', with: 150.0   
           fill_in 'sighting_altitude', with: 150.0  
+          attach_file "sighting_photo", Rails.root.join("db/seed_photos/ST_Plant.jpg")
         end
         
         it "should not create a Sighting" do
@@ -108,6 +113,7 @@ RSpec.describe "Sighting", type: :feature do
           fill_in 'sighting_latitude', with: ''   
           fill_in 'sighting_longitude', with: 150.0   
           fill_in 'sighting_altitude', with: 150.0  
+          attach_file "sighting_photo", Rails.root.join("db/seed_photos/ST_Plant.jpg")
         end
         
         it "should not create a Sighting" do
@@ -130,6 +136,7 @@ RSpec.describe "Sighting", type: :feature do
           fill_in 'sighting_latitude', with: -33.0   
           fill_in 'sighting_longitude', with: 150.0   
           fill_in 'sighting_altitude', with: 150.0  
+          attach_file "sighting_photo", Rails.root.join("db/seed_photos/ST_Plant.jpg")
         end
         
         it "should create a Sighting" do
@@ -148,8 +155,7 @@ RSpec.describe "Sighting", type: :feature do
         end
       end
       
-           
-      describe "with valid information" do 
+      describe "with valid information but without a photo" do 
         before do
           find('#species').find(:xpath, 'option[2]').select_option  
           find('#sites').find(:xpath, 'option[2]').select_option 
@@ -157,6 +163,28 @@ RSpec.describe "Sighting", type: :feature do
           fill_in 'sighting_latitude', with: -30.0   
           fill_in 'sighting_longitude', with: 150.0   
           fill_in 'sighting_altitude', with: 150.0  
+        end
+        
+        it "should create a sighting" do
+          expect { click_button "Submit" }.to change{Sighting.count}.by(0)
+        end        
+        
+        describe "should revert to sighting view page with success message" do
+          before { click_button "Submit" }
+          it { should have_content('1 error') }
+          it { should have_content('You must supply a photograph') }
+        end
+      end
+           
+      describe "with fully valid information" do 
+        before do
+          find('#species').find(:xpath, 'option[2]').select_option  
+          find('#sites').find(:xpath, 'option[2]').select_option 
+          fill_in 'sighting_datetime_sighted', with: DateTime.new(2014, 07, 11, 20, 10, 0)
+          fill_in 'sighting_latitude', with: -30.0   
+          fill_in 'sighting_longitude', with: 150.0   
+          fill_in 'sighting_altitude', with: 150.0 
+          attach_file "sighting_photo", Rails.root.join("db/seed_photos/ST_Plant.jpg")
         end
         
         it "should create a sighting" do
@@ -198,6 +226,7 @@ RSpec.describe "Sighting", type: :feature do
         it { should have_content('Altitude') }
         it { should have_content('Sighted by') }
         it { should have_content('Comments') }
+        it { should have_content('Photo') }
       end
       
       describe "providing empty information" do                 
@@ -207,10 +236,11 @@ RSpec.describe "Sighting", type: :feature do
         
         describe "should return an error and revert back" do
           before { click_button "Submit" }
-          it { should have_content('3 errors') }
+          it { should have_content('4 errors') }
           
           it { should have_content('You must select a Species') }
           it { should have_content('You must state when a sighting was made') }
+          it { should have_content('You must supply a photograph') }
           it { should have_selector('h2', text: "Create New Sighting") }
         end
       end
@@ -223,6 +253,7 @@ RSpec.describe "Sighting", type: :feature do
           fill_in 'sighting_latitude', with: -50.0   
           fill_in 'sighting_longitude', with: 150.0   
           fill_in 'sighting_altitude', with: 150.0   
+          attach_file "sighting_photo", Rails.root.join("db/seed_photos/ST_Plant.jpg")
         end
         
         it "should not create a sighting" do
@@ -245,6 +276,7 @@ RSpec.describe "Sighting", type: :feature do
           fill_in 'sighting_latitude', with: 150.0   
           fill_in 'sighting_longitude', with: 150.0   
           fill_in 'sighting_altitude', with: 150.0  
+          attach_file "sighting_photo", Rails.root.join("db/seed_photos/ST_Plant.jpg")
         end
         
         it "should not create a Sighting" do
@@ -267,6 +299,7 @@ RSpec.describe "Sighting", type: :feature do
           fill_in 'sighting_latitude', with: -30.0   
           fill_in 'sighting_longitude', with: 150.0   
           fill_in 'sighting_altitude', with: 150.0  
+          attach_file "sighting_photo", Rails.root.join("db/seed_photos/ST_Plant.jpg")
         end
         
         it "should create a sighting" do
@@ -305,6 +338,7 @@ RSpec.describe "Sighting", type: :feature do
         it { should have_content('Altitude') }
         it { should have_content('Sighted by') }
         it { should have_content('Comments') }
+        it { should have_content('Photo') }
       end
       
       describe "providing empty information" do                 
@@ -314,10 +348,11 @@ RSpec.describe "Sighting", type: :feature do
         
         describe "should return an error and revert back" do
           before { click_button "Submit" }
-          it { should have_content('3 errors') }
+          it { should have_content('4 errors') }
           
           it { should have_content('You must select a Species') }
           it { should have_content('You must state when a sighting was made') }
+          it { should have_content('You must supply a photograph') }
           it { should have_selector('h2', text: "Create New Sighting") }
         end
       end
@@ -329,7 +364,8 @@ RSpec.describe "Sighting", type: :feature do
           fill_in 'sighting_datetime_sighted', with: DateTime.new(2015, 07, 11, 20, 10, 0)
           fill_in 'sighting_latitude', with: -50.0   
           fill_in 'sighting_longitude', with: 150.0   
-          fill_in 'sighting_altitude', with: 150.0   
+          fill_in 'sighting_altitude', with: 150.0  
+          attach_file "sighting_photo", Rails.root.join("db/seed_photos/ST_Plant.jpg") 
         end
         
         it "should not create a sighting" do
@@ -351,7 +387,8 @@ RSpec.describe "Sighting", type: :feature do
           fill_in 'sighting_datetime_sighted', with: DateTime.new(2014, 07, 11, 20, 10, 0)
           fill_in 'sighting_latitude', with: 150.0   
           fill_in 'sighting_longitude', with: 150.0   
-          fill_in 'sighting_altitude', with: 150.0  
+          fill_in 'sighting_altitude', with: 150.0 
+          attach_file "sighting_photo", Rails.root.join("db/seed_photos/ST_Plant.jpg") 
         end
         
         it "should not create a Sighting" do
@@ -374,6 +411,7 @@ RSpec.describe "Sighting", type: :feature do
           fill_in 'sighting_latitude', with: -30.0   
           fill_in 'sighting_longitude', with: 150.0   
           fill_in 'sighting_altitude', with: 150.0  
+          attach_file "sighting_photo", Rails.root.join("db/seed_photos/ST_Plant.jpg")
         end
         
         it "should create a sighting" do

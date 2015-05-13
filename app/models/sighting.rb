@@ -7,17 +7,21 @@ class Sighting < ActiveRecord::Base
   
   # For photo uploads via paperclip
   has_attached_file :photo, :styles => { large: "800x800>", medium: "300x300>", thumb: "150x150#" }, :default_url => "/images/:style/missing.png"
-  validates_attachment_content_type :photo, content_type: /\Aimage\/.*\Z/
   
   ## Validations
   validates :species_id, :presence => { :message => "You must select a Species" }
   validates :creator_id, presence: true
   validates :spotter_id, presence: true
   validates :datetime_sighted, :presence => { :message => "You must state when a sighting was made" }
+  validates :photo, :attachment_presence => { :message => "You must supply a photograph" }
   
   validates :latitude, :numericality => { :greater_than_or_equal_to => -90.0, :less_than_or_equal_to => 90 }, :allow_nil => true
   validates :longitude, :numericality => { :greater_than_or_equal_to => 0.0, :less_than_or_equal_to => 360.0 }, :allow_nil => true
   validates :altitude, :numericality => { :greater_than_or_equal_to => 0.0, :less_than_or_equal_to => 10000.0 }, :allow_nil => true
+  
+  # For photo uploads via paperclip
+  validates_attachment_content_type :photo, content_type: /\Aimage\/.*\Z/, message: "This is not a valid photograph format"
+  validates_with AttachmentSizeValidator, :attributes => :photo, :less_than => 5.megabytes, :message => "Photo uploads must be less than 5Mb  "
   
   #custom validations
   validate :site_andor_coords

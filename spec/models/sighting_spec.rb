@@ -26,7 +26,7 @@ RSpec.describe Sighting, type: :model do
   it { should respond_to(:updated_at) }
 
   it { should be_valid }
-
+  
   
 # Presence checks
   describe "when species_id is not present" do
@@ -48,11 +48,11 @@ RSpec.describe Sighting, type: :model do
     before { @sighting.datetime_sighted = " " }
     it { should_not be_valid }
   end      
-# 
-  # describe "when a photo is not present" do
-    # before { @sighting.photo = " " }
-    # it { should_not be_valid }
-  # end      
+
+  describe "when a photo is not present" do
+    before { @sighting.photo = nil }
+    it { should_not be_valid }
+  end      
   
   # Sensible date sighted
   describe "when datetime_sighted is in the future" do
@@ -232,6 +232,27 @@ RSpec.describe Sighting, type: :model do
         @sighting.creator = superuser
       end
       it { should be_valid } 
+    end    
+  end
+  
+  
+  # Test the photo upload
+  it { should have_attached_file(:photo) }
+  it { should validate_attachment_presence(:photo) }
+  it { should validate_attachment_content_type(:photo).
+                allowing('image/png', 'image/gif', 'image/jpg').
+                rejecting('text/plain', 'text/xml') }
+  it { should validate_attachment_size(:photo).
+                less_than(5.megabytes) }
+                
+  describe "when adding a text file as photo upload" do  
+    let!(:textfile) {File.new("#{Rails.root}/db/seed_photos/ST_Plant.txt")}
+    
+    describe "spotter can be a different person" do  
+      before do 
+        @sighting.photo = textfile
+      end
+      it { should_not be_valid } 
     end    
   end
       
