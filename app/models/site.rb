@@ -9,4 +9,9 @@ class Site < ActiveRecord::Base
   validates :centre_lon, :numericality => { :greater_than_or_equal_to => 0.0, :less_than_or_equal_to => 360.0 }
   validates :centre_alt, :numericality => { :greater_than_or_equal_to => 0.0, :less_than_or_equal_to => 10000.0 }
   
+  def listname
+    # Returns the name and co-ords appended (for dropdown lists etc)
+    self.name.humanize << " (" << ApplicationController.helpers.to_twodp(self.centre_lat) << ", " << ApplicationController.helpers.to_twodp(self.centre_lon) << ")" 
+  end
+  
 end

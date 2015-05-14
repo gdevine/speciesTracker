@@ -9,6 +9,8 @@ require 'factory_girl'
 User.create(firstname:'Gerard-User', surname:'Devine', email:'g.user@uws.edu.au', password:'qwertyui', password_confirmation:'qwertyui', approved:true, role:'user')
 User.create(firstname:'Gerard-Super', surname:'Devine', email:'g.superuser@uws.edu.au', password:'qwertyui', password_confirmation:'qwertyui', approved:true, role:'superuser')
 User.create(firstname:'Gerard-Admin', surname:'Devine', email:'g.admin@uws.edu.au', password:'qwertyui', password_confirmation:'qwertyui', approved:true, role:'admin')
+User.create(firstname:'Paul', surname:'Rymer', email:'p.rymer@uws.edu.au', password:'password', password_confirmation:'password', approved:true, role:'admin')
+User.create(firstname:'Desi', surname:'Quintans', email:'d.quintans@uws.edu.au', password:'password', password_confirmation:'password', approved:true, role:'admin')
 User.create(firstname:'Gerard-Unapproved', surname:'Devine', email:'g.unapproved@uws.edu.au', password:'qwertyui', password_confirmation:'qwertyui', approved:false, role:'user')
 
 # Create some approved users
@@ -39,6 +41,6 @@ end
 end
 
 # Create sightings
-30.times do
+20.times do
   FactoryGirl.create(:sighting)
 end

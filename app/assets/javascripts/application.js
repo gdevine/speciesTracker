@@ -20,3 +20,4 @@
 //= require gmaps/google
 //= require lightbox
 //= require jasny-bootstrap
+//= require bootstrap-multiselect

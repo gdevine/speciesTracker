@@ -9,5 +9,10 @@ module ApplicationHelper
       "#{base_title} | #{page_title}"
     end
   end
+  
+  def to_twodp(num)
+    # Returns a float number to two decimal places
+    number_with_precision(num, :precision => 2).to_s
+  end
     
 end
