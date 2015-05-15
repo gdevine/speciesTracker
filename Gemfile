@@ -29,6 +29,7 @@ gem 'gmaps4rails'
 gem 'jquery-turbolinks'
 gem "paperclip", "~> 4.2"
 gem 'lightbox2-rails'
+gem 'respond-js-rails'
 
 
 group :development, :test do

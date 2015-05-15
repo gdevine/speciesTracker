@@ -18,6 +18,6 @@
 //= require dataTables/bootstrap/3/jquery.dataTables.bootstrap
 //= require underscore
 //= require gmaps/google
-//= require lightbox
 //= require jasny-bootstrap
 //= require bootstrap-multiselect
+//= require lightbox

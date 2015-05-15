@@ -5,38 +5,38 @@
   <%= render 'shared/error_messages', object: f.object %>
   
   <div class="form-group topspace50">
-    <%= f.label :species_id, 'Species *', :class => "col-lg-2 control-label" %>
-    <div class="col-lg-4">
+    <%= f.label :species_id, 'Species *', :class => "col-sm-2 col-sm-offset-1 control-label" %>
+    <div class="col-sm-6">
       <%= collection_select(:sighting, :species_id, Species.all, :id, :fullname, {include_blank: 'None selected'}, {:class=>"form-control", :id=>'species'} ) %>
     </div>
   </div> 
   
   <div class="form-group">
-    <%= f.label :datetime_sighted, 'Date/Time of Sighting *', :class => "col-lg-2 control-label" %>
-    <div class="col-lg-4">
+    <%= f.label :datetime_sighted, 'Date/Time of Sighting *', :class => "col-sm-2 col-sm-offset-1 control-label" %>
+    <div class="col-lg-6">
       <%= f.datetime_local_field :datetime_sighted, :class => "form-control" %>
     </div>
   </div>
 	  
 	<% if current_user.role != 'user' %>
 	  <div class="form-group">
-	    <%= f.label :spotter_id, 'Sighted by *', :class => "col-lg-2 control-label" %>
-	    <div class="col-lg-4">
+	    <%= f.label :spotter_id, 'Sighted by *', :class => "col-sm-2 col-sm-offset-1 control-label" %>
+	    <div class="col-lg-6">
 	      <%= collection_select(:sighting, :spotter_id, User.all, :id, :fullname, {:selected => current_user.id}, {:class=>"form-control", :id=>'spotters'} ) %>
 	    </div>
 	  </div>
 	<% end %>
 
   <div class="form-group">
-    <%= f.label :site_id, 'Site *', :class => "col-lg-2 control-label" %>
-    <div class="col-lg-4">
+    <%= f.label :site_id, 'Site *', :class => "col-sm-2 col-sm-offset-1 control-label" %>
+    <div class="col-lg-6">
       <%= collection_select(:sighting, :site_id, Site.all, :id, :listname, {include_blank: 'None selected'}, {:class=>"form-control", :id=>'sites'} ) %>
     </div>
   </div> 
   
   
   <div class="row topspace20 bottomspace">
-	  <div class="col-md-3 col-md-offset-2">
+	  <div class="col-md-2 col-md-offset-3">
 		  <button class="btn btn-block btn-default" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
 		    Add Specific Location
 		  </button>
@@ -44,25 +44,25 @@
 	</div>
   
   <div class="form-group">
-		<div class="collapse col-md-4 col-md-offset-2" id="collapseExample">
+		<div class="collapse col-md-6 col-md-offset-3" id="collapseExample">
 			<div class="well">  
 			  <div class="form-group">
 			    <%= f.label :latitude, "Latitude", :class => "col-lg-4 control-label" %>
-			    <div class="col-lg-8">
+			    <div class="col-lg-6">
 			      <%= f.number_field :latitude, :class => "form-control", :min => -90.0, :max => 90.0, :step => 'any' %>
 			    </div>
 			  </div>
 			  
 			  <div class="form-group">
 			    <%= f.label :longitude, "Longitude", :class => "col-lg-4 control-label" %>
-			    <div class="col-lg-8">
+			    <div class="col-lg-6">
 			      <%= f.number_field :longitude, :class => "form-control", :min => 0.0, :max => 360.0, :step => 'any' %>
 			    </div>
 			  </div>
 			  
 			  <div class="form-group">
 			    <%= f.label :altitude, "Altitude (m)", :class => "col-lg-4 control-label" %>
-			    <div class="col-lg-8">
+			    <div class="col-lg-6">
 			      <%= f.number_field :altitude, :class => "form-control", :min => 0.0, :max => 10000.0, :step => 'any' %>
 			    </div>
 			  </div>
@@ -72,15 +72,15 @@
     
     
   <div class="form-group">
-    <%= f.label :comments, "Comments", :class => "col-lg-2 control-label" %>
-    <div class="col-lg-4">
+    <%= f.label :comments, "Comments", :class => "col-sm-2 col-sm-offset-1 control-label" %>
+    <div class="col-lg-6">
       <%= f.text_area :comments, :class => "form-control" %>
     </div>
   </div>
 
   <div class="form-group">
-    <%= f.label :photo, "Photograph", :class => "col-lg-2 control-label" %>
-    <div class="col-lg-8">
+    <%= f.label :photo, "Photograph", :class => "col-sm-2 col-sm-offset-1 control-label" %>
+    <div class="col-lg-6">
       <div class="fileinput fileinput-new" data-provides="fileinput">
 			  <div class="fileinput-preview thumbnail" data-trigger="fileinput" style="width: 200px; height: 100%;">
 			  </div>
@@ -107,9 +107,8 @@
 <script type="text/javascript">
 $('#species, #sites, #spotters').multiselect({
     buttonClass : "form-control",
-    buttonWidth: "50%",
+    buttonWidth: "100%",
     maxHeight: 400,
     enableCaseInsensitiveFiltering: true,
-    buttonWidth: '350px'
 });
 </script>
