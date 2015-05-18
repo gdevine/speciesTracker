@@ -51,7 +51,7 @@ RSpec.describe Sighting, type: :model do
 
   describe "when a photo is not present" do
     before { @sighting.photo = nil }
-    it { should_not be_valid }
+    it { should be_valid }
   end      
   
   # Sensible date sighted
@@ -74,8 +74,8 @@ RSpec.describe Sighting, type: :model do
   describe "when site is empty but co-ordinates are present" do
     before do
       @sighting.site_id = " "
-      @sighting.latitude = -34.1
-      @sighting.longitude = 153.2
+      @sighting.latitude = -34.112345
+      @sighting.longitude = 153.212345
     end
     it { should be_valid }
   end 
@@ -90,7 +90,7 @@ RSpec.describe Sighting, type: :model do
   
   describe "when site is given and one of lat/long is empty" do
     before do
-      @sighting.latitude = 35.0
+      @sighting.latitude = 35.012345
       @sighting.longitude = ""
     end
     it { should_not be_valid }
@@ -99,28 +99,28 @@ RSpec.describe Sighting, type: :model do
   describe "when site is empty and invalid co-ordinates are present" do
     before do
       @sighting.site_id = " "
-      @sighting.latitude = -340.1
-      @sighting.longitude = 153.2
+      @sighting.latitude = -340.112345 
+      @sighting.longitude = 153.212345
     end
     it { should_not be_valid }
   end 
   
   describe "when both site and co-ordinates are present" do
     before do
-      @sighting.latitude = -34.1
-      @sighting.longitude = 153.2
+      @sighting.latitude = -34.112345
+      @sighting.longitude = 153.212345
     end
     it { should be_valid }
   end 
   
   #Sensible co-ordinates
   describe "when latitude is too high" do
-    before { @sighting.latitude = 100.03 }
+    before { @sighting.latitude = 100.031234 }
     it { should_not be_valid }
   end
   
   describe "when latitude is too low" do
-    before { @sighting.latitude = -120.03 }
+    before { @sighting.latitude = -120.031234 }
     it { should_not be_valid }
   end
 
@@ -132,18 +132,18 @@ RSpec.describe Sighting, type: :model do
   describe "when latitude is empty" do
     before do
       @sighting.latitude = '' 
-      @sighting.longitude = 131.0 
+      @sighting.longitude = 131.012345 
     end
     it { should_not be_valid }
   end
   
   describe "when longitude is too high" do
-    before { @sighting.longitude = 400.03 }
+    before { @sighting.longitude = 400.031234 }
     it { should_not be_valid }
   end
   
   describe "when longitude is too low" do
-    before { @sighting.longitude = -12.03 }
+    before { @sighting.longitude = -12.031234 }
     it { should_not be_valid }
   end
 
@@ -154,7 +154,7 @@ RSpec.describe Sighting, type: :model do
   
   describe "when longitude is empty" do
     before do 
-      @sighting.latitude = 33.9
+      @sighting.latitude = 33.912345
       @sighting.longitude = ''
     end
     it { should_not be_valid }
@@ -237,8 +237,8 @@ RSpec.describe Sighting, type: :model do
   
   
   # Test the photo upload
-  it { should have_attached_file(:photo) }
-  it { should validate_attachment_presence(:photo) }
+  # it { should have_attached_file(:photo) }
+  # it { should validate_attachment_presence(:photo) }
   it { should validate_attachment_content_type(:photo).
                 allowing('image/png', 'image/gif', 'image/jpg').
                 rejecting('text/plain', 'text/xml') }

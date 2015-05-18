@@ -39,9 +39,9 @@ RSpec.describe "Site", type: :feature do
         it { should have_content('Comments') }
         it { should have_content(@site.name) }
         it { should have_content(@site.suburb) }
-        let!(:centrelat) { "%5.2f" % @site.centre_lat }
-        let!(:centrelon) { "%5.2f" % @site.centre_lon }
-        let!(:centrealt) { "%6.2f" % @site.centre_alt }
+        let!(:centrelat) { "%10.6f" % @site.centre_lat }
+        let!(:centrelon) { "%10.2f" % @site.centre_lon }
+        let!(:centrealt) { "%3.1f" % @site.centre_alt }
         it { should have_content(centrelat)}
         it { should have_content(centrelon)}
         it { should have_content(centrealt)}
@@ -67,9 +67,9 @@ RSpec.describe "Site", type: :feature do
         it { should have_content('Comments') }
         it { should have_content(@site.name) }
         it { should have_content(@site.suburb) }
-        let!(:centrelat) { "%5.2f" % @site.centre_lat }
-        let!(:centrelon) { "%5.2f" % @site.centre_lon }
-        let!(:centrealt) { "%6.2f" % @site.centre_alt }
+        let!(:centrelat) { "%10.6f" % @site.centre_lat }
+        let!(:centrelon) { "%10.6f" % @site.centre_lon }
+        let!(:centrealt) { "%3.1f" % @site.centre_alt }
         it { should have_content(centrelat)}
         it { should have_content(centrelon)}
         it { should have_content(centrealt)}
@@ -119,9 +119,9 @@ RSpec.describe "Site", type: :feature do
         it { should have_content('Comments') }
         it { should have_content(@site.name) }
         it { should have_content(@site.suburb) }
-        let!(:centrelat) { "%5.2f" % @site.centre_lat }
-        let!(:centrelon) { "%5.2f" % @site.centre_lon }
-        let!(:centrealt) { "%6.2f" % @site.centre_alt }
+        let!(:centrelat) { "%10.6f" % @site.centre_lat }
+        let!(:centrelon) { "%10.6f" % @site.centre_lon }
+        let!(:centrealt) { "%3.1f" % @site.centre_alt }
         it { should have_content(centrelat)}
         it { should have_content(centrelon)}
         it { should have_content(centrealt)}

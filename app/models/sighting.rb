@@ -13,7 +13,7 @@ class Sighting < ActiveRecord::Base
   validates :creator_id, presence: true
   validates :spotter_id, presence: true
   validates :datetime_sighted, :presence => { :message => "You must state when a sighting was made" }
-  validates :photo, :attachment_presence => { :message => "You must supply a photograph" }
+  # validates :photo, :attachment_presence => { :message => "You must supply a photograph" }
   
   validates :latitude, :numericality => { :greater_than_or_equal_to => -90.0, :less_than_or_equal_to => 90 }, :allow_nil => true
   validates :longitude, :numericality => { :greater_than_or_equal_to => 0.0, :less_than_or_equal_to => 360.0 }, :allow_nil => true

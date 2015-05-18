@@ -130,8 +130,8 @@ RSpec.describe "Site", type: :feature do
         before do
           fill_in 'site_name'  , with: 'namexx'
           fill_in 'site_suburb'  , with: 'suburbyy'
-          fill_in 'site_centre_lat', with: -33.00
-          fill_in 'site_centre_lon', with: 150.02
+          fill_in 'site_centre_lat', with: -33.004342
+          fill_in 'site_centre_lon', with: 150.024322
           fill_in 'site_centre_alt', with: 255.00
         end
         
@@ -144,8 +144,8 @@ RSpec.describe "Site", type: :feature do
           it { should have_content('Site Updated!') }
           it { should have_content('namexx') }
           it { should have_content('suburbyy') }
-          it { should have_content('150.02') }
-          it { should have_content('-33.00') }
+          it { should have_content('150.024322') }
+          it { should have_content('-33.004342') }
           it { should have_title(full_title('Site View')) }  
           it { should have_selector('h2', text: "Site "+@site.id.to_s) }
         end
@@ -249,8 +249,8 @@ RSpec.describe "Site", type: :feature do
         before do
           fill_in 'site_name'  , with: 'namexx'
           fill_in 'site_suburb'  , with: 'suburbyy'
-          fill_in 'site_centre_lat', with: -33.02
-          fill_in 'site_centre_lon', with: 151.00
+          fill_in 'site_centre_lat', with: -33.021234
+          fill_in 'site_centre_lon', with: 151.001234
           fill_in 'site_centre_alt', with: 255.00
         end
         
@@ -263,8 +263,8 @@ RSpec.describe "Site", type: :feature do
           it { should have_content('Site Updated!') }
           it { should have_content('namexx') }
           it { should have_content('suburbyy') }
-          it { should have_content('151.00') }
-          it { should have_content('-33.02') }
+          it { should have_content('151.001234') }
+          it { should have_content('-33.021234') }
           it { should have_title(full_title('Site View')) }  
           it { should have_selector('h2', text: "Site "+@site.id.to_s) }
         end

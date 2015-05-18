@@ -138,9 +138,9 @@ RSpec.describe "Site", type: :feature do
           fill_in 'site_suburb'  , with: 'a site suburb'
           fill_in 'site_street', with: 'a street'   
           fill_in 'site_comments', with: 'This is a comment'   
-          fill_in 'site_centre_lat', with: -30.0   
-          fill_in 'site_centre_lon', with: 150.0   
-          fill_in 'site_centre_alt', with: 150.0  
+          fill_in 'site_centre_lat', with: -30.010267   
+          fill_in 'site_centre_lon', with: 150.063728   
+          fill_in 'site_centre_alt', with: 150  
         end
         
         it "should create a site" do
@@ -155,6 +155,9 @@ RSpec.describe "Site", type: :feature do
           it { should have_selector('h2', "Suburb") }
           it { should have_content('a site name') }
           it { should have_content('a site suburb') }
+          it { should have_content('-30.010267') }
+          it { should have_content('150.063728') }
+          it { should have_content('150') }
         end
       end
   

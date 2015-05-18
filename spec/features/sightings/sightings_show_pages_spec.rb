@@ -44,9 +44,9 @@ RSpec.describe "Sighting", type: :feature do
         it { should have_content('Comments') }
         it { should have_content(@sighting.species.fullname) }
         it { should have_content(@sighting.site.name) }
-        let!(:latitude) { "%5.2f" % @sighting.latitude }
-        let!(:longitude) { "%5.2f" % @sighting.longitude }
-        let!(:altitude) { "%6.2f" % @sighting.altitude }
+        let!(:latitude) { "%10.6f" % @sighting.latitude }
+        let!(:longitude) { "%10.6f" % @sighting.longitude }
+        let!(:altitude) { "%4.1f" % @sighting.altitude }
         it { should have_content(latitude)}
         it { should have_content(longitude)}
         it { should have_content(altitude)}
@@ -79,9 +79,9 @@ RSpec.describe "Sighting", type: :feature do
         it { should have_content('Comments') }
         it { should have_content(@sighting.species.fullname) }
         it { should have_content(@sighting.site.name) }
-        let!(:latitude) { "%5.2f" % @sighting.latitude }
-        let!(:longitude) { "%5.2f" % @sighting.longitude }
-        let!(:altitude) { "%6.2f" % @sighting.altitude }
+        let!(:latitude) { "%10.6f" % @sighting.latitude }
+        let!(:longitude) { "%10.6f" % @sighting.longitude }
+        let!(:altitude) { "%4.1f" % @sighting.altitude }
         it { should have_content(latitude)}
         it { should have_content(longitude)}
         it { should have_content(altitude)}
@@ -146,9 +146,9 @@ RSpec.describe "Sighting", type: :feature do
         it { should have_content('Comments') }
         it { should have_content(@sighting.species.fullname) }
         it { should have_content(@sighting.site.name) }
-        let!(:latitude) { "%5.2f" % @sighting.latitude }
-        let!(:longitude) { "%5.2f" % @sighting.longitude }
-        let!(:altitude) { "%6.2f" % @sighting.altitude }
+        let!(:latitude) { "%10.6f" % @sighting.latitude }
+        let!(:longitude) { "%10.6f" % @sighting.longitude }
+        let!(:altitude) { "%4.1f" % @sighting.altitude }
         it { should have_content(latitude)}
         it { should have_content(longitude)}
         it { should have_content(altitude)}
@@ -182,9 +182,9 @@ RSpec.describe "Sighting", type: :feature do
         it { should have_content('Comments') }
         it { should have_content(@sighting.species.fullname) }
         it { should have_content(@sighting.site.name) }
-        let!(:latitude) { "%5.2f" % @sighting.latitude }
-        let!(:longitude) { "%5.2f" % @sighting.longitude }
-        let!(:altitude) { "%6.2f" % @sighting.altitude }
+        let!(:latitude) { "%10.6f" % @sighting.latitude }
+        let!(:longitude) { "%10.6f" % @sighting.longitude }
+        let!(:altitude) { "%4.1f" % @sighting.altitude }
         it { should have_content(latitude)}
         it { should have_content(longitude)}
         it { should have_content(altitude)}
@@ -223,9 +223,9 @@ RSpec.describe "Sighting", type: :feature do
         it { should have_content('Comments') }
         it { should have_content(@sighting.species.fullname) }
         it { should have_content(@sighting.site.name) }
-        let!(:latitude) { "%5.2f" % @sighting.latitude }
-        let!(:longitude) { "%5.2f" % @sighting.longitude }
-        let!(:altitude) { "%6.2f" % @sighting.altitude }
+        let!(:latitude) { "%10.6f" % @sighting.latitude }
+        let!(:longitude) { "%10.6f" % @sighting.longitude }
+        let!(:altitude) { "%4.1f" % @sighting.altitude }
         it { should have_content(latitude)}
         it { should have_content(longitude)}
         it { should have_content(altitude)}
