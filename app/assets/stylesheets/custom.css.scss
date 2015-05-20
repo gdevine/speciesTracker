@@ -274,13 +274,18 @@ background-color: rgba(200,220,255,0.2); // I don't know the .well color, so I u
 
 
 /* Menu list text sizes */
-
 .dropdown-menu {
     font-size: 18px;
 }
 
-/* left align text on multiselect dropdown buttons */
 
+/* Let align radio buttons on dropdowns */
+.radioLeft {
+    text-align:left;
+    display:inline;
+}
+
+/* left align text on multiselect dropdown buttons */
 .multiselect {
     text-align: left;
 }
