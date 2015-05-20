@@ -8,7 +8,7 @@
   <div class="form-group topspace50">
     <%= f.label :species_id, 'Species *', :class => "col-md-2 col-md-offset-1 control-label" %>
     <div class="col-md-6">
-      <%= collection_select(:sighting, :species_id, Species.all, :id, :fullname, {include_blank: 'None selected'}, {:class=>"form-control", :id=>'species'} ) %>
+      <%= collection_select(:sighting, :species_id, Species.all, :id, :fullname, {include_blank: 'None selected'}, {:class=>"form-control multiselect", :id=>'species', :multiple=> false} ) %>
     </div>
   </div> 
   
@@ -25,7 +25,7 @@
 	  <div class="form-group">
 	    <%= f.label :spotter_id, 'Sighted by *', :class => "col-md-2 col-md-offset-1 control-label" %>
 	    <div class="col-md-6">
-	      <%= collection_select(:sighting, :spotter_id, User.all, :id, :fullname, {:selected => current_user.id}, {:class=>"form-control", :id=>'spotters'} ) %>
+	      <%= collection_select(:sighting, :spotter_id, User.all, :id, :fullname, {:selected => current_user.id}, {:class=>"form-control multiselect", :id=>'spotters', :multiple=> false} ) %>
 	    </div>
 	  </div>
 	<% end %>
@@ -34,7 +34,7 @@
   <div class="form-group">
     <%= f.label :site_id, 'Site *', :class => "col-md-2 col-md-offset-1 control-label" %>
     <div class="col-md-6">
-      <%= collection_select(:sighting, :site_id, Site.all, :id, :listname, {include_blank: 'None selected'}, {:class=>"form-control", :id=>'sites'} ) %>
+      <%= collection_select(:sighting, :site_id, Site.all, :id, :listname, {include_blank: 'None selected'}, {:class=>"form-control multiselect", :id=>'sites', :multiple=> false} ) %>
     </div>
   </div> 
   
