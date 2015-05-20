@@ -1,38 +1,43 @@
 <% provide(:title, 'Edit Sighting') %>
 <% provide(:pageheading, 'Edit Sighting '+@sighting.id.to_s) %>
 
-<%= form_for @sighting, :html => {:class => "form-horizontal"} do |f| %>
+<%= form_for @sighting, :html => {:class => "form-horizontal", :multipart => true} do |f| %>
   <%= render 'shared/error_messages', object: f.object %>
   
+  
   <div class="form-group topspace50">
-    <%= f.label :species_id, 'Species *', :class => "col-sm-2 col-sm-offset-1 control-label" %>
-    <div class="col-lg-6">
+    <%= f.label :species_id, 'Species *', :class => "col-md-2 col-md-offset-1 control-label" %>
+    <div class="col-md-6">
       <%= collection_select(:sighting, :species_id, Species.all, :id, :fullname, {include_blank: 'None selected'}, {:class=>"form-control", :id=>'species'} ) %>
     </div>
   </div>
   
+  
   <div class="form-group">
-    <%= f.label :datetime_sighted, 'Date/Time of Sighting *', :class => "col-sm-2 col-sm-offset-1 control-label" %>
-    <div class="col-lg-6">
+    <%= f.label :datetime_sighted, 'Date/Time of Sighting *', :class => "col-md-2 col-md-offset-1 control-label" %>
+    <div class="col-md-6">
       <%= f.datetime_local_field :datetime_sighted, :class => "form-control" %>
     </div>
   </div>
+	
 	  
 	<% if current_user.role != 'user' %>
 	  <div class="form-group">
-	    <%= f.label :spotter_id, 'Sighted by *', :class => "col-sm-2 col-sm-offset-1 control-label" %>
-	    <div class="col-lg-6">
+	    <%= f.label :spotter_id, 'Sighted by *', :class => "col-md-2 col-md-offset-1 control-label" %>
+	    <div class="col-md-6">
 	      <%= collection_select(:sighting, :spotter_id, User.all, :id, :fullname, {}, {:class=>"form-control", :id=>'spotters'} ) %>
 	    </div>
 	  </div>
 	<% end %>
   
+  
   <div class="form-group">
-    <%= f.label :site_id, 'Site *', :class => "col-sm-2 col-sm-offset-1 control-label" %>
-    <div class="col-lg-6">
+    <%= f.label :site_id, 'Site *', :class => "col-md-2 col-md-offset-1 control-label" %>
+    <div class="col-md-6">
       <%= collection_select(:sighting, :site_id, Site.all, :id, :name, {include_blank: 'None selected'}, {:class=>"form-control", :id=>'sites'} ) %>
     </div>
   </div>  
+  
   
   <div class="row topspace20 bottomspace">
 	  <div class="col-md-2 col-md-offset-3">
@@ -56,38 +61,87 @@
 			<div class="well">
 			  <div class="form-group">
 			    <%= f.label :latitude, "Latitude", :class => "col-lg-4 control-label" %>
-			    <div class="col-lg-6">
+			    <div class="col-md-6">
 			      <%= f.number_field :latitude, :class => "form-control", :min => -90.0, :max => 90.0, :step => 'any' %>
 			    </div>
 			  </div>
 			  
 			  <div class="form-group">
 			    <%= f.label :longitude, "Longitude", :class => "col-lg-4 control-label" %>
-			    <div class="col-lg-6">
+			    <div class="col-md-6">
 			      <%= f.number_field :longitude, :class => "form-control", :min => 0.0, :max => 360.0, :step => 'any' %>
 			    </div>
 			  </div>
 			  
 			  <div class="form-group">
 			    <%= f.label :altitude, "Altitude (m)", :class => "col-lg-4 control-label" %>
-			    <div class="col-lg-6">
+			    <div class="col-md-6">
 			      <%= f.number_field :altitude, :class => "form-control", :min => 0.0, :max => 10000.0, :step => 'any' %>
 			    </div>
 			  </div>
 			</div>
 	  </div>
 	</div>
-    
+
+
   <div class="form-group">
-    <%= f.label :comments, "Comments", :class => "col-sm-2 col-sm-offset-1 control-label" %>
-    <div class="col-lg-6">
+    <%= f.label :plant_ages_seen, 'Plant Ages Seen', :class => "col-md-2 col-md-offset-1 control-label" %>
+    <div class="col-md-6">
+      <%= f.select(:plant_ages_seen, Settings.plant_ages_seen, {:include_blank => true}, {:class => "form-control"}) %>
+    </div>
+  </div>   
+  
+  
+  <div class="form-group">
+    <%= f.label :dom_flower_stage, 'Dominant Flower Stage', :class => "col-md-2 col-md-offset-1 control-label" %>
+    <div class="col-md-6">
+      <%= f.select(:dom_flower_stage, Settings.dom_flower_stage, {:include_blank => true}, {:class => "form-control"}) %>
+    </div>
+  </div>  
+  
+  
+  <div class="form-group">
+    <%= f.label :dom_pod_stage, 'Dominant Pod Stage', :class => "col-md-2 col-md-offset-1 control-label" %>
+    <div class="col-md-6">
+      <%= f.select(:dom_pod_stage, Settings.dom_pod_stage, {:include_blank => true}, {:class => "form-control"}) %>
+    </div>
+  </div>  
+  
+  
+  <div class="form-group">
+    <%= f.label :healthy_flowers, 'Healthy Flowers %', :class => "col-md-2 col-md-offset-1 control-label" %>
+    <div class="col-md-6">
+      <%= f.select(:healthy_flowers, Settings.healthy_flowers, {:include_blank => true}, {:class => "form-control"}) %>
+    </div>
+  </div>  
+  
+  
+  <div class="form-group">
+    <%= f.label :healthy_pods, 'Healthy Pods %', :class => "col-md-2 col-md-offset-1 control-label" %>
+    <div class="col-md-6">
+      <%= f.select(:healthy_pods, Settings.healthy_pods, {:include_blank => true}, {:class => "form-control"}) %>
+    </div>
+  </div>  
+  
+  
+  <div class="form-group">
+	  <%= f.label :adult_abundance, 'Adult Abundance', :class => "col-md-2 col-md-offset-1 control-label"  %>
+	  <div class="col-md-6">
+	    <%= f.number_field :adult_abundance, :min => 0, :max => 1000, :class => "form-control" %>  
+	  </div> 
+  </div> 	
+	
+	
+  <div class="form-group">
+    <%= f.label :comments, "Comments", :class => "col-md-2 col-md-offset-1 control-label" %>
+    <div class="col-md-6">
       <%= f.text_area :comments, :class => "form-control" %>
     </div>
   </div>
     
   <div class="form-group">
-    <%= f.label :photo, "Photograph", :class => "col-sm-2 col-sm-offset-1 control-label" %>
-    <div class="col-lg-6">
+    <%= f.label :photo, "Photograph", :class => "col-md-2 col-md-offset-1 control-label" %>
+    <div class="col-md-6">
 			<div class="fileinput fileinput-exists" data-provides="fileinput">
 			  <div class="fileinput-preview thumbnail" data-trigger="fileinput" style="width: 25%; height: 100%;">
 			  	<%= image_tag(@sighting.photo.url(:thumb), class:"img-thumbnail") %>

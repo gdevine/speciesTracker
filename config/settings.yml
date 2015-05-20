@@ -1,0 +1,28 @@
+plant_ages_seen:
+  - Seed
+  - Juvenile
+  - Adult
+  
+dom_flower_stage:
+  - None seen
+  - Bud
+  - Open
+  - Old                                                                                                                                                                                                                
+
+dom_pod_stage:
+  - None seen
+  - Unripe
+  - Ripe
+  - Open
+  
+healthy_flowers:
+  - 0%
+  - 25%
+  - 50%
+  - More
+
+healthy_pods:
+  - 0%
+  - 25%
+  - 50%
+  - More

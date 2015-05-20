@@ -78,9 +78,9 @@ class SightingsController < ApplicationController
   private
     def sighting_params
         if current_user.role != 'user'
-          params.require(:sighting).permit(:species_id, :site_id, :datetime_sighted, :comments, :photo, :latitude, :longitude, :altitude, :spotter_id)
+          params.require(:sighting).permit(:species_id, :site_id, :datetime_sighted, :comments, :photo, :latitude, :longitude, :altitude, :spotter_id, :plant_ages_seen, :dom_flower_stage, :dom_pod_stage, :healthy_flowers, :healthy_pods, :adult_abundance)
         else
-          params.require(:sighting).permit(:species_id, :site_id, :datetime_sighted, :comments, :photo, :latitude, :longitude, :altitude)
+          params.require(:sighting).permit(:species_id, :site_id, :datetime_sighted, :comments, :photo, :latitude, :longitude, :altitude, :plant_ages_seen, :dom_flower_stage, :dom_pod_stage, :healthy_flowers, :healthy_pods, :adult_abundance)
         end
     end  
   

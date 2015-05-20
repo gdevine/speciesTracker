@@ -40,7 +40,7 @@ RSpec.describe "Site", type: :feature do
         it { should have_content(@site.name) }
         it { should have_content(@site.suburb) }
         let!(:centrelat) { "%10.6f" % @site.centre_lat }
-        let!(:centrelon) { "%10.2f" % @site.centre_lon }
+        let!(:centrelon) { "%10.6f" % @site.centre_lon }
         let!(:centrealt) { "%3.1f" % @site.centre_alt }
         it { should have_content(centrelat)}
         it { should have_content(centrelon)}

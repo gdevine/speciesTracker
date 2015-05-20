@@ -21,6 +21,12 @@ RSpec.describe Sighting, type: :model do
   it { should respond_to(:spotter_id) }
   it { should respond_to(:creator) }
   it { should respond_to(:photo) }
+  it { should respond_to(:plant_ages_seen) }    
+  it { should respond_to(:dom_flower_stage) }   
+  it { should respond_to(:dom_pod_stage) }     
+  it { should respond_to(:healthy_flowers) }    
+  it { should respond_to(:healthy_pods) }       
+  it { should respond_to(:adult_abundance) }   
   it { should respond_to(:creator_id) }
   it { should respond_to(:created_at) }
   it { should respond_to(:updated_at) }

@@ -7,6 +7,10 @@
   <% end %>
   <td><%= sighting.species.fullname %> </td>
   <td><%= sighting.datetime_sighted.to_formatted_s(:long_ordinal) %> </td>
-  <td><%= image_tag(sighting.photo.url(:thumb), class:"img-thumbnail") %></td>
+  <% if sighting.photo.file? %>  
+    <td><%= image_tag(sighting.photo.url(:thumb), class:"img-thumbnail") %></td>
+	<% else %>
+    <td><%= image_tag("no_image.gif", size: "100x100", alt: "No Image Available") %></td>
+  <% end %>
   <td><%= link_to "View", sighting %></td>
 </tr>

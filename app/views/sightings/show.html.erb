@@ -22,21 +22,21 @@
 <div class="row topspace20">
 	
   <!--  Fields -->
-  <div class="col-md-4 topspace20">	
+  <div class="col-md-5 topspace20">	
 		<div class="row">
-		  <div class="col-md-offset-1 col-md-4">
+		  <div class="col-md-offset-1 col-md-6">
 		    <p class="text-left">Species</p>
 		  </div>   
-		  <div class="col-md-7">
+		  <div class="col-md-5">
 		    <p class="text-muted"><%= @sighting.species.fullname %></p>
 		  </div>
 		</div>
 		
 		<div class="row">
-		  <div class="col-md-offset-1 col-md-4">
+		  <div class="col-md-offset-1 col-md-6">
 		    <p class="text-left">Site</p>
 		  </div>   
-		  <div class="col-md-7">
+		  <div class="col-md-5">
         <% if !@sighting.site.nil? %>
 		      <p class="text-muted"><%= @sighting.site.name %></p>
         <% else %>
@@ -46,71 +46,129 @@
 		</div>
 		
 		<div class="row">
-		  <div class="col-md-offset-1 col-md-4">
+		  <div class="col-md-offset-1 col-md-6">
 		    <p class="text-left">Date/Time of Sighting</p>
 		  </div>   
-		  <div class="col-md-7">
+		  <div class="col-md-5">
 		    <p class="text-muted"><%= @sighting.datetime_sighted.to_formatted_s(:long_ordinal) %></p>
 		  </div>
 		</div>
 		
 		<div class="row">
-		  <div class="col-md-offset-1 col-md-4">
+		  <div class="col-md-offset-1 col-md-6">
 		    <p class="text-left">Sighted by</p>
 		  </div>   
-		  <div class="col-md-7">
+		  <div class="col-md-5">
 		    <p class="text-muted"><%= @sighting.spotter.fullname %></p>
 		  </div>
 		</div>
 				
 		<div class="row">
-		  <div class="col-md-offset-1 col-md-4">
+		  <div class="col-md-offset-1 col-md-6">
 		    <p class="text-left">Comments</p>
 		  </div>   
-		  <div class="col-md-7">
+		  <div class="col-md-5">
 		    <p class="text-muted"><%= @sighting.comments %></p>
 		  </div>
 		</div>
 		
 		<div class="row">
-		  <div class="col-md-offset-1 col-md-4">
+		  <div class="col-md-offset-1 col-md-6">
 		    <p class="text-left">Latitude</p>
 		  </div>   
-		  <div class="col-md-7">
+		  <div class="col-md-5">
 		    <p class="text-muted"><%= number_with_precision(@sighting.latitude, :precision => 6)%></p>
 		  </div>
 		</div>
 		
 		<div class="row">
-		  <div class="col-md-offset-1 col-md-4">
+		  <div class="col-md-offset-1 col-md-6">
 		    <p class="text-left">Longitude</p>
 		  </div>   
-		  <div class="col-md-7">
+		  <div class="col-md-5">
 		    <p class="text-muted"><%= number_with_precision(@sighting.longitude, :precision => 6)%></p>
 		  </div>
 		</div>
 		
 		<div class="row">
-		  <div class="col-md-offset-1 col-md-4">
+		  <div class="col-md-offset-1 col-md-6">
 		    <p class="text-left">Altitude</p>
 		  </div>   
-		  <div class="col-md-7">
-		    <p class="text-muted"><%= number_with_precision(@sighting.altitude, :precision => 6)%></p>
+		  <div class="col-md-5">
+		    <p class="text-muted"><%= number_with_precision(@sighting.altitude, :precision => 2)%></p>
 		  </div>
 		</div>
 		
+		<div class="row">
+		  <div class="col-md-offset-1 col-md-6">
+		    <p class="text-left">Plant Ages Seen</p>
+		  </div>   
+		  <div class="col-md-5">
+		    <p class="text-muted"><%= @sighting.plant_ages_seen %></p>
+		  </div>
+		</div>
+		
+		<div class="row">
+		  <div class="col-md-offset-1 col-md-6">
+		    <p class="text-left">Dominant Flower Stage</p>
+		  </div>   
+		  <div class="col-md-5">
+		    <p class="text-muted"><%= @sighting.dom_flower_stage %></p>
+		  </div>
+		</div>
+		
+		<div class="row">
+		  <div class="col-md-offset-1 col-md-6">
+		    <p class="text-left">Dominant Pod Stage</p>
+		  </div>   
+		  <div class="col-md-5">
+		    <p class="text-muted"><%= @sighting.dom_pod_stage %></p>
+		  </div>
+		</div>		
+		
+		
+		<div class="row">
+		  <div class="col-md-offset-1 col-md-6">
+		    <p class="text-left">Healthy Flowers</p>
+		  </div>   
+		  <div class="col-md-5">
+		    <p class="text-muted"><%= @sighting.healthy_flowers %></p>
+		  </div>
+		</div>
+		
+		<div class="row">
+		  <div class="col-md-offset-1 col-md-6">
+		    <p class="text-left">Healthy Pods</p>
+		  </div>   
+		  <div class="col-md-5">
+		    <p class="text-muted"><%= @sighting.healthy_pods %></p>
+		  </div>
+		</div>
+			
+		
+		<div class="row">
+		  <div class="col-md-offset-1 col-md-6">
+		    <p class="text-left">Adult Abundance</p>
+		  </div>   
+		  <div class="col-md-5">
+		    <p class="text-muted"><%= @sighting.adult_abundance %></p>
+		  </div>
+		</div>	
+								
   </div>
   
 	<!--  Photo -->
-  <div class="col-md-4 topspace20 center">
-	  <% if @sighting.photo %>
+  <div class="col-md-3 topspace20 center">
+	  <% if @sighting.photo.file? %>
 	    <%= link_to image_tag(@sighting.photo.url(:medium), class:"img-thumbnail"), image_path(@sighting.photo.url(:large), class:"img-thumbnail"), :rel => "lightbox" %>
+    <% else %>
+	    <%= image_tag("no_image.gif", size: "200x200", alt: "No Image Available") %>
     <% end %>
   </div>
 	
 	<!--  Map -->
   <div class="col-md-4 topspace20">	
-		<div id="map" class="center" style="width: 100%%; height: 350px;"></div>
+		<div id="map" class="center" style="width: 100%; height: 350px;"></div>
 		<div class="row">
 		  <div class="col-xs-12 center">
         <%= image_tag("marker_plant.png")%> Sighting 

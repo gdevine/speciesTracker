@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150511040446) do
+ActiveRecord::Schema.define(version: 20150520063116) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -65,6 +65,12 @@ ActiveRecord::Schema.define(version: 20150511040446) do
     t.string   "photo_content_type"
     t.integer  "photo_file_size"
     t.datetime "photo_updated_at"
+    t.string   "plant_ages_seen"
+    t.string   "dom_flower_stage"
+    t.string   "dom_pod_stage"
+    t.string   "healthy_flowers"
+    t.string   "healthy_pods"
+    t.integer  "adult_abundance"
   end
 
   add_index "sightings", ["species_id", "site_id", "spotter_id", "creator_id"], name: "create_species", using: :btree

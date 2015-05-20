@@ -11,8 +11,10 @@
     <p><%= link_to "View Sighting Details", sighting %></p>
 	</div>
 	<div class="col-md-6">
-  	<% if !sighting.photo.url.nil? %>
+  	<% if sighting.photo.file? %>
 	    <p><%= image_tag sighting.photo.url(:thumb) %></p>
+	  <% else %>
+	    <p><%= image_tag("no_image.gif", size: "200x200", alt: "No Image Available") %></p>
 	  <% end %>
 	</div>
 </div>
