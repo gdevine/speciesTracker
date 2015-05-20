@@ -7,7 +7,7 @@
   
   <div class="form-group topspace50">
     <%= f.label :species_id, 'Species *', :class => "col-md-2 col-md-offset-1 control-label" %>
-    <div class="col-md-6 radioLeft">
+    <div class="col-md-6">
       <%= collection_select(:sighting, :species_id, Species.all, :id, :fullname, {include_blank: 'None selected'}, {:class=>"form-control", :id=>'species'} ) %>
     </div>
   </div> 
@@ -24,7 +24,7 @@
 	<% if current_user.role != 'user' %>
 	  <div class="form-group">
 	    <%= f.label :spotter_id, 'Sighted by *', :class => "col-md-2 col-md-offset-1 control-label" %>
-	    <div class="col-md-6 radioLeft">
+	    <div class="col-md-6">
 	      <%= collection_select(:sighting, :spotter_id, User.all, :id, :fullname, {:selected => current_user.id}, {:class=>"form-control", :id=>'spotters'} ) %>
 	    </div>
 	  </div>
@@ -33,7 +33,7 @@
 
   <div class="form-group">
     <%= f.label :site_id, 'Site *', :class => "col-md-2 col-md-offset-1 control-label" %>
-    <div class="col-md-6 radioLeft">
+    <div class="col-md-6">
       <%= collection_select(:sighting, :site_id, Site.all, :id, :listname, {include_blank: 'None selected'}, {:class=>"form-control", :id=>'sites'} ) %>
     </div>
   </div> 
