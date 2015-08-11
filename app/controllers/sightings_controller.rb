@@ -20,6 +20,8 @@ class SightingsController < ApplicationController
   end
 
   def new
+    @sighting = Sighting.new
+    @sighting.datetime_sighted = DateTime.now
   end
   
   def create

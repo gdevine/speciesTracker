@@ -34,6 +34,7 @@ class Sighting < ActiveRecord::Base
   validate :creator_spotter_same_if_user
   validate :date_is_date?
   
+  
   def primary_lat
     if self.latitude.nil?
       self.site.centre_lat
@@ -108,6 +109,7 @@ class Sighting < ActiveRecord::Base
       end
     end
   end
+
   
     
 end

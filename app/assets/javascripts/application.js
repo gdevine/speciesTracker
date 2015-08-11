@@ -21,3 +21,4 @@
 //= require jasny-bootstrap
 //= require bootstrap-multiselect
 //= require lightbox
+//= require geolocation

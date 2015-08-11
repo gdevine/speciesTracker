@@ -50,15 +50,37 @@ RSpec.describe "Sighting", type: :feature do
         
         describe "should return an error and revert back" do
           before { click_button "Submit" }
-          it { should have_content('3 errors') }
+          it { should have_content('2 errors') }
           
           it { should have_content('You must select a Species') }
-          it { should have_content('You must state when a sighting was made') }
           it { should have_content('If a Site is not selected, then a specific latitude/longitude must be given') }
           it { should have_selector('h2', text: "Create New Sighting") }
         end
       end
-
+      
+      describe "not providing a date time of sighting" do   
+        before do
+          find('#species').find(:xpath, 'option[2]').select_option  
+          find('#sites').find(:xpath, 'option[2]').select_option  
+          fill_in 'sighting_datetime_sighted', with: ''
+          fill_in 'sighting_latitude', with: -50.012345   
+          fill_in 'sighting_longitude', with: 150.012345   
+          fill_in 'sighting_altitude', with: 150   
+          attach_file "sighting_photo", Rails.root.join("db/seed_photos/ST_Plant.jpg")
+        end
+        
+        it "should not create a sighting" do
+          expect{ click_button "Submit" }.to change{Sighting.count}.by(0)
+        end             
+        
+        describe "should return an error and revert back" do
+          before { click_button "Submit" }
+          it { should have_content('1 error') }
+          it { should have_content('You must state when a sighting was made') }
+          it { should have_selector('h2', text: "Create New Sighting") }
+        end
+      end
+      
       describe "providing a datetime in the future" do   
         before do
           find('#species').find(:xpath, 'option[2]').select_option  
@@ -244,10 +266,9 @@ RSpec.describe "Sighting", type: :feature do
         
         describe "should return an error and revert back" do
           before { click_button "Submit" }
-          it { should have_content('3 errors') }
+          it { should have_content('2 errors') }
           
           it { should have_content('You must select a Species') }
-          it { should have_content('You must state when a sighting was made') }
           it { should have_selector('h2', text: "Create New Sighting") }
         end
       end
@@ -357,10 +378,9 @@ RSpec.describe "Sighting", type: :feature do
         
         describe "should return an error and revert back" do
           before { click_button "Submit" }
-          it { should have_content('3 errors') }
+          it { should have_content('2 errors') }
           
           it { should have_content('You must select a Species') }
-          it { should have_content('You must state when a sighting was made') }
           it { should have_selector('h2', text: "Create New Sighting") }
         end
       end

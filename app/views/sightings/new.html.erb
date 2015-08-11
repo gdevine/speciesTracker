@@ -32,7 +32,7 @@
 
 
   <div class="form-group">
-    <%= f.label :site_id, 'Site *', :class => "col-md-2 col-md-offset-1 control-label" %>
+    <%= f.label :site_id, 'Associated Site *', :class => "col-md-2 col-md-offset-1 control-label" %>
     <div class="col-md-6">
       <%= collection_select(:sighting, :site_id, Site.all, :id, :listname, {include_blank: 'None selected'}, {:class=>"form-control multiselect", :id=>'sites', :multiple=> false} ) %>
     </div>
@@ -70,6 +70,16 @@
 			      <%= f.number_field :altitude, :class => "form-control", :min => 0.0, :max => 10000.0, :step => 'any' %>
 			    </div>
 			  </div>
+			  
+			  <div class="row">			  
+			    <div class="col-sm-6 col-sm-offset-3"> Or get location details automatically</div>
+			  </div>
+			  <div class="row">
+			    <div class="col-sm-6 col-sm-offset-3">
+			  	  <button class="btn btn-block btn-default" type="button" onclick="getGPSLocation();return false;">Get my Location</button>
+			  	</div>
+			  </div>  
+			  
 		  </div>
 		</div>
   </div>      

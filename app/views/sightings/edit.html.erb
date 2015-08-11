@@ -79,6 +79,16 @@
 			      <%= f.number_field :altitude, :class => "form-control", :min => 0.0, :max => 10000.0, :step => 'any' %>
 			    </div>
 			  </div>
+			  
+			  <div class="row">			  
+			    <div class="col-md-6 col-md-offset-3"> Or get location details automatically</div>
+			  </div>
+			  <div class="row">
+			    <div class="col-md-6 col-md-offset-3">
+			  	  <button class="btn btn-block btn-default" type="button" onclick="getGPSLocation();return false;">Get my Location</button>
+			  	</div>
+			  </div>  
+			  
 			</div>
 	  </div>
 	</div>
