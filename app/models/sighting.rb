@@ -6,7 +6,22 @@ class Sighting < ActiveRecord::Base
   belongs_to :spotter, :class_name => 'User', :foreign_key => 'spotter_id'
   
   # For photo uploads via paperclip
-  has_attached_file :photo, :styles => { large: "800x800>", medium: "300x300>", thumb: "150x150#" }, :default_url => "/images/:style/missing.png"
+  has_attached_file :photo, 
+    :styles => { large: "800x800>", medium: "250x250>", thumb: "100x100#" }, 
+    # :path => "sightings/:id/:attachment/:fingerprint-:style.:extension",
+    :default_url => "/images/:style/missing.png",
+    :url => "/assets/photos/:style/:normalize_basename.:extension",
+    :path => ":rails_root/public/assets/photos/:style/:normalize_basename.:extension"
+    
+    Paperclip.interpolates :normalize_basename do |attachment, style|
+      attachment.instance.normalize_basename
+    end
+    
+    
+    def normalize_basename
+      'species_photo_'+self.id.to_s
+    end
+
   
   ## Validations
   validates :species_id, :presence => { :message => "You must select a Species" }
@@ -34,6 +49,8 @@ class Sighting < ActiveRecord::Base
   validate :creator_spotter_same_if_user
   validate :date_is_date?
   
+  #rename the uploaded photo to match record id
+  # before_post_process :rename_sighting_photo
   
   def primary_lat
     if self.latitude.nil?
@@ -110,6 +127,35 @@ class Sighting < ActiveRecord::Base
     end
   end
 
-  
-    
+  # def rename_sighting_photo
+    # # self.photo.instance_write :file_name, function_to_change_a_string(photo_file_name)
+    # extension = File.extname(photo_file_name).gsub(/^\.+/, '')
+    # filename = photo_file_name.gsub(/\.#{extension}$/, '')
+    # self.photo.instance_write(:file_name, "#{rename_file(filename)}.#{extension}")
+  # end
+# 
+  # def rename_file(str)
+    # # Based on permalink_fu by Rick Olsen
+#    
+    # # Escape str by transliterating to UTF-8 with Iconv
+    # # s = Iconv.iconv('ascii//ignore//translit', 'utf-8', str).to_s
+#    
+    # # Downcase string
+    # s = str.downcase!
+#    
+    # # Remove apostrophes so isn't changes to isnt
+    # s.gsub!(/'/, '')
+#    
+    # # Replace any non-letter or non-number character with a space
+    # s.gsub!(/[^A-Za-z0-9]+/, ' ')
+#    
+    # # Remove spaces from beginning and end of string
+    # s.strip!
+#    
+    # # Replace groups of spaces with single hyphen
+    # s.gsub!(/\ +/, '-')
+#    
+    # return s
+  # end
+
 end
