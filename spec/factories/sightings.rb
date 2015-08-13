@@ -9,6 +9,6 @@ FactoryGirl.define do
     comments "My comments about this sighting"
     spotter  
     creator
-    photo File.new("#{Rails.root}/db/seed_photos/ST_Plant.jpg")
+    photo File.new("#{Rails.root}/db/seed_photos/ST_Plant#{Random.rand(1..5).to_i.to_s}.jpg")
   end
 end

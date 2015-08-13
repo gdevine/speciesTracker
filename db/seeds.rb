@@ -42,5 +42,5 @@ end
 
 # Create sightings
 20.times do
-  FactoryGirl.create(:sighting)
+  FactoryGirl.create(:sighting, photo: File.new("#{Rails.root}/db/seed_photos/ST_Plant#{Random.rand(1..5).to_i.to_s}.jpg"))
 end
