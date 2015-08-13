@@ -28,7 +28,6 @@ class Sighting < ActiveRecord::Base
   validates :creator_id, presence: true
   validates :spotter_id, presence: true
   validates :datetime_sighted, :presence => { :message => "You must state when a sighting was made" }
-  # validates :photo, :attachment_presence => { :message => "You must supply a photograph" }
   
   validates :latitude, :numericality => { :greater_than_or_equal_to => -90.0, :less_than_or_equal_to => 90 }, :allow_nil => true
   validates :longitude, :numericality => { :greater_than_or_equal_to => 0.0, :less_than_or_equal_to => 360.0 }, :allow_nil => true
@@ -40,7 +39,6 @@ class Sighting < ActiveRecord::Base
   
   #custom validations
   validate :site_andor_coords
-  validate :lat_and_lon
   validate :check_future_sighting
   validate :validate_species_id
   validate :validate_site_id
@@ -49,8 +47,6 @@ class Sighting < ActiveRecord::Base
   validate :creator_spotter_same_if_user
   validate :date_is_date?
   
-  #rename the uploaded photo to match record id
-  # before_post_process :rename_sighting_photo
   
   def primary_lat
     if self.latitude.nil?
@@ -77,12 +73,6 @@ class Sighting < ActiveRecord::Base
     elsif self.site.nil?
       errors.add(:base, "If a Site is not selected, then a specific latitude/longitude must be given") if self.latitude.nil? || self.longitude.nil?
     end
-  end
-  
-  def lat_and_lon
-    # if (!self.latitude.nil? && self.longitude.nil? ) || (!self.longitude.nil? && self.latitude.nil? ) 
-      # errors.add(:base, "If providing latitude/longitude, both must be present")
-    # end
   end
   
   def check_future_sighting
@@ -127,35 +117,5 @@ class Sighting < ActiveRecord::Base
     end
   end
 
-  # def rename_sighting_photo
-    # # self.photo.instance_write :file_name, function_to_change_a_string(photo_file_name)
-    # extension = File.extname(photo_file_name).gsub(/^\.+/, '')
-    # filename = photo_file_name.gsub(/\.#{extension}$/, '')
-    # self.photo.instance_write(:file_name, "#{rename_file(filename)}.#{extension}")
-  # end
-# 
-  # def rename_file(str)
-    # # Based on permalink_fu by Rick Olsen
-#    
-    # # Escape str by transliterating to UTF-8 with Iconv
-    # # s = Iconv.iconv('ascii//ignore//translit', 'utf-8', str).to_s
-#    
-    # # Downcase string
-    # s = str.downcase!
-#    
-    # # Remove apostrophes so isn't changes to isnt
-    # s.gsub!(/'/, '')
-#    
-    # # Replace any non-letter or non-number character with a space
-    # s.gsub!(/[^A-Za-z0-9]+/, ' ')
-#    
-    # # Remove spaces from beginning and end of string
-    # s.strip!
-#    
-    # # Replace groups of spaces with single hyphen
-    # s.gsub!(/\ +/, '-')
-#    
-    # return s
-  # end
 
 end
