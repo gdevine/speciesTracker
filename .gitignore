@@ -21,7 +21,7 @@ doc/
 
 # Ignore uploaded photos
 /public/system
-/public/assets/photos
+/public/assets/photos/*
 
 config/settings.local.yml
 config/settings/*.local.yml
