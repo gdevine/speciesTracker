@@ -22,3 +22,10 @@
 //= require bootstrap-multiselect
 //= require lightbox
 //= require geolocation
+//= require webshims/polyfiller
+
+$.webshims.setOptions('basePath', '/webshims/1.15.8/shims/');
+$.webshims.polyfill();
+$(document).on("page:load", function() {
+  return $(this).updatePolyfill();
+});

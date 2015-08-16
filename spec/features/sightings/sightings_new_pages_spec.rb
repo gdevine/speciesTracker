@@ -66,7 +66,7 @@ RSpec.describe "Sighting", type: :feature do
           fill_in 'sighting_latitude', with: -50.012345   
           fill_in 'sighting_longitude', with: 150.012345   
           fill_in 'sighting_altitude', with: 150   
-          attach_file "sighting_photo", Rails.root.join("db/seed_photos/ST_Plant.jpg")
+          attach_file "sighting_photo", Rails.root.join("db/seed_photos/ST_Plant1.jpg")
         end
         
         it "should not create a sighting" do
@@ -89,7 +89,7 @@ RSpec.describe "Sighting", type: :feature do
           fill_in 'sighting_latitude', with: -50.012345   
           fill_in 'sighting_longitude', with: 150.012345   
           fill_in 'sighting_altitude', with: 150   
-          attach_file "sighting_photo", Rails.root.join("db/seed_photos/ST_Plant.jpg")
+          attach_file "sighting_photo", Rails.root.join("db/seed_photos/ST_Plant1.jpg")
         end
         
         it "should not create a sighting" do
@@ -112,7 +112,7 @@ RSpec.describe "Sighting", type: :feature do
           fill_in 'sighting_latitude', with: 150.012345   
           fill_in 'sighting_longitude', with: 150.012345   
           fill_in 'sighting_altitude', with: 150  
-          attach_file "sighting_photo", Rails.root.join("db/seed_photos/ST_Plant.jpg")
+          attach_file "sighting_photo", Rails.root.join("db/seed_photos/ST_Plant1.jpg")
         end
         
         it "should not create a Sighting" do
@@ -134,7 +134,7 @@ RSpec.describe "Sighting", type: :feature do
           fill_in 'sighting_latitude', with: ''   
           fill_in 'sighting_longitude', with: 150.012345   
           fill_in 'sighting_altitude', with: 150.012345  
-          attach_file "sighting_photo", Rails.root.join("db/seed_photos/ST_Plant.jpg")
+          attach_file "sighting_photo", Rails.root.join("db/seed_photos/ST_Plant1.jpg")
         end
         
         it "should not create a Sighting" do
@@ -157,7 +157,7 @@ RSpec.describe "Sighting", type: :feature do
           fill_in 'sighting_latitude', with: -33.012345   
           fill_in 'sighting_longitude', with: 150.012345   
           fill_in 'sighting_altitude', with: 150.0  
-          attach_file "sighting_photo", Rails.root.join("db/seed_photos/ST_Plant.jpg")
+          attach_file "sighting_photo", Rails.root.join("db/seed_photos/ST_Plant1.jpg")
         end
         
         it "should create a Sighting" do
@@ -212,7 +212,7 @@ RSpec.describe "Sighting", type: :feature do
           fill_in 'sighting_latitude', with: -30.012345   
           fill_in 'sighting_longitude', with: 150.012345   
           fill_in 'sighting_altitude', with: 150 
-          attach_file "sighting_photo", Rails.root.join("db/seed_photos/ST_Plant.jpg")
+          attach_file "sighting_photo", Rails.root.join("db/seed_photos/ST_Plant1.jpg")
         end
         
         it "should create a sighting" do
@@ -281,7 +281,7 @@ RSpec.describe "Sighting", type: :feature do
           fill_in 'sighting_latitude', with: -50.0   
           fill_in 'sighting_longitude', with: 150.0   
           fill_in 'sighting_altitude', with: 150.0   
-          attach_file "sighting_photo", Rails.root.join("db/seed_photos/ST_Plant.jpg")
+          attach_file "sighting_photo", Rails.root.join("db/seed_photos/ST_Plant1.jpg")
         end
         
         it "should not create a sighting" do
@@ -304,7 +304,7 @@ RSpec.describe "Sighting", type: :feature do
           fill_in 'sighting_latitude', with: 150.0   
           fill_in 'sighting_longitude', with: 150.0   
           fill_in 'sighting_altitude', with: 150.0  
-          attach_file "sighting_photo", Rails.root.join("db/seed_photos/ST_Plant.jpg")
+          attach_file "sighting_photo", Rails.root.join("db/seed_photos/ST_Plant1.jpg")
         end
         
         it "should not create a Sighting" do
@@ -327,7 +327,7 @@ RSpec.describe "Sighting", type: :feature do
           fill_in 'sighting_latitude', with: -30.012345   
           fill_in 'sighting_longitude', with: 150.012345   
           fill_in 'sighting_altitude', with: 150.0  
-          attach_file "sighting_photo", Rails.root.join("db/seed_photos/ST_Plant.jpg")
+          attach_file "sighting_photo", Rails.root.join("db/seed_photos/ST_Plant1.jpg")
         end
         
         it "should create a sighting" do
@@ -393,7 +393,7 @@ RSpec.describe "Sighting", type: :feature do
           fill_in 'sighting_latitude', with: -50.0   
           fill_in 'sighting_longitude', with: 150.0   
           fill_in 'sighting_altitude', with: 150.0  
-          attach_file "sighting_photo", Rails.root.join("db/seed_photos/ST_Plant.jpg") 
+          attach_file "sighting_photo", Rails.root.join("db/seed_photos/ST_Plant1.jpg") 
         end
         
         it "should not create a sighting" do
@@ -416,7 +416,7 @@ RSpec.describe "Sighting", type: :feature do
           fill_in 'sighting_latitude', with: 150.0   
           fill_in 'sighting_longitude', with: 150.0   
           fill_in 'sighting_altitude', with: 150.0 
-          attach_file "sighting_photo", Rails.root.join("db/seed_photos/ST_Plant.jpg") 
+          attach_file "sighting_photo", Rails.root.join("db/seed_photos/ST_Plant1.jpg") 
         end
         
         it "should not create a Sighting" do
@@ -439,7 +439,7 @@ RSpec.describe "Sighting", type: :feature do
           fill_in 'sighting_latitude', with: -30.012345   
           fill_in 'sighting_longitude', with: 150.012345   
           fill_in 'sighting_altitude', with: 150.0  
-          attach_file "sighting_photo", Rails.root.join("db/seed_photos/ST_Plant.jpg")
+          attach_file "sighting_photo", Rails.root.join("db/seed_photos/ST_Plant1.jpg")
         end
         
         it "should create a sighting" do

@@ -25,7 +25,7 @@
 	  <div class="form-group">
 	    <%= f.label :spotter_id, 'Sighted by *', :class => "col-md-2 col-md-offset-1 control-label" %>
 	    <div class="col-md-6">
-	      <%= collection_select(:sighting, :spotter_id, User.all, :id, :fullname, {:selected => current_user.id}, {:class=>"form-control multiselect", :id=>'spotters', :multiple=> false} ) %>
+	      <%= collection_select(:sighting, :spotter_id, User.all, :id, :fullname, {:selected => current_user.id}, {:class=>"form-control", :id=>'spotters', :multiple=> false} ) %>
 	    </div>
 	  </div>
 	<% end %>

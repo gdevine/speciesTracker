@@ -30,7 +30,9 @@ gem 'jquery-turbolinks'
 gem "paperclip", "~> 4.2"
 gem 'lightbox2-rails'
 gem 'respond-js-rails'
-gem "rails_config"
+# gem "rails_config"
+gem 'config', github: 'railsconfig/config'
+gem 'webshims-rails'
 
 
 group :development, :test do

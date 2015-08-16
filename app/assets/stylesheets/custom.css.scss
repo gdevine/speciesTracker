@@ -279,10 +279,9 @@ background-color: rgba(200,220,255,0.2); // I don't know the .well color, so I u
 }
 
 
-/* Let align radio buttons on dropdowns */
-.radioLeft {
-    text-align:left;
-    display:inline;
+input[type="radio"] {
+    left: -999em;
+    position: absolute;
 }
 
 /* left align text on multiselect dropdown buttons */
