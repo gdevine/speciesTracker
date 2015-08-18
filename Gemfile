@@ -31,7 +31,6 @@ gem "paperclip", "~> 4.2"
 gem 'lightbox2-rails'
 gem 'respond-js-rails'
 gem 'config', github: 'railsconfig/config'
-# gem 'webshims-rails'
 gem 'momentjs-rails', '>= 2.9.0'
 gem 'bootstrap3-datetimepicker-rails', '~> 4.15.35'
 
