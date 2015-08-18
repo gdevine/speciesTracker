@@ -17,5 +17,6 @@
  *= require bootstrap
  *= require lumen 
  *= require lightbox
+ *= require bootstrap-datetimepicker
  *= require custom
  */

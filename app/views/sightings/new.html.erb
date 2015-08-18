@@ -16,7 +16,9 @@
   <div class="form-group">
     <%= f.label :datetime_sighted, 'Date/Time of Sighting *', :class => "col-md-2 col-md-offset-1 control-label" %>
     <div class="col-md-6">
-      <%= f.datetime_local_field :datetime_sighted, :class => "form-control" %>
+      <%# f.datetime_local_field :datetime_sighted, :class => "form-control" %>
+      <%# f.input :datetime_sighted, as: :datetime_picker, :class => "form-control" %>
+      <%= f.text_field :datetime_sighted, data: { :date_format => 'YYYY/MM/DD hh:mm' }, :class => 'form-control datetimepicker', placeholder: 'YYYY/MM/DD hh:mm:ss' %>
     </div>
   </div>
 	

@@ -1,6 +1,6 @@
 GIT
   remote: git://github.com/activeadmin/activeadmin.git
-  revision: 3254f53b4b354d07c85f4b59f84f551127da6b1f
+  revision: 3fb69f21426a53947bb645170409ca722de7ec15
   specs:
     activeadmin (1.0.0.pre1)
       arbre (~> 1.0, >= 1.0.2)
@@ -18,7 +18,7 @@ GIT
 
 GIT
   remote: git://github.com/railsconfig/config.git
-  revision: 84c8391a2437c89f6146c3d786eca3be13036e7b
+  revision: 60ecef49a3da926cb2bbeb0b6cf5e590758f197e
   specs:
     config (1.0.0)
       activesupport (>= 3.0)
@@ -73,6 +73,8 @@ GEM
       sass (~> 3.2)
     bootstrap-will_paginate (0.0.10)
       will_paginate
+    bootstrap3-datetimepicker-rails (4.15.35)
+      momentjs-rails (>= 2.8.1)
     bourbon (4.2.3)
       sass (~> 3.4)
       thor
@@ -134,7 +136,7 @@ GEM
     diff-lcs (1.2.5)
     erubis (2.7.0)
     excon (0.45.4)
-    execjs (2.5.2)
+    execjs (2.6.0)
     factory_girl (4.5.0)
       activesupport (>= 3.0.0)
     factory_girl_rails (4.5.0)
@@ -227,7 +229,7 @@ GEM
     listen (3.0.3)
       rb-fsevent (>= 0.9.3)
       rb-inotify (>= 0.9)
-    loofah (2.0.2)
+    loofah (2.0.3)
       nokogiri (>= 1.5.9)
     lumberjack (1.0.9)
     mail (2.6.3)
@@ -247,6 +249,8 @@ GEM
       builder
       minitest (>= 5.0)
       ruby-progressbar
+    momentjs-rails (2.10.3)
+      railties (>= 3.1)
     multi_json (1.11.2)
     multi_test (0.1.2)
     nenv (0.2.0)
@@ -288,7 +292,7 @@ GEM
       sprockets-rails
     rails-deprecated_sanitizer (1.0.3)
       activesupport (>= 4.2.0.alpha)
-    rails-dom-testing (1.0.6)
+    rails-dom-testing (1.0.7)
       activesupport (>= 4.2.0.beta, < 5.0)
       nokogiri (~> 1.6.0)
       rails-deprecated_sanitizer (>= 1.0.1)
@@ -382,8 +386,6 @@ GEM
       binding_of_caller (= 0.7.3.pre1)
       railties (~> 4.0)
       sprockets-rails (>= 2.0, < 4.0)
-    webshims-rails (1.15.8)
-      rails (> 3.1.0)
     will_paginate (3.0.7)
     xpath (2.0.0)
       nokogiri (~> 1.3)
@@ -396,6 +398,7 @@ DEPENDENCIES
   bcrypt (= 3.1.7)
   bootstrap-sass (= 3.2.0.0)
   bootstrap-will_paginate (= 0.0.10)
+  bootstrap3-datetimepicker-rails (~> 4.15.35)
   byebug (= 3.4.0)
   cancancan (~> 1.10)
   capybara
@@ -419,6 +422,7 @@ DEPENDENCIES
   mini_backtrace (= 0.1.3)
   mini_magick (= 3.8.0)
   minitest-reporters (= 1.0.5)
+  momentjs-rails (>= 2.9.0)
   paperclip (~> 4.2)
   pg
   rails (= 4.2.0)
@@ -433,5 +437,4 @@ DEPENDENCIES
   underscore-rails
   unicorn (= 4.8.3)
   web-console (= 2.0.0.beta3)
-  webshims-rails
   will_paginate (= 3.0.7)
