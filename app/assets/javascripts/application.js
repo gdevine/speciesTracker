@@ -20,19 +20,8 @@
 //= require gmaps/google
 //= require jasny-bootstrap
 //= require bootstrap-multiselect
-//= require lightbox
 //= require geolocation
 //= require moment
 //= require bootstrap-datetimepicker
-
-
-// $(function() {
-  // if ( /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) ) {
-  	// return;
-  // } else {
-    // return $(".datetimepicker").datetimepicker();
-  // }
-// });
-$(function() {
-    return $(".datetimepicker").datetimepicker();
-});
+//= require lightbox
+//= require sightings
