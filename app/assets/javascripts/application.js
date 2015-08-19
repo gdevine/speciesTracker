@@ -26,9 +26,13 @@
 //= require bootstrap-datetimepicker
 
 
+// $(function() {
+  // if ( /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) ) {
+  	// return;
+  // } else {
+    // return $(".datetimepicker").datetimepicker();
+  // }
+// });
 $(function() {
-  if ( /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) ) {
-  } else {
     return $(".datetimepicker").datetimepicker();
-  }
 });
