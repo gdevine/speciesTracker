@@ -27,5 +27,8 @@
 
 
 $(function() {
-  return $(".datetimepicker").datetimepicker();
+  if ( /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) ) {
+  } else {
+    return $(".datetimepicker").datetimepicker();
+  }
 });
