@@ -1,59 +1,65 @@
 source 'https://rubygems.org'
-ruby '2.2.0'
 
-gem 'rails',                '4.2.0'
-gem 'sass-rails',           '5.0.0.beta1'
-gem 'uglifier',             '2.5.3'
-gem 'coffee-rails',         '4.1.0'
-gem 'jquery-rails',         '4.0.0.beta2'
-gem 'turbolinks',           '2.3.0'
-gem 'jbuilder',             '2.2.3'
-gem 'sdoc',                 '0.4.0', group: :doc
+gem 'rails'
+# gem 'sass-rails'
+gem 'uglifier'
+gem 'coffee-rails'
+gem 'jquery-rails'
+gem 'turbolinks'
+gem 'jbuilder'
 gem 'pg'
-gem 'bcrypt',                  '3.1.7'
-gem 'faker',                   '1.4.2'
-gem 'carrierwave',             '0.10.0'
-gem 'mini_magick',             '3.8.0'
-gem 'fog',                     '1.23.0'
-gem 'will_paginate',           '3.0.7'
-gem 'bootstrap-will_paginate', '0.0.10'
-gem 'bootstrap-sass',          '3.2.0.0'
+gem 'bcrypt'
+gem 'faker'
+gem 'carrierwave'
+gem 'mini_magick'
+gem 'fog'
+gem 'will_paginate'
+source 'https://rails-assets.org' do
+  gem 'rails-assets-tether', '>= 1.3.3'
+end
+gem 'bootstrap-will_paginate'
 gem 'devise'
-gem 'activeadmin', github: 'activeadmin'
-gem 'cancancan', '~> 1.10'
+gem 'sprockets'
+
+gem 'activeadmin', github: 'gregbell/active_admin'
+gem 'cancancan'
 gem 'factory_girl_rails'
-gem 'jquery-datatables-rails', '~> 3.3.0'
+gem 'jquery-datatables-rails'
 gem 'jquery-ui-rails'
 gem 'underscore-rails'
 gem 'gmaps4rails'
-gem 'jquery-turbolinks'
-gem "paperclip", "~> 4.2"
-gem 'lightbox2-rails'
+gem "paperclip"
 gem 'respond-js-rails'
 gem 'config', github: 'railsconfig/config'
-gem 'momentjs-rails', '>= 2.9.0'
-gem 'bootstrap3-datetimepicker-rails', '~> 4.15.35'
+gem 'momentjs-rails'
+gem 'bootstrap3-datetimepicker-rails'
+gem 'bootstrap-multiselect-rails'
 
-
+group :development do
+  gem 'web-console'
+end
 
 group :development, :test do
-  gem 'rspec-rails', '~> 3.0'
-  gem 'capybara'     
+  gem 'rspec-rails'
+  gem 'capybara'
   gem 'database_cleaner'
-  gem 'byebug',      '3.4.0'
-  gem 'web-console', '2.0.0.beta3'
-  gem 'spring',      '1.1.3'
-  gem 'capistrano', '~> 2.15.0'
+  gem 'byebug'
+  gem 'spring'
+  gem 'capistrano'
 end
 
 group :test do
-  gem 'minitest-reporters', '1.0.5'
-  gem 'mini_backtrace',     '0.1.3'
-  gem 'guard-minitest',     '2.3.1'
-  gem 'cucumber-rails',     '1.4.0', :require => false
+  gem 'minitest-reporters'
+  gem 'mini_backtrace'
+  gem 'guard-minitest'
+  gem 'cucumber-rails', :require => false
+end
+
+group :doc do
+  gem 'sdoc', require: false
 end
 
 group :production do
-  gem 'rails_12factor', '0.0.2'
-  gem 'unicorn',        '4.8.3'
+  gem 'rails_12factor'
+  gem 'unicorn'
 end

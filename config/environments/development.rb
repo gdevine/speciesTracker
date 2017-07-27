@@ -13,6 +13,10 @@ Rails.application.configure do
   config.consider_all_requests_local       = true
   config.action_controller.perform_caching = false
 
+  # Disable serving static files from the `/public` folder by default since
+  # Apache or NGINX already handles this.
+  config.public_file_server.enabled = true
+
   # Don't care if the mailer can't send.
   config.action_mailer.raise_delivery_errors = true
   config.action_mailer.perform_deliveries = false
@@ -49,13 +53,14 @@ Rails.application.configure do
 
   # Raises error for missing translations
   # config.action_view.raise_on_missing_translations = true
-  
+
   # Devise
   # config.action_mailer.default_url_options = { host: 'localhost', port: 3000 }
   config.action_mailer.default_url_options = { :host => "localhost:3000" }
   # Default Mailer Host
   # Rails.application.routes.default_url_options[:host] = 'domain.com'
-  
+
   # Imagemagick location for paperclip
   Paperclip.options[:command_path] = "/usr/local/bin/"
+
 end

@@ -10,6 +10,7 @@ html {
 
 body {
   padding-top: 60px;
+  // background: image-url("/assets/bg.png");
   background: image-url("bg.png");
 }
 
@@ -119,7 +120,7 @@ input, textarea, select, .uneditable-input {
 }
 
 input {
-  height: auto !important;  
+  height: auto !important;
 }
 
 #error_explanation {
@@ -240,17 +241,17 @@ background-color: rgba(200,220,255,0.2); // I don't know the .well color, so I u
 
 .frontpage_image {
   border: 1px solid #444;
-} 
+}
 
 /* file upload button */
 .divborder1 {
-  border:1px 
+  border:1px
   solid black;
 }
 
 /* to make the mobile view toggle button more obvious */
 .navbar-toggle {
-  border:5px solid #444;  
+  border:5px solid #444;
 }
 
 

@@ -1,3 +1,13 @@
+<% content_for :page_scripts do %>
+  <script>
+    $('#species').DataTable({
+      pagingType: "simple",
+      responsive: false,
+      bJQueryUI: false
+    });
+  </script>
+<% end %>
+
 <% provide(:title, 'Species') %>
 <% provide(:pageheading, 'Available Species') %>
 

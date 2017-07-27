@@ -1,4 +1,3 @@
-# encoding: UTF-8
 # This file is auto-generated from the current state of the database. Instead
 # of editing this file, please use the migrations feature of Active Record to
 # incrementally modify your database, and then regenerate this schema definition.
@@ -21,15 +20,14 @@ ActiveRecord::Schema.define(version: 20150520063116) do
     t.text     "body"
     t.string   "resource_id",   null: false
     t.string   "resource_type", null: false
-    t.integer  "author_id"
     t.string   "author_type"
+    t.integer  "author_id"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.index ["author_type", "author_id"], name: "index_active_admin_comments_on_author_type_and_author_id", using: :btree
+    t.index ["namespace"], name: "index_active_admin_comments_on_namespace", using: :btree
+    t.index ["resource_type", "resource_id"], name: "index_active_admin_comments_on_resource_type_and_resource_id", using: :btree
   end
-
-  add_index "active_admin_comments", ["author_type", "author_id"], name: "index_active_admin_comments_on_author_type_and_author_id", using: :btree
-  add_index "active_admin_comments", ["namespace"], name: "index_active_admin_comments_on_namespace", using: :btree
-  add_index "active_admin_comments", ["resource_type", "resource_id"], name: "index_active_admin_comments_on_resource_type_and_resource_id", using: :btree
 
   create_table "admin_users", force: :cascade do |t|
     t.string   "email",                  default: "", null: false
@@ -44,10 +42,9 @@ ActiveRecord::Schema.define(version: 20150520063116) do
     t.inet     "last_sign_in_ip"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.index ["email"], name: "index_admin_users_on_email", unique: true, using: :btree
+    t.index ["reset_password_token"], name: "index_admin_users_on_reset_password_token", unique: true, using: :btree
   end
-
-  add_index "admin_users", ["email"], name: "index_admin_users_on_email", unique: true, using: :btree
-  add_index "admin_users", ["reset_password_token"], name: "index_admin_users_on_reset_password_token", unique: true, using: :btree
 
   create_table "sightings", force: :cascade do |t|
     t.integer  "species_id"
@@ -71,9 +68,8 @@ ActiveRecord::Schema.define(version: 20150520063116) do
     t.string   "healthy_flowers"
     t.string   "healthy_pods"
     t.integer  "adult_abundance"
+    t.index ["species_id", "site_id", "spotter_id", "creator_id"], name: "create_species", using: :btree
   end
-
-  add_index "sightings", ["species_id", "site_id", "spotter_id", "creator_id"], name: "create_species", using: :btree
 
   create_table "sites", force: :cascade do |t|
     t.string   "name"
@@ -85,9 +81,8 @@ ActiveRecord::Schema.define(version: 20150520063116) do
     t.float    "centre_alt"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.index ["name"], name: "index_sites_on_name", using: :btree
   end
-
-  add_index "sites", ["name"], name: "index_sites_on_name", using: :btree
 
   create_table "species", force: :cascade do |t|
     t.string   "genus"
@@ -96,9 +91,8 @@ ActiveRecord::Schema.define(version: 20150520063116) do
     t.text     "description"
     t.datetime "created_at",  null: false
     t.datetime "updated_at",  null: false
+    t.index ["genus"], name: "index_species_on_genus", using: :btree
   end
-
-  add_index "species", ["genus"], name: "index_species_on_genus", using: :btree
 
   create_table "users", force: :cascade do |t|
     t.string   "email",                  default: "",     null: false
@@ -117,9 +111,8 @@ ActiveRecord::Schema.define(version: 20150520063116) do
     t.string   "surname"
     t.boolean  "approved",               default: false
     t.string   "role",                   default: "user"
+    t.index ["email"], name: "index_users_on_email", unique: true, using: :btree
+    t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true, using: :btree
   end
-
-  add_index "users", ["email"], name: "index_users_on_email", unique: true, using: :btree
-  add_index "users", ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true, using: :btree
 
 end

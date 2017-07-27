@@ -27,9 +27,3 @@ class CustomMarkerBuilder extends Gmaps.Google.Builders.Marker
     boxStyle:
       width: "280px"
       
-      
-$ ->
-  if /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent)
-    return
-  else
-    $('.datetimepicker').datetimepicker()

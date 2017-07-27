@@ -24,4 +24,4 @@ def secure_token
   end
 end
 
-InstrumentTracker::Application.config.secret_key_base = secure_token
+SpeciesTracker::Application.config.secret_key_base = secure_token

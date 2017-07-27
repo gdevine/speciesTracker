@@ -1,30 +1,52 @@
+<% content_for :page_scripts do %>
+  <script>
+    $(function() {
+      if (/Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent)) {
+        // may not need return
+        return
+      } else {
+        return $('.datetimepicker').datetimepicker();
+      }
+    });
+  </script>
+  <script type="text/javascript">
+    $('#species, #sites, #spotters').multiselect({
+        buttonClass : "form-control",
+        buttonWidth: "100%",
+        maxHeight: 400,
+        enableCaseInsensitiveFiltering: true,
+    });
+  </script>
+<% end %>
+
+
 <% provide(:title, 'New Sighting') %>
 <% provide(:pageheading, 'Create New Sighting') %>
 
 <%= form_for @sighting, :html => {:class => "form-horizontal", :multipart => true} do |f| %>
   <%= render 'shared/error_messages', object: f.object %>
 
-  
+
   <div class="form-group topspace50">
     <%= f.label :species_id, 'Species *', :class => "col-md-2 col-md-offset-1 control-label" %>
     <div class="col-md-6">
       <%= collection_select(:sighting, :species_id, Species.all, :id, :fullname, {include_blank: 'None selected'}, {:class=>"form-control multiselect", :id=>'species', :multiple=> false} ) %>
     </div>
-  </div> 
-  
-  
+  </div>
+
+
   <div class="form-group">
     <%= f.label :datetime_sighted, 'Date/Time of Sighting *', :class => "col-md-2 col-md-offset-1 control-label" %>
     <div class="col-md-6">
     	<% if mobile_device? %>
         <%= f.datetime_local_field :datetime_sighted, :class => "form-control" %>
-      <% else %>	
+      <% else %>
         <%= f.text_field :datetime_sighted, data: { :date_format => 'YYYY/MM/DD hh:mm' }, :class => 'form-control datetimepicker', placeholder: 'YYYY/MM/DD hh:mm:ss' %>
       <% end %>
     </div>
   </div>
-	
-	  
+
+
 	<% if current_user.role != 'user' %>
 	  <div class="form-group">
 	    <%= f.label :spotter_id, 'Sighted by *', :class => "col-md-2 col-md-offset-1 control-label" %>
@@ -40,103 +62,103 @@
     <div class="col-md-6">
       <%= collection_select(:sighting, :site_id, Site.all, :id, :listname, {include_blank: 'None selected'}, {:class=>"form-control multiselect", :id=>'sites', :multiple=> false} ) %>
     </div>
-  </div> 
-  
-  
+  </div>
+
+
   <div class="row topspace20 bottomspace">
 	  <div class="col-md-2 col-md-offset-3">
 		  <button class="btn btn-block btn-default" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
 		    Add Specific Location
 		  </button>
-		</div>  
+		</div>
 	</div>
-  
+
   <div class="form-group">
 		<div class="collapse col-md-6 col-md-offset-3" id="collapseExample">
-			<div class="well">  
+			<div class="well">
 			  <div class="form-group">
 			    <%= f.label :latitude, "Latitude", :class => "col-lg-4 control-label" %>
 			    <div class="col-md-6">
 			      <%= f.number_field :latitude, :class => "form-control", :min => -90.0, :max => 90.0, :step => 'any' %>
 			    </div>
 			  </div>
-			  
+
 			  <div class="form-group">
 			    <%= f.label :longitude, "Longitude", :class => "col-lg-4 control-label" %>
 			    <div class="col-md-6">
 			      <%= f.number_field :longitude, :class => "form-control", :min => 0.0, :max => 360.0, :step => 'any' %>
 			    </div>
 			  </div>
-			  
+
 			  <div class="form-group">
 			    <%= f.label :altitude, "Altitude (m)", :class => "col-lg-4 control-label" %>
 			    <div class="col-md-6">
 			      <%= f.number_field :altitude, :class => "form-control", :min => 0.0, :max => 10000.0, :step => 'any' %>
 			    </div>
 			  </div>
-			  
-			  <div class="row">			  
+
+			  <div class="row">
 			    <div class="col-sm-6 col-sm-offset-3"> Or get location details automatically</div>
 			  </div>
 			  <div class="row">
 			    <div class="col-sm-6 col-sm-offset-3">
 			  	  <button class="btn btn-block btn-default" type="button" onclick="getGPSLocation();return false;">Get my Location</button>
 			  	</div>
-			  </div>  
-			  
+			  </div>
+
 		  </div>
 		</div>
-  </div>      
-  
-  
+  </div>
+
+
   <div class="form-group">
     <%= f.label :plant_ages_seen, 'Plant Ages Seen', :class => "col-md-2 col-md-offset-1 control-label" %>
     <div class="col-md-6">
       <%= f.select(:plant_ages_seen, Settings.plant_ages_seen, {:include_blank => true}, {:class => "form-control"}) %>
     </div>
-  </div>   
-  
-  
+  </div>
+
+
   <div class="form-group">
     <%= f.label :dom_flower_stage, 'Dominant Flower Stage', :class => "col-md-2 col-md-offset-1 control-label" %>
     <div class="col-md-6">
       <%= f.select(:dom_flower_stage, Settings.dom_flower_stage, {:include_blank => true}, {:class => "form-control"}) %>
     </div>
-  </div>  
-  
-  
+  </div>
+
+
   <div class="form-group">
     <%= f.label :dom_pod_stage, 'Dominant Pod Stage', :class => "col-md-2 col-md-offset-1 control-label" %>
     <div class="col-md-6">
       <%= f.select(:dom_pod_stage, Settings.dom_pod_stage, {:include_blank => true}, {:class => "form-control"}) %>
     </div>
-  </div>  
-  
-  
+  </div>
+
+
   <div class="form-group">
     <%= f.label :healthy_flowers, 'Healthy Flowers %', :class => "col-md-2 col-md-offset-1 control-label" %>
     <div class="col-md-6">
       <%= f.select(:healthy_flowers, Settings.healthy_flowers, {:include_blank => true}, {:class => "form-control"}) %>
     </div>
-  </div>  
-  
-  
+  </div>
+
+
   <div class="form-group">
     <%= f.label :healthy_pods, 'Healthy Pods %', :class => "col-md-2 col-md-offset-1 control-label" %>
     <div class="col-md-6">
       <%= f.select(:healthy_pods, Settings.healthy_pods, {:include_blank => true}, {:class => "form-control"}) %>
     </div>
-  </div>  
-  
-  
+  </div>
+
+
   <div class="form-group">
 	  <%= f.label :adult_abundance, 'Adult Abundance', :class => "col-md-2 col-md-offset-1 control-label"  %>
 	  <div class="col-md-6">
-	    <%= f.number_field :adult_abundance, :min => 0, :max => 1000, :class => "form-control" %>  
-	  </div> 
-  </div> 
-  
-        
+	    <%= f.number_field :adult_abundance, :min => 0, :max => 1000, :class => "form-control" %>
+	  </div>
+  </div>
+
+
   <div class="form-group">
     <%= f.label :comments, "Comments", :class => "col-md-2 col-md-offset-1 control-label" %>
     <div class="col-md-6">
@@ -160,22 +182,12 @@
 			  </div>
 			</div>
     </div>
-  </div>  
-  
+  </div>
+
   <div class="form-group">
     <div class="col-md-4 col-md-offset-4 topspace50 bottomspace">
       <%= f.submit "Submit", :class => "btn btn-large btn-primary" %>
     </div>
   </div>
-  
+
 <% end %>
-
-
-<script type="text/javascript">
-$('#species, #sites, #spotters').multiselect({
-    buttonClass : "form-control",
-    buttonWidth: "100%",
-    maxHeight: 400,
-    enableCaseInsensitiveFiltering: true,
-});
-</script>

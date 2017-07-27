@@ -18,10 +18,11 @@
 //= require dataTables/bootstrap/3/jquery.dataTables.bootstrap
 //= require underscore
 //= require gmaps/google
-//= require jasny-bootstrap
 //= require bootstrap-multiselect
-//= require geolocation
 //= require moment
 //= require bootstrap-datetimepicker
-//= require lightbox
-//= require sightings
+//= require geolocation
+//= require turbolinks
+
+// -- Vendor folder
+//= require jasny-bootstrap
