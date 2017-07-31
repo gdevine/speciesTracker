@@ -1,4 +1,4 @@
-class AddAttachmentPhotoToSightings < ActiveRecord::Migration
+class AddAttachmentPhotoToSightings < ActiveRecord::Migration[5.0]
   def self.up
     change_table :sightings do |t|
       t.attachment :photo

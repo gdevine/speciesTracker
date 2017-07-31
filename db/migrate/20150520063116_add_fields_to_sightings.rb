@@ -1,4 +1,4 @@
-class AddFieldsToSightings < ActiveRecord::Migration
+class AddFieldsToSightings < ActiveRecord::Migration[5.0]
   def change
     add_column :sightings, :plant_ages_seen, :string
     add_column :sightings, :dom_flower_stage, :string

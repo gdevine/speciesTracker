@@ -1,7 +1,6 @@
 source 'https://rubygems.org'
 
-gem 'rails'
-# gem 'sass-rails'
+gem 'rails', '~> 5.0.1'
 gem 'uglifier'
 gem 'coffee-rails'
 gem 'jquery-rails'
@@ -14,14 +13,12 @@ gem 'carrierwave'
 gem 'mini_magick'
 gem 'fog'
 gem 'will_paginate'
-source 'https://rails-assets.org' do
-  gem 'rails-assets-tether', '>= 1.3.3'
-end
 gem 'bootstrap-will_paginate'
 gem 'devise'
 gem 'sprockets'
 
-gem 'activeadmin', github: 'gregbell/active_admin'
+# gem 'activeadmin', github: 'gregbell/active_admin'
+gem 'activeadmin'
 gem 'cancancan'
 gem 'factory_girl_rails'
 gem 'jquery-datatables-rails'
@@ -29,13 +26,15 @@ gem 'jquery-ui-rails'
 gem 'underscore-rails'
 gem 'gmaps4rails'
 gem "paperclip"
-gem 'respond-js-rails'
+# gem 'respond-js-rails'
 gem 'config', github: 'railsconfig/config'
 gem 'momentjs-rails'
 gem 'bootstrap3-datetimepicker-rails'
 gem 'bootstrap-multiselect-rails'
 
 group :development do
+  gem 'debase'
+  gem 'ruby-debug-ide'
   gem 'web-console'
 end
 

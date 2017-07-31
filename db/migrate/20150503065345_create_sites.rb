@@ -1,4 +1,4 @@
-class CreateSites < ActiveRecord::Migration
+class CreateSites < ActiveRecord::Migration[5.0]
   def change
     create_table :sites do |t|
       t.string :name
@@ -9,7 +9,7 @@ class CreateSites < ActiveRecord::Migration
       t.float :centre_lon
       t.float :centre_alt
 
-      t.timestamps null: false
+      t.timestamps
     end
     add_index :sites, [:name]
   end

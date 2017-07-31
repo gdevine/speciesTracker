@@ -11,9 +11,9 @@
 // about supported directives.
 //
 //= require jquery
+//= require bootstrap
 //= require jquery-ui
 //= require jquery_ujs
-//= require bootstrap
 //= require dataTables/jquery.dataTables
 //= require dataTables/bootstrap/3/jquery.dataTables.bootstrap
 //= require underscore
@@ -23,6 +23,4 @@
 //= require bootstrap-datetimepicker
 //= require geolocation
 //= require turbolinks
-
-// -- Vendor folder
 //= require jasny-bootstrap

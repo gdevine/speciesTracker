@@ -22,8 +22,8 @@ ActiveRecord::Schema.define(version: 20150520063116) do
     t.string   "resource_type", null: false
     t.string   "author_type"
     t.integer  "author_id"
-    t.datetime "created_at"
-    t.datetime "updated_at"
+    t.datetime "created_at",    null: false
+    t.datetime "updated_at",    null: false
     t.index ["author_type", "author_id"], name: "index_active_admin_comments_on_author_type_and_author_id", using: :btree
     t.index ["namespace"], name: "index_active_admin_comments_on_namespace", using: :btree
     t.index ["resource_type", "resource_id"], name: "index_active_admin_comments_on_resource_type_and_resource_id", using: :btree
@@ -40,15 +40,15 @@ ActiveRecord::Schema.define(version: 20150520063116) do
     t.datetime "last_sign_in_at"
     t.inet     "current_sign_in_ip"
     t.inet     "last_sign_in_ip"
-    t.datetime "created_at"
-    t.datetime "updated_at"
+    t.datetime "created_at",                          null: false
+    t.datetime "updated_at",                          null: false
     t.index ["email"], name: "index_admin_users_on_email", unique: true, using: :btree
     t.index ["reset_password_token"], name: "index_admin_users_on_reset_password_token", unique: true, using: :btree
   end
 
   create_table "sightings", force: :cascade do |t|
-    t.integer  "species_id"
     t.datetime "datetime_sighted"
+    t.integer  "species_id"
     t.integer  "site_id"
     t.float    "latitude"
     t.float    "longitude"
@@ -68,7 +68,10 @@ ActiveRecord::Schema.define(version: 20150520063116) do
     t.string   "healthy_flowers"
     t.string   "healthy_pods"
     t.integer  "adult_abundance"
-    t.index ["species_id", "site_id", "spotter_id", "creator_id"], name: "create_species", using: :btree
+    t.index ["creator_id"], name: "index_sightings_on_creator_id", using: :btree
+    t.index ["site_id"], name: "index_sightings_on_site_id", using: :btree
+    t.index ["species_id"], name: "index_sightings_on_species_id", using: :btree
+    t.index ["spotter_id"], name: "index_sightings_on_spotter_id", using: :btree
   end
 
   create_table "sites", force: :cascade do |t|
@@ -105,8 +108,8 @@ ActiveRecord::Schema.define(version: 20150520063116) do
     t.datetime "last_sign_in_at"
     t.inet     "current_sign_in_ip"
     t.inet     "last_sign_in_ip"
-    t.datetime "created_at"
-    t.datetime "updated_at"
+    t.datetime "created_at",                              null: false
+    t.datetime "updated_at",                              null: false
     t.string   "firstname"
     t.string   "surname"
     t.boolean  "approved",               default: false
