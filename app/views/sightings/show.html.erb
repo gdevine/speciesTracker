@@ -9,6 +9,11 @@
       handler.getMap().setZoom(9);
     });
   </script>
+  <script type="text/javascript">
+    $(document).on('turbolinks:load', function() {
+      $("a.fancybox").fancybox();
+    })
+  </script>
 <% end %>
 
 <% provide(:title, 'Sighting View') %>
@@ -171,7 +176,7 @@
   <!--  Photo -->
   <div class="col-md-3 topspace20 center">
 	  <% if @sighting.photo.file? %>
-	    <%= link_to image_tag(@sighting.photo.url(:medium), class:"img-fluid"), image_path(@sighting.photo.url(:large), class:"img-thumbnail"), data: {toggle:"lightbox"} %>
+	    <%= link_to image_tag(@sighting.photo.url(:medium), class:"img-fluid"), image_path(@sighting.photo.url(:large)), class:"fancybox img-thumbnail" %>
     <% else %>
 	    <%= image_tag("no_image.gif", size: "200x200", alt: "No Image Available") %>
     <% end %>

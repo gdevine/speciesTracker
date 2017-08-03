@@ -23,7 +23,6 @@ gem 'activeadmin'
 gem 'cancancan'
 gem 'factory_girl_rails'
 gem 'jquery-datatables-rails'
-gem 'jquery-ui-rails'
 gem 'underscore-rails'
 gem 'gmaps4rails'
 gem "paperclip"
@@ -32,6 +31,7 @@ gem 'config', github: 'railsconfig/config'
 gem 'momentjs-rails'
 gem 'bootstrap3-datetimepicker-rails'
 gem 'bootstrap-multiselect-rails'
+gem 'fancybox2-rails'
 
 group :development do
   gem 'debase'
