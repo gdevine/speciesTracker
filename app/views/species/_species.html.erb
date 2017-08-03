@@ -1,8 +1,7 @@
 <% if @species.any? %>
-  <table class="table table-bordered table-striped table-hover display responsive no-wrap" id="species">
+  <table class="table table-bordered table-striped table-hover display responsive no-wrap" id="species_table">
     <thead>
       <tr>
-        <th>Species ID</th>
         <th>Genus</th>
         <th>Species</th>
         <th>Common Name</th>
@@ -13,7 +12,7 @@
       <%= render partial: 'species/species_table', collection: @species, as: :species %>
     </tbody>
   </table>
-  
+
 <% else %>
   <p>No Species found</p>
 <% end %>

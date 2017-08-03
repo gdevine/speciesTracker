@@ -21,6 +21,6 @@
 //= require moment
 //= require bootstrap-datetimepicker
 //= require geolocation
-//= require turbolinks
 //= require fancybox
+//= require turbolinks
 //= require jasny-bootstrap

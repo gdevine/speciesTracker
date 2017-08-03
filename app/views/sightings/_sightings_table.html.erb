@@ -12,5 +12,5 @@
 	<% else %>
     <td><%= image_tag("no_image.gif", size: "100x100", alt: "No Image Available") %></td>
   <% end %>
-  <td><%= link_to "View", sighting %></td>
+  <td><%= link_to "View", sighting, :"data-turbolinks" => false %></td>
 </tr>

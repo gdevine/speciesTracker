@@ -1,8 +1,7 @@
 <% if @sites.any? %>
-  <table class="table table-bordered table-striped table-hover display responsive no-wrap" id="sites">
+  <table class="table table-bordered table-striped table-hover display responsive no-wrap" id="sites_table">
     <thead>
       <tr>
-        <th>Site ID</th>
         <th>Name</th>
         <th>Street</th>
         <th>Suburb</th>
@@ -13,7 +12,7 @@
       <%= render partial: 'sites/sites_table', collection: @sites, as: :site %>
     </tbody>
   </table>
-  
+
 <% else %>
   <p>No Sites found</p>
 <% end %>

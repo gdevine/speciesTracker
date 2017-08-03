@@ -266,6 +266,13 @@ background-color: rgba(200,220,255,0.2); // I don't know the .well color, so I u
     border: 0px;
 }
 
+/* Show clickable cursor on whole datatable row - matching js to make whole row clickable */
+#sightings_table, #species_table, #sites_table tbody td:hover {
+    cursor: pointer;
+}
+
+
+
 
 /* google maps styling */
 .gm-style-iw {

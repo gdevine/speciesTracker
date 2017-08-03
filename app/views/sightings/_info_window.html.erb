@@ -8,7 +8,7 @@
 		<% end %>
 		<p><span style="font-weight: bold;">Species:</span> <%= sighting.species.fullname %></p>
     <p><span style="font-weight: bold;">Date/Time:</span> <%= sighting.datetime_sighted.to_formatted_s(:long_ordinal) %></p>
-    <p><%= link_to "View Sighting Details", sighting %></p>
+    <p><%= link_to "View Sighting Details", sighting, :"data-turbolinks" => false %></p>
 	</div>
 	<div class="col-md-6">
   	<% if sighting.photo.file? %>
