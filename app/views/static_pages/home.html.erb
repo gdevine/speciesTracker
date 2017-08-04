@@ -3,7 +3,7 @@
 
 <% if user_signed_in? %>
 	<div class="center hero-unit">
-    
+
     <div class="row topspace50">
     	<div class="col-md-6">
         <div class="col-md-12">
@@ -12,18 +12,18 @@
       </div>
     </div>
   </div>
-	    
+
 <% else %>
 
   <div class="center hero-unit">
-    
+
     <div class="row topspace50">
-    	<div class="col-md-6">
+      <div class="col-md-6">
         <div class="col-md-12">
           Welcome to Species Tracker
         </div>
       </div>
-    	
+
       <div class="col-md-6">
         <div class="col-md-6 col-md-offset-2 topspace20">
           <%= link_to "Register", new_user_registration_path, class: "btn btn-large btn-block btn-primary" %>
@@ -33,7 +33,7 @@
         </div>
       </div>
     </div>
-  
+
   </div>
 
 <% end %>

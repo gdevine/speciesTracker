@@ -8,9 +8,9 @@
   <td><%= sighting.species.fullname %> </td>
   <td><%= sighting.datetime_sighted.to_formatted_s(:long_ordinal) %> </td>
   <% if sighting.photo.file? %>
-    <td><%= image_tag(sighting.photo.url(:thumb), class:"img-thumbnail") %></td>
+    <td align="center"><%= image_tag(sighting.photo.url(:thumb), class:"img-thumbnail") %></td>
 	<% else %>
-    <td><%= image_tag("no_image.gif", size: "100x100", alt: "No Image Available") %></td>
+    <td align="center"><%= image_tag("no_image.gif", size: "100x100", alt: "No Image Available") %></td>
   <% end %>
-  <td><%= link_to "View", sighting, :"data-turbolinks" => false %></td>
+  <td style="display:none;"><%= link_to "View", sighting, :"data-turbolinks" => false %></td>
 </tr>

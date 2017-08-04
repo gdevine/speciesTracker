@@ -10,8 +10,13 @@ html {
 
 body {
   padding-top: 60px;
-  // background: image-url("/assets/bg.png");
   background: image-url("bg.png");
+  // background-image: url(http://d3lp4xedbqa8a5.cloudfront.net/s3/digital-cougar-assets/AusGeo/2014/02/28/38480/5945.jpg) ;
+  // background-position: center center;
+  // background-repeat:  no-repeat;
+  // background-attachment: fixed;
+  // background-size:  cover;
+  // background-color: #999;
 }
 
 section {
@@ -296,3 +301,5 @@ input[type="radio"] {
 .multiselect {
     text-align: left;
 }
+
+

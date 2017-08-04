@@ -6,7 +6,15 @@
       bJQueryUI: false,
       "columnDefs": [
         { "orderable": false, "targets": 3 }
-      ]
+      ],
+      "drawCallback": function( settings ) {
+        $('#sites_table tr').click(function() {
+          var href = $(this).find("a").attr("href");
+          if(href) {
+              Turbolinks.visit(href);
+          }
+        });
+      }
     });
   </script>
 
@@ -20,14 +28,6 @@
     document.addEventListener("turbolinks:before-cache", function() {
       if ($('#sites_table_wrapper').length === 1) {
         return sites_table.destroy();
-      }
-    });
-  </script>
-  <script>
-      $('#sites_table tr').click(function() {
-      var href = $(this).find("a").attr("href");
-      if(href) {
-          window.location = href;
       }
     });
   </script>

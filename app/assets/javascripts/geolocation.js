@@ -3,7 +3,7 @@ function getGPSLocation()
 {
 var options = {
   enableHighAccuracy: true,
-  timeout: 5000,
+  timeout: 6000,
   maximumAge: 0
 };
 
