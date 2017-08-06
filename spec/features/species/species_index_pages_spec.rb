@@ -48,12 +48,9 @@ RSpec.describe "Species", type: :feature do
         it { should have_content(@sp1.genus) }
         it { should have_content(@sp2.genus) }
         it { should have_content(@sp3.genus) }
-        it { should have_link('View', :href => species_path(@sp1)) }
-        it { should have_link('View', :href => species_path(@sp3)) }
-        it { should have_link('View', :href => species_path(@sp3)) }
 
         describe "should navigate to correct page on following view link" do
-          before { find("a[href='#{species_path(@sp1)}']").click }
+          before { find("a[href='#{species_path(@sp1)}']", :visible => false).click }
           it { should have_selector('h2', text: "Species " + @sp1.id.to_s) }
         end
 
@@ -90,12 +87,9 @@ RSpec.describe "Species", type: :feature do
         it { should have_content(@sp1.genus) }
         it { should have_content(@sp2.genus) }
         it { should have_content(@sp3.genus) }
-        it { should have_link('View', :href => species_path(@sp1)) }
-        it { should have_link('View', :href => species_path(@sp3)) }
-        it { should have_link('View', :href => species_path(@sp3)) }
 
         describe "should navigate to correct page on following view link" do
-          before { find("a[href='#{species_path(@sp1)}']").click }
+          before { find("a[href='#{species_path(@sp1)}']", :visible => false).click }
           it { should have_selector('h2', text: "Species " + @sp1.id.to_s) }
         end
 
@@ -132,12 +126,9 @@ RSpec.describe "Species", type: :feature do
         it { should have_content(@sp1.genus) }
         it { should have_content(@sp2.genus) }
         it { should have_content(@sp3.genus) }
-        it { should have_link('View', :href => species_path(@sp1)) }
-        it { should have_link('View', :href => species_path(@sp3)) }
-        it { should have_link('View', :href => species_path(@sp3)) }
 
         describe "should navigate to correct page on following view link" do
-          before { find("a[href='#{species_path(@sp1)}']").click }
+          before { find("a[href='#{species_path(@sp1)}']", :visible => false).click }
           it { should have_selector('h2', text: "Species " + @sp1.id.to_s) }
         end
 

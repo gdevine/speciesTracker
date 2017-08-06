@@ -54,12 +54,9 @@ RSpec.describe "Site", type: :feature do
         it { should have_content(@s1.name) }
         it { should have_content(@s2.name) }
         it { should have_content(@s3.name) }
-        it { should have_link('View', :href => site_path(@s1)) }
-        it { should have_link('View', :href => site_path(@s3)) }
-        it { should have_link('View', :href => site_path(@s3)) }
 
         describe "should navigate to correct page on following view link" do
-          before { find("a[href='#{site_path(@s1)}']").click }
+          before { find("a[href='#{site_path(@s1)}']", :visible => false).click }
           it { should have_selector('h2', text: "Site " + @s1.id.to_s) }
         end
 
@@ -98,12 +95,9 @@ RSpec.describe "Site", type: :feature do
         it { should have_content(@s1.name) }
         it { should have_content(@s2.name) }
         it { should have_content(@s3.name) }
-        it { should have_link('View', :href => site_path(@s1)) }
-        it { should have_link('View', :href => site_path(@s3)) }
-        it { should have_link('View', :href => site_path(@s3)) }
 
         describe "should navigate to correct page on following view link" do
-          before { find("a[href='#{site_path(@s1)}']").click }
+          before { find("a[href='#{site_path(@s1)}']", :visible => false).click }
           it { should have_selector('h2', text: "Site " + @s1.id.to_s) }
         end
 
@@ -143,12 +137,9 @@ RSpec.describe "Site", type: :feature do
         it { should have_content(@s1.name) }
         it { should have_content(@s2.name) }
         it { should have_content(@s3.name) }
-        it { should have_link('View', :href => site_path(@s1)) }
-        it { should have_link('View', :href => site_path(@s3)) }
-        it { should have_link('View', :href => site_path(@s3)) }
 
         describe "should navigate to correct page on following view link" do
-          before { find("a[href='#{site_path(@s1)}']").click }
+          before { find("a[href='#{site_path(@s1)}']", :visible => false).click }
           it { should have_selector('h2', text: "Site " + @s1.id.to_s) }
         end
 
