@@ -71,7 +71,7 @@ class Sighting < ActiveRecord::Base
     if (!self.latitude.nil? && self.longitude.nil? ) || (!self.longitude.nil? && self.latitude.nil? )
       errors.add(:base, "If providing latitude/longitude, both must be present")
     elsif self.site.nil?
-      errors.add(:base, "If a Site is not selected, then a specific latitude/longitude must be given") if self.latitude.nil? || self.longitude.nil?
+      errors.add(:base, "If a research site is not selected, then a specific latitude/longitude must be given") if self.latitude.nil? || self.longitude.nil?
     end
   end
 
@@ -89,7 +89,7 @@ class Sighting < ActiveRecord::Base
 
   def validate_site_id
     if !self.site_id.nil?
-      errors.add(:site_id, "Site given is invalid") unless Site.exists?(self.site_id)
+      errors.add(:site_id, "Research Site given is invalid") unless Site.exists?(self.site_id)
     end
   end
 

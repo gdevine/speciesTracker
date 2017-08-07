@@ -21,7 +21,7 @@
 
 
 <% provide(:title, 'New Sighting') %>
-<% provide(:pageheading, 'Create New Sighting') %>
+<% provide(:pageheading, 'New Sighting') %>
 
 <%= form_for @sighting, :html => {:class => "form-horizontal", :multipart => true} do |f| %>
   <%= render 'shared/error_messages', object: f.object %>
@@ -58,7 +58,7 @@
 
 
   <div class="form-group">
-    <%= f.label :site_id, 'Associated Site *', :class => "col-md-2 col-md-offset-1 control-label" %>
+    <%= f.label :site_id, 'Research Site *', :class => "col-md-2 col-md-offset-1 control-label" %>
     <div class="col-md-6">
       <%= collection_select(:sighting, :site_id, Site.all, :id, :listname, {include_blank: 'None selected'}, {:class=>"form-control multiselect", :id=>'sites', :multiple=> false} ) %>
     </div>

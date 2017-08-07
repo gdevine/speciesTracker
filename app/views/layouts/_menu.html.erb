@@ -14,22 +14,22 @@
 		    </li>
 
 		    <li>
-		      <%= link_to 'View Sites', sites_path, :id => 'sites_index' %>
+		      <%= link_to 'View Research Sites', sites_path, :id => 'sites_index' %>
 		    </li>
 
 		    <li role="presentation" class="divider"></li>
 
 		    <li>
-		      <%= link_to 'Create New Sighting', new_sighting_path, :id => 'sightings_new' %>
+		      <%= link_to 'New Sighting', new_sighting_path, :id => 'sightings_new' %>
 		    </li>
 		    <% if current_user.role != 'user' %>
 		      <li>
-		        <%= link_to 'Create New Species', new_species_path, :id => 'species_new' %>
+		        <%= link_to 'New Species', new_species_path, :id => 'species_new' %>
 		      </li>
 		    <% end %>
 		    <% if current_user.role != 'user' %>
 		      <li>
-		        <%= link_to 'Create New Site', new_site_path, :id => 'sites_new' %>
+		        <%= link_to 'New Research Site', new_site_path, :id => 'sites_new' %>
 		      </li>
 		    <% end %>
 		  </ul>

@@ -1,11 +1,11 @@
 class SitesController < ApplicationController
-  
+
   before_action :authenticate_user!, only: [:index, :map, :new, :update, :show, :edit, :create, :destroy]
   load_and_authorize_resource
-  
+
   def index
   end
-  
+
   def map
     @hash = Gmaps4rails.build_markers(@sites) do |site, marker|
       marker.lat site.centre_lat
@@ -18,14 +18,14 @@ class SitesController < ApplicationController
       marker.infowindow render_to_string(:partial => "sites/info_window", :locals => { :site => site})
     end
   end
-  
+
   def new
-  end  
-  
+  end
+
   def create
     @site = Site.new(site_params)
     if @site.save
-      flash[:link] = "Site created!"
+      flash[:link] = "Research Site created!"
       redirect_to @site
     else
       render 'sites/new'
@@ -43,23 +43,23 @@ class SitesController < ApplicationController
       })
     end
   end
-  
+
   def edit
   end
 
   def update
     @site = Site.find(params[:id])
     if @site.update_attributes(site_params)
-      flash[:link] = "Site Updated!"
+      flash[:link] = "Research Site Updated!"
       redirect_to @site
     else
       render 'edit'
     end
   end
-    
+
   def destroy
     @site.destroy
-    flash[:link] = "Site Deleted!"
+    flash[:link] = "Research Site Deleted!"
     redirect_to sites_path
   end
 
@@ -68,5 +68,5 @@ class SitesController < ApplicationController
     def site_params
       params.require(:site).permit(:name, :street, :suburb, :comments, :centre_lat, :centre_lon, :centre_alt)
     end
-  
+
 end

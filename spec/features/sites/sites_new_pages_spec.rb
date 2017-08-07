@@ -39,8 +39,8 @@ RSpec.describe "Site", type: :feature do
       end
 
       describe "should be given access to add a new site" do
-        it { should have_title('Species Tracker | New Site') }
-        it { should have_selector('h2', text: "Create New Site") }
+        it { should have_title('Species Tracker | New Research Site') }
+        it { should have_selector('h2', text: "New Research Site") }
         it { should have_content('Name') }
         it { should have_content('Street') }
         it { should have_content('Suburb') }
@@ -58,7 +58,7 @@ RSpec.describe "Site", type: :feature do
         describe "should return an error and revert back" do
           before { click_button "Submit" }
           it { should have_content('5 errors') }
-          it { should have_selector('h2', text: "Create New Site") }
+          it { should have_selector('h2', text: "New Research Site") }
         end
       end
 
@@ -79,7 +79,7 @@ RSpec.describe "Site", type: :feature do
         describe "should return an error and revert back" do
           before { click_button "Submit" }
           it { should have_content('1 error') }
-          it { should have_selector('h2', text: "Create New Site") }
+          it { should have_selector('h2', text: "New Research Site") }
         end
       end
 
@@ -106,7 +106,7 @@ RSpec.describe "Site", type: :feature do
           before { click_button "Submit" }
           it { should have_content('1 error') }
           it { should have_content('This name already exists') }
-          it { should have_selector('h2', text: "Create New Site") }
+          it { should have_selector('h2', text: "New Research Site") }
         end
       end
 
@@ -127,15 +127,15 @@ RSpec.describe "Site", type: :feature do
         describe "should return an error and revert back" do
           before { click_button "Submit" }
           it { should have_content('1 error') }
-          it { should have_selector('h2', text: "Create New Site") }
+          it { should have_selector('h2', text: "New Research Site") }
         end
       end
 
 
       describe "with valid information" do
         before do
-          fill_in 'site_name'  , with: 'a site name'
-          fill_in 'site_suburb'  , with: 'a site suburb'
+          fill_in 'site_name'  , with: 'a research site name'
+          fill_in 'site_suburb'  , with: 'a research site suburb'
           fill_in 'site_street', with: 'a street'
           fill_in 'site_comments', with: 'This is a comment'
           fill_in 'site_centre_lat', with: -30.010267
@@ -149,12 +149,12 @@ RSpec.describe "Site", type: :feature do
 
         describe "should revert to site view page with success message" do
           before { click_button "Submit" }
-          it { should have_content('Site created!') }
-          it { should have_title(full_title('Site View')) }
+          it { should have_content('Research Site created!') }
+          it { should have_title(full_title('Research Site View')) }
           it { should have_selector('p', text:"Name") }
           it { should have_selector('p', text:"Suburb") }
-          it { should have_content('a site name') }
-          it { should have_content('a site suburb') }
+          it { should have_content('a research site name') }
+          it { should have_content('a research site suburb') }
           it { should have_content('-30.010267') }
           it { should have_content('150.063728') }
           it { should have_content('150') }
@@ -171,8 +171,8 @@ RSpec.describe "Site", type: :feature do
       end
 
       describe "should be given access to add a new site" do
-        it { should have_title('Species Tracker | New Site') }
-        it { should have_selector('h2', text: "Create New Site") }
+        it { should have_title('Species Tracker | New Research Site') }
+        it { should have_selector('h2', text: "New Research Site") }
         it { should have_content('Name') }
         it { should have_content('Street') }
         it { should have_content('Suburb') }
@@ -184,8 +184,8 @@ RSpec.describe "Site", type: :feature do
 
       describe "with valid information" do
         before do
-          fill_in 'site_name'  , with: 'a site name'
-          fill_in 'site_suburb'  , with: 'a site suburb'
+          fill_in 'site_name'  , with: 'a research site name'
+          fill_in 'site_suburb'  , with: 'a research site suburb'
           fill_in 'site_street', with: 'a street'
           fill_in 'site_comments', with: 'This is a comment'
           fill_in 'site_centre_lat', with: -30.0
@@ -199,12 +199,12 @@ RSpec.describe "Site", type: :feature do
 
         describe "should revert to site view page with success message" do
           before { click_button "Submit" }
-          it { should have_content('Site created!') }
-          it { should have_title(full_title('Site View')) }
+          it { should have_content('Research Site created!') }
+          it { should have_title(full_title('Research Site View')) }
           it { should have_selector('p', text:"Name") }
           it { should have_selector('p', text:"Suburb") }
-          it { should have_content('a site name') }
-          it { should have_content('a site suburb') }
+          it { should have_content('a research site name') }
+          it { should have_content('a research site suburb') }
         end
       end
 

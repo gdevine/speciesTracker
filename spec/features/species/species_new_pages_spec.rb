@@ -40,7 +40,7 @@ RSpec.describe "Species", type: :feature do
 
       describe "should be given access to add a new species" do
         it { should have_title('Species Tracker | New Species') }
-        it { should have_selector('h2', text: "Create New Species") }
+        it { should have_selector('h2', text: "New Species") }
         it { should have_content('Genus') }
         it { should have_content('Species') }
         it { should have_content('Common Name') }
@@ -55,7 +55,7 @@ RSpec.describe "Species", type: :feature do
         describe "should return an error and revert back" do
           before { click_button "Submit" }
           it { should have_content('2 errors') }
-          it { should have_selector('h2', text: "Create New Species") }
+          it { should have_selector('h2', text: "New Species") }
         end
       end
 
@@ -75,7 +75,7 @@ RSpec.describe "Species", type: :feature do
         describe "should return an error and revert back" do
           before { click_button "Submit" }
           it { should have_content('1 error') }
-          it { should have_selector('h2', text: "Create New Species") }
+          it { should have_selector('h2', text: "New Species") }
         end
       end
 
@@ -102,7 +102,7 @@ RSpec.describe "Species", type: :feature do
           before { click_button "Submit" }
           it { should have_content('1 error') }
           it { should have_content('This genus-species already exists') }
-          it { should have_selector('h2', text: "Create New Species") }
+          it { should have_selector('h2', text: "New Species") }
         end
       end
 

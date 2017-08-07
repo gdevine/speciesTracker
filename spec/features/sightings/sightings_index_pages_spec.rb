@@ -45,7 +45,7 @@ RSpec.describe "Sighting", type: :feature do
           visit sightings_path
         end
 
-        it { should have_content('Site') }
+        it { should have_content('Research Site') }
         it { should have_content('Species') }
         it { should have_content('Date/Time of Sighting') }
         it { should have_link('View Map Mode') }
@@ -88,7 +88,7 @@ RSpec.describe "Sighting", type: :feature do
           visit sightings_path
         end
 
-        it { should have_content('Site') }
+        it { should have_content('Research Site') }
         it { should have_content('Species') }
         it { should have_content('Date/Time of Sighting') }
         it { should have_link('View Map Mode') }
@@ -132,7 +132,7 @@ RSpec.describe "Sighting", type: :feature do
           visit sightings_path
         end
 
-        it { should have_content('Site') }
+        it { should have_content('Research Site') }
         it { should have_content('Species') }
         it { should have_content('Date/Time of Sighting') }
         it { should have_link('View Map Mode') }

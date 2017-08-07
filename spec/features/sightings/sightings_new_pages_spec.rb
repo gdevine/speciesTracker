@@ -31,9 +31,9 @@ RSpec.describe "Sighting", type: :feature do
 
       describe "should be given access to add a new sighting" do
         it { should have_title('Species Tracker | New Sighting') }
-        it { should have_selector('h2', text: "Create New Sighting") }
+        it { should have_selector('h2', text: "New Sighting") }
         it { should have_content('Species') }
-        it { should have_content('Site') }
+        it { should have_content('Research Site') }
         it { should have_content('Date/Time of Sighting') }
         it { should have_content('Latitude') }
         it { should have_content('Longitude') }
@@ -53,8 +53,8 @@ RSpec.describe "Sighting", type: :feature do
           it { should have_content('2 errors') }
 
           it { should have_content('You must select a Species') }
-          it { should have_content('If a Site is not selected, then a specific latitude/longitude must be given') }
-          it { should have_selector('h2', text: "Create New Sighting") }
+          it { should have_content('If a research site is not selected, then a specific latitude/longitude must be given') }
+          it { should have_selector('h2', text: "New Sighting") }
         end
       end
 
@@ -77,7 +77,7 @@ RSpec.describe "Sighting", type: :feature do
           before { click_button "Submit" }
           it { should have_content('1 error') }
           it { should have_content('You must state when a sighting was made') }
-          it { should have_selector('h2', text: "Create New Sighting") }
+          it { should have_selector('h2', text: "New Sighting") }
         end
       end
 
@@ -100,7 +100,7 @@ RSpec.describe "Sighting", type: :feature do
           before { click_button "Submit" }
           it { should have_content('1 error') }
           it { should have_content('Date/Time of sighting can not be in the future') }
-          it { should have_selector('h2', text: "Create New Sighting") }
+          it { should have_selector('h2', text: "New Sighting") }
         end
       end
 
@@ -123,11 +123,11 @@ RSpec.describe "Sighting", type: :feature do
           before { click_button "Submit" }
           it { should have_content('1 error') }
           it { should have_content("must be less than or equal to 90") }
-          it { should have_selector('h2', text: "Create New Sighting") }
+          it { should have_selector('h2', text: "New Sighting") }
         end
       end
 
-      describe "not providing a site but providing invalid co-ordinates" do
+      describe "not providing a research site but providing invalid co-ordinates" do
         before do
           find('#species').find(:xpath, 'option[2]').select_option
           fill_in 'sighting_datetime_sighted', with: DateTime.new(2014, 07, 11, 20, 10, 0)
@@ -145,11 +145,11 @@ RSpec.describe "Sighting", type: :feature do
           before { click_button "Submit" }
           it { should have_content('1 error') }
           it { should have_content("If providing latitude/longitude, both must be present") }
-          it { should have_selector('h2', text: "Create New Sighting") }
+          it { should have_selector('h2', text: "New Sighting") }
         end
       end
 
-      describe "not providing a site but providing valid co-ordinates" do
+      describe "not providing a research site but providing valid co-ordinates" do
         before do
           find('#species').find(:xpath, 'option[2]').select_option
           find('#sites').find(:xpath, 'option[1]').select_option
@@ -169,7 +169,7 @@ RSpec.describe "Sighting", type: :feature do
           it { should have_content('Sighting created!') }
           it { should have_title(full_title('Sighting View')) }
           it { should have_selector('p', text:"Species") }
-          it { should have_selector('p', text:"Site") }
+          it { should have_selector('p', text:"Research Site") }
           it { should have_content(species.fullname) }
           it { should have_content('None given') }
           it { should have_content('-33.012345') }
@@ -196,7 +196,7 @@ RSpec.describe "Sighting", type: :feature do
           it { should have_content('Sighting created!') }
           it { should have_title(full_title('Sighting View')) }
           it { should have_selector('p', text:"Species") }
-          it { should have_selector('p', text:"Site") }
+          it { should have_selector('p', text:"Research Site") }
           it { should have_content(species.fullname) }
           it { should have_content(site.name) }
           it { should have_content('-30.01234') }
@@ -224,7 +224,7 @@ RSpec.describe "Sighting", type: :feature do
           it { should have_content('Sighting created!') }
           it { should have_title(full_title('Sighting View')) }
           it { should have_selector('p', text:"Species") }
-          it { should have_selector('p', text:"Site") }
+          it { should have_selector('p', text:"Research Site") }
           it { should have_content(species.fullname) }
           it { should have_content(site.name) }
           it { should have_content('-30.01234') }
@@ -247,9 +247,9 @@ RSpec.describe "Sighting", type: :feature do
 
       describe "should be given access to add a new sighting" do
         it { should have_title('Species Tracker | New Sighting') }
-        it { should have_selector('h2', text: "Create New Sighting") }
+        it { should have_selector('h2', text: "New Sighting") }
         it { should have_content('Species') }
-        it { should have_content('Site') }
+        it { should have_content('Research Site') }
         it { should have_content('Date/Time of Sighting') }
         it { should have_content('Latitude') }
         it { should have_content('Longitude') }
@@ -269,7 +269,7 @@ RSpec.describe "Sighting", type: :feature do
           it { should have_content('2 errors') }
 
           it { should have_content('You must select a Species') }
-          it { should have_selector('h2', text: "Create New Sighting") }
+          it { should have_selector('h2', text: "New Sighting") }
         end
       end
 
@@ -292,7 +292,7 @@ RSpec.describe "Sighting", type: :feature do
           before { click_button "Submit" }
           it { should have_content('1 error') }
           it { should have_content('Date/Time of sighting can not be in the future') }
-          it { should have_selector('h2', text: "Create New Sighting") }
+          it { should have_selector('h2', text: "New Sighting") }
         end
       end
 
@@ -315,7 +315,7 @@ RSpec.describe "Sighting", type: :feature do
           before { click_button "Submit" }
           it { should have_content('1 error') }
           it { should have_content("must be less than or equal to 90") }
-          it { should have_selector('h2', text: "Create New Sighting") }
+          it { should have_selector('h2', text: "New Sighting") }
         end
       end
 
@@ -339,7 +339,7 @@ RSpec.describe "Sighting", type: :feature do
           it { should have_content('Sighting created!') }
           it { should have_title(full_title('Sighting View')) }
           it { should have_selector('p', text:"Species") }
-          it { should have_selector('p', text:"Site") }
+          it { should have_selector('p', text:"Research Site") }
           it { should have_content(species.fullname) }
           it { should have_content(superuser.fullname) }
           it { should have_content(site.name) }
@@ -359,9 +359,9 @@ RSpec.describe "Sighting", type: :feature do
 
       describe "should be given access to add a new sighting" do
         it { should have_title('Species Tracker | New Sighting') }
-        it { should have_selector('h2', text: "Create New Sighting") }
+        it { should have_selector('h2', text: "New Sighting") }
         it { should have_content('Species') }
-        it { should have_content('Site') }
+        it { should have_content('Research Site') }
         it { should have_content('Date/Time of Sighting') }
         it { should have_content('Latitude') }
         it { should have_content('Longitude') }
@@ -381,7 +381,7 @@ RSpec.describe "Sighting", type: :feature do
           it { should have_content('2 errors') }
 
           it { should have_content('You must select a Species') }
-          it { should have_selector('h2', text: "Create New Sighting") }
+          it { should have_selector('h2', text: "New Sighting") }
         end
       end
 
@@ -404,7 +404,7 @@ RSpec.describe "Sighting", type: :feature do
           before { click_button "Submit" }
           it { should have_content('1 error') }
           it { should have_content('Date/Time of sighting can not be in the future') }
-          it { should have_selector('h2', text: "Create New Sighting") }
+          it { should have_selector('h2', text: "New Sighting") }
         end
       end
 
@@ -427,7 +427,7 @@ RSpec.describe "Sighting", type: :feature do
           before { click_button "Submit" }
           it { should have_content('1 error') }
           it { should have_content("must be less than or equal to 90") }
-          it { should have_selector('h2', text: "Create New Sighting") }
+          it { should have_selector('h2', text: "New Sighting") }
         end
       end
 
@@ -451,7 +451,7 @@ RSpec.describe "Sighting", type: :feature do
           it { should have_content('Sighting created!') }
           it { should have_title(full_title('Sighting View')) }
           it { should have_selector('p', text:"Species") }
-          it { should have_selector('p', text:"Site") }
+          it { should have_selector('p', text:"Research Site") }
           it { should have_content(species.fullname) }
           it { should have_content(site.name) }
           it { should have_content('-30.012345') }

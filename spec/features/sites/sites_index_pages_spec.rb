@@ -27,9 +27,9 @@ RSpec.describe "Site", type: :feature do
 
         it { should have_title('Sites') }
         it { should_not have_title('| Home') }
-        it { should have_selector('h2', text: "Available Sites") }
+        it { should have_selector('h2', text: "Research Sites") }
         it "should have an information message" do
-          expect(page).to have_content('No Sites found')
+          expect(page).to have_content('No Research Sites found')
         end
         #With no sites neither toggle button should show
         it { should_not have_link('View Map Mode') }
@@ -70,11 +70,11 @@ RSpec.describe "Site", type: :feature do
      describe "with no sites in the system" do
         before { visit sites_path }
 
-        it { should have_title('Sites') }
+        it { should have_title('Research Sites') }
         it { should_not have_title('| Home') }
-        it { should have_selector('h2', text: "Available Sites") }
+        it { should have_selector('h2', text: "Research Sites") }
         it "should have an information message" do
-          expect(page).to have_content('No Sites found')
+          expect(page).to have_content('No Research Sites found')
         end
       end
 
@@ -114,9 +114,9 @@ RSpec.describe "Site", type: :feature do
 
         it { should have_title('Sites') }
         it { should_not have_title('| Home') }
-        it { should have_selector('h2', text: "Available Sites") }
+        it { should have_selector('h2', text: "Research Sites") }
         it "should have an information message" do
-          expect(page).to have_content('No Sites found')
+          expect(page).to have_content('No Research Sites found')
         end
       end
 
@@ -140,7 +140,7 @@ RSpec.describe "Site", type: :feature do
 
         describe "should navigate to correct page on following view link" do
           before { find("a[href='#{site_path(@s1)}']", :visible => false).click }
-          it { should have_selector('h2', text: "Site " + @s1.id.to_s) }
+          it { should have_selector('h2', text: "Research Site " + @s1.id.to_s) }
         end
 
       end
