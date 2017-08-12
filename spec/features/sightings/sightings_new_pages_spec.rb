@@ -38,6 +38,7 @@ RSpec.describe "Sighting", type: :feature do
         it { should have_content('Latitude') }
         it { should have_content('Longitude') }
         it { should have_content('Altitude') }
+        it { should have_content('Dominant Reproductive Stage') }
         it { should have_content('Photo') }
         it { should_not have_content('Sighted by') }
         it { should have_content('Comments') }
@@ -50,9 +51,10 @@ RSpec.describe "Sighting", type: :feature do
 
         describe "should return an error and revert back" do
           before { click_button "Submit" }
-          it { should have_content('2 errors') }
+          it { should have_content('3 errors') }
 
           it { should have_content('You must select a Species') }
+          it { should have_content('You must select a Dominant Reproductive Stage') }
           it { should have_content('If a research site is not selected, then a specific latitude/longitude must be given') }
           it { should have_selector('h2', text: "New Sighting") }
         end
@@ -62,6 +64,7 @@ RSpec.describe "Sighting", type: :feature do
         before do
           find('#species').find(:xpath, 'option[2]').select_option
           find('#sites').find(:xpath, 'option[2]').select_option
+          find('#sighting_dom_reproductive_stage').find(:xpath, 'option[2]').select_option
           fill_in 'sighting_datetime_sighted', with: ''
           fill_in 'sighting_latitude', with: -50.012345
           fill_in 'sighting_longitude', with: 150.012345
@@ -85,6 +88,7 @@ RSpec.describe "Sighting", type: :feature do
         before do
           find('#species').find(:xpath, 'option[2]').select_option
           find('#sites').find(:xpath, 'option[2]').select_option
+          find('#sighting_dom_reproductive_stage').find(:xpath, 'option[2]').select_option
           fill_in 'sighting_datetime_sighted', with: DateTime.new(2018, 12, 11, 20, 10, 0)
           fill_in 'sighting_latitude', with: -50.012345
           fill_in 'sighting_longitude', with: 150.012345
@@ -108,6 +112,7 @@ RSpec.describe "Sighting", type: :feature do
         before do
           find('#species').find(:xpath, 'option[2]').select_option
           find('#sites').find(:xpath, 'option[2]').select_option
+          find('#sighting_dom_reproductive_stage').find(:xpath, 'option[2]').select_option
           fill_in 'sighting_datetime_sighted', with: DateTime.new(2014, 07, 11, 20, 10, 0)
           fill_in 'sighting_latitude', with: 150.012345
           fill_in 'sighting_longitude', with: 150.012345
@@ -130,6 +135,7 @@ RSpec.describe "Sighting", type: :feature do
       describe "not providing a research site but providing invalid co-ordinates" do
         before do
           find('#species').find(:xpath, 'option[2]').select_option
+          find('#sighting_dom_reproductive_stage').find(:xpath, 'option[2]').select_option
           fill_in 'sighting_datetime_sighted', with: DateTime.new(2014, 07, 11, 20, 10, 0)
           fill_in 'sighting_latitude', with: ''
           fill_in 'sighting_longitude', with: 150.012345
@@ -153,6 +159,7 @@ RSpec.describe "Sighting", type: :feature do
         before do
           find('#species').find(:xpath, 'option[2]').select_option
           find('#sites').find(:xpath, 'option[1]').select_option
+          find('#sighting_dom_reproductive_stage').find(:xpath, 'option[2]').select_option
           fill_in 'sighting_datetime_sighted', with: DateTime.new(2014, 07, 11, 20, 10, 0)
           fill_in 'sighting_latitude', with: -33.012345
           fill_in 'sighting_longitude', with: 150.012345
@@ -170,6 +177,7 @@ RSpec.describe "Sighting", type: :feature do
           it { should have_title(full_title('Sighting View')) }
           it { should have_selector('p', text:"Species") }
           it { should have_selector('p', text:"Research Site") }
+          it { should have_selector('p', text:"Dominant Reproductive Stage") }
           it { should have_content(species.fullname) }
           it { should have_content('None given') }
           it { should have_content('-33.012345') }
@@ -181,6 +189,7 @@ RSpec.describe "Sighting", type: :feature do
         before do
           find('#species').find(:xpath, 'option[2]').select_option
           find('#sites').find(:xpath, 'option[2]').select_option
+          find('#sighting_dom_reproductive_stage').find(:xpath, 'option[2]').select_option
           fill_in 'sighting_datetime_sighted', with: DateTime.new(2014, 07, 11, 20, 10, 0)
           fill_in 'sighting_latitude', with: -30.012345
           fill_in 'sighting_longitude', with: 150.012345
@@ -197,6 +206,7 @@ RSpec.describe "Sighting", type: :feature do
           it { should have_title(full_title('Sighting View')) }
           it { should have_selector('p', text:"Species") }
           it { should have_selector('p', text:"Research Site") }
+          it { should have_selector('p', text:"Dominant Reproductive Stage") }
           it { should have_content(species.fullname) }
           it { should have_content(site.name) }
           it { should have_content('-30.01234') }
@@ -204,10 +214,34 @@ RSpec.describe "Sighting", type: :feature do
         end
       end
 
+      describe "with no answer given for 'dominant reproductive stage'" do
+        before do
+          find('#species').find(:xpath, 'option[2]').select_option
+          find('#sites').find(:xpath, 'option[2]').select_option
+          fill_in 'sighting_datetime_sighted', with: DateTime.new(2014, 07, 11, 20, 10, 0)
+          fill_in 'sighting_latitude', with: -30.012345
+          fill_in 'sighting_longitude', with: 150.012345
+          fill_in 'sighting_altitude', with: 150
+          attach_file "sighting_photo", Rails.root.join("db/seed_photos/ST_Plant1.jpg")
+        end
+
+        it "should not create a Sighting" do
+          expect{ click_button "Submit" }.to change{Sighting.count}.by(0)
+        end
+
+        describe "should return an error and revert back" do
+          before { click_button "Submit" }
+          it { should have_content('1 error') }
+          it { should have_content("You must select a Dominant Reproductive Stage") }
+          it { should have_selector('h2', text: "New Sighting") }
+        end
+      end
+
       describe "with fully valid information" do
         before do
           find('#species').find(:xpath, 'option[2]').select_option
           find('#sites').find(:xpath, 'option[2]').select_option
+          find('#sighting_dom_reproductive_stage').find(:xpath, 'option[2]').select_option
           fill_in 'sighting_datetime_sighted', with: DateTime.new(2014, 07, 11, 20, 10, 0)
           fill_in 'sighting_latitude', with: -30.012345
           fill_in 'sighting_longitude', with: 150.012345
@@ -225,6 +259,7 @@ RSpec.describe "Sighting", type: :feature do
           it { should have_title(full_title('Sighting View')) }
           it { should have_selector('p', text:"Species") }
           it { should have_selector('p', text:"Research Site") }
+          it { should have_selector('p', text:"Dominant Reproductive Stage") }
           it { should have_content(species.fullname) }
           it { should have_content(site.name) }
           it { should have_content('-30.01234') }
@@ -254,6 +289,7 @@ RSpec.describe "Sighting", type: :feature do
         it { should have_content('Latitude') }
         it { should have_content('Longitude') }
         it { should have_content('Altitude') }
+        it { should have_content('Dominant Reproductive Stage') }
         it { should have_content('Sighted by') }
         it { should have_content('Comments') }
         it { should have_content('Photo') }
@@ -266,7 +302,7 @@ RSpec.describe "Sighting", type: :feature do
 
         describe "should return an error and revert back" do
           before { click_button "Submit" }
-          it { should have_content('2 errors') }
+          it { should have_content('3 errors') }
 
           it { should have_content('You must select a Species') }
           it { should have_selector('h2', text: "New Sighting") }
@@ -277,6 +313,7 @@ RSpec.describe "Sighting", type: :feature do
         before do
           find('#species').find(:xpath, 'option[2]').select_option
           find('#sites').find(:xpath, 'option[2]').select_option
+          find('#sighting_dom_reproductive_stage').find(:xpath, 'option[2]').select_option
           fill_in 'sighting_datetime_sighted', with: DateTime.new(2018, 12, 11, 20, 10, 0)
           fill_in 'sighting_latitude', with: -50.0
           fill_in 'sighting_longitude', with: 150.0
@@ -300,6 +337,7 @@ RSpec.describe "Sighting", type: :feature do
         before do
           find('#species').find(:xpath, 'option[2]').select_option
           find('#sites').find(:xpath, 'option[2]').select_option
+          find('#sighting_dom_reproductive_stage').find(:xpath, 'option[2]').select_option
           fill_in 'sighting_datetime_sighted', with: DateTime.new(2014, 07, 11, 20, 10, 0)
           fill_in 'sighting_latitude', with: 150.0
           fill_in 'sighting_longitude', with: 150.0
@@ -323,6 +361,7 @@ RSpec.describe "Sighting", type: :feature do
         before do
           find('#species').find(:xpath, 'option[2]').select_option
           find('#sites').find(:xpath, 'option[2]').select_option
+          find('#sighting_dom_reproductive_stage').find(:xpath, 'option[2]').select_option
           fill_in 'sighting_datetime_sighted', with: DateTime.new(2014, 07, 11, 20, 10, 0)
           fill_in 'sighting_latitude', with: -30.012345
           fill_in 'sighting_longitude', with: 150.012345
@@ -340,6 +379,7 @@ RSpec.describe "Sighting", type: :feature do
           it { should have_title(full_title('Sighting View')) }
           it { should have_selector('p', text:"Species") }
           it { should have_selector('p', text:"Research Site") }
+          it { should have_selector('p', text:"Dominant Reproductive Stage") }
           it { should have_content(species.fullname) }
           it { should have_content(superuser.fullname) }
           it { should have_content(site.name) }
@@ -363,6 +403,7 @@ RSpec.describe "Sighting", type: :feature do
         it { should have_content('Species') }
         it { should have_content('Research Site') }
         it { should have_content('Date/Time of Sighting') }
+        it { should have_content('Dominant Reproductive Stage') }
         it { should have_content('Latitude') }
         it { should have_content('Longitude') }
         it { should have_content('Altitude') }
@@ -378,9 +419,10 @@ RSpec.describe "Sighting", type: :feature do
 
         describe "should return an error and revert back" do
           before { click_button "Submit" }
-          it { should have_content('2 errors') }
+          it { should have_content('3 errors') }
 
           it { should have_content('You must select a Species') }
+          it { should have_content('You must select a Dominant Reproductive Stage') }
           it { should have_selector('h2', text: "New Sighting") }
         end
       end
@@ -389,6 +431,7 @@ RSpec.describe "Sighting", type: :feature do
         before do
           find('#species').find(:xpath, 'option[2]').select_option
           find('#sites').find(:xpath, 'option[2]').select_option
+          find('#sighting_dom_reproductive_stage').find(:xpath, 'option[2]').select_option
           fill_in 'sighting_datetime_sighted', with: DateTime.new(2018, 12, 11, 20, 10, 0)
           fill_in 'sighting_latitude', with: -50.0
           fill_in 'sighting_longitude', with: 150.0
@@ -412,6 +455,7 @@ RSpec.describe "Sighting", type: :feature do
         before do
           find('#species').find(:xpath, 'option[2]').select_option
           find('#sites').find(:xpath, 'option[2]').select_option
+          find('#sighting_dom_reproductive_stage').find(:xpath, 'option[2]').select_option
           fill_in 'sighting_datetime_sighted', with: DateTime.new(2014, 07, 11, 20, 10, 0)
           fill_in 'sighting_latitude', with: 150.0
           fill_in 'sighting_longitude', with: 150.0
@@ -435,6 +479,7 @@ RSpec.describe "Sighting", type: :feature do
         before do
           find('#species').find(:xpath, 'option[2]').select_option
           find('#sites').find(:xpath, 'option[2]').select_option
+          find('#sighting_dom_reproductive_stage').find(:xpath, 'option[2]').select_option
           fill_in 'sighting_datetime_sighted', with: DateTime.new(2014, 07, 11, 20, 10, 0)
           fill_in 'sighting_latitude', with: -30.012345
           fill_in 'sighting_longitude', with: 150.012345
@@ -452,6 +497,7 @@ RSpec.describe "Sighting", type: :feature do
           it { should have_title(full_title('Sighting View')) }
           it { should have_selector('p', text:"Species") }
           it { should have_selector('p', text:"Research Site") }
+          it { should have_selector('p', text:"Dominant Reproductive Stage") }
           it { should have_content(species.fullname) }
           it { should have_content(site.name) }
           it { should have_content('-30.012345') }

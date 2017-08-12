@@ -25,7 +25,6 @@
 <%= form_for @sighting, :html => {:class => "form-horizontal", :multipart => true} do |f| %>
   <%= render 'shared/error_messages', object: f.object %>
 
-
   <div class="form-group topspace50">
     <%= f.label :species_id, 'Species *', :class => "col-md-2 col-md-offset-1 control-label" %>
     <div class="col-md-6">
@@ -119,25 +118,9 @@
 
 
   <div class="form-group">
-    <%= f.label :plant_ages_seen, 'Plant Ages Seen', :class => "col-md-2 col-md-offset-1 control-label" %>
+    <%= f.label :dom_reproductive_stage, 'Dominant Reproductive Stage *', :class => "col-md-2 col-md-offset-1 control-label" %>
     <div class="col-md-6">
-      <%= f.select(:plant_ages_seen, Settings.plant_ages_seen, {:include_blank => true}, {:class => "form-control"}) %>
-    </div>
-  </div>
-
-
-  <div class="form-group">
-    <%= f.label :dom_flower_stage, 'Dominant Flower Stage', :class => "col-md-2 col-md-offset-1 control-label" %>
-    <div class="col-md-6">
-      <%= f.select(:dom_flower_stage, Settings.dom_flower_stage, {:include_blank => true}, {:class => "form-control"}) %>
-    </div>
-  </div>
-
-
-  <div class="form-group">
-    <%= f.label :dom_pod_stage, 'Dominant Pod Stage', :class => "col-md-2 col-md-offset-1 control-label" %>
-    <div class="col-md-6">
-      <%= f.select(:dom_pod_stage, Settings.dom_pod_stage, {:include_blank => true}, {:class => "form-control"}) %>
+      <%= f.select(:dom_reproductive_stage, Settings.dom_reproductive_stage, {:include_blank => true}, {:class => "form-control"}) %>
     </div>
   </div>
 

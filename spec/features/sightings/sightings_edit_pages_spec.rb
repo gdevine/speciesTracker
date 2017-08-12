@@ -56,6 +56,7 @@ RSpec.describe "Sighting", type: :feature do
         it { should have_content('Latitude') }
         it { should have_content('Longitude') }
         it { should have_content('Altitude') }
+        it { should have_content('Dominant Reproductive Stage') }
         it { should_not have_content('Sighted by') }
         it { should have_content('Comments') }
         it { should have_select('species', selected: @sighting.species.fullname) }
@@ -85,6 +86,23 @@ RSpec.describe "Sighting", type: :feature do
         describe "should return an error and revert back" do
           before { click_button "Update" }
           it { should have_content('1 error') }
+          it { should have_selector('h2', text: "Edit Sighting "+@sighting.id.to_s) }
+        end
+      end
+
+      describe "providing empty dominating reproductive stage information" do
+        before do
+          find('#sighting_dom_reproductive_stage').find(:xpath, 'option[1]').select_option
+        end
+
+        it "should not change number of sightings" do
+          expect{ click_button "Update" }.to change{Sighting.count}.by(0)
+        end
+
+        describe "should return an error and revert back" do
+          before { click_button "Update" }
+          it { should have_content('1 error') }
+          it { should have_content("You must select a Dominant Reproductive Stage") }
           it { should have_selector('h2', text: "Edit Sighting "+@sighting.id.to_s) }
         end
       end
@@ -173,6 +191,7 @@ RSpec.describe "Sighting", type: :feature do
         it { should have_content('Latitude') }
         it { should have_content('Longitude') }
         it { should have_content('Altitude') }
+        it { should have_content('Dominant Reproductive Stage') }
         it { should have_content('Sighted by') }
         it { should have_content('Comments') }
         it { should have_select('species', selected: @sighting.species.fullname) }
@@ -205,6 +224,24 @@ RSpec.describe "Sighting", type: :feature do
           it { should have_selector('h2', text: "Edit Sighting "+@sighting.id.to_s) }
         end
       end
+
+      describe "with no answer given for 'dominant reproductive stage'" do
+        before do
+          find('#sighting_dom_reproductive_stage').find(:xpath, 'option[1]').select_option
+        end
+
+        it "should not create a Sighting" do
+          expect{ click_button "Update" }.to change{Sighting.count}.by(0)
+        end
+
+        describe "should return an error and revert back" do
+          before { click_button "Update" }
+          it { should have_content('1 error') }
+          it { should have_content("You must select a Dominant Reproductive Stage") }
+          it { should have_selector('h2', text: "Edit Sighting") }
+        end
+      end
+
 
       describe "with invalid co-ordinate information" do
         before do
@@ -260,6 +297,7 @@ RSpec.describe "Sighting", type: :feature do
         it { should have_content('Latitude') }
         it { should have_content('Longitude') }
         it { should have_content('Altitude') }
+        it { should have_content('Dominant Reproductive Stage') }
         it { should have_content('Sighted by') }
         it { should have_content('Comments') }
         it { should have_select('species', selected: @sighting.species.fullname) }

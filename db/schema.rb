@@ -56,15 +56,13 @@ ActiveRecord::Schema.define(version: 20150520063116) do
     t.text     "comments"
     t.integer  "spotter_id"
     t.integer  "creator_id"
-    t.datetime "created_at",         null: false
-    t.datetime "updated_at",         null: false
+    t.datetime "created_at",             null: false
+    t.datetime "updated_at",             null: false
     t.string   "photo_file_name"
     t.string   "photo_content_type"
     t.integer  "photo_file_size"
     t.datetime "photo_updated_at"
-    t.string   "plant_ages_seen"
-    t.string   "dom_flower_stage"
-    t.string   "dom_pod_stage"
+    t.string   "dom_reproductive_stage"
     t.string   "healthy_flowers"
     t.string   "healthy_pods"
     t.integer  "adult_abundance"

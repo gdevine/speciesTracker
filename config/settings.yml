@@ -1,20 +1,12 @@
-plant_ages_seen:
-  - Seed
-  - Juvenile
-  - Adult
-  
-dom_flower_stage:
-  - None seen
-  - Bud
-  - Open
-  - Old                                                                                                                                                                                                                
+dom_reproductive_stage:
+  - None Seen
+  - Floral Bud
+  - Open Flower
+  - Old Flower
+  - Immature Pod
+  - Ripe Pod
+  - Old Pod
 
-dom_pod_stage:
-  - None seen
-  - Unripe
-  - Ripe
-  - Open
-  
 healthy_flowers:
   - 0%
   - 25%

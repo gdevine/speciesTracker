@@ -27,6 +27,7 @@ class Sighting < ActiveRecord::Base
   validates :species_id, :presence => { :message => "You must select a Species" }
   validates :creator_id, presence: true
   validates :spotter_id, presence: true
+  validates :dom_reproductive_stage, :presence => { :message => "You must select a Dominant Reproductive Stage" }
   validates :datetime_sighted, :presence => { :message => "You must state when a sighting was made" }
 
   validates :latitude, :numericality => { :greater_than_or_equal_to => -90.0, :less_than_or_equal_to => 90 }, :allow_nil => true
@@ -45,6 +46,7 @@ class Sighting < ActiveRecord::Base
   validate :validate_spotter_id
   validate :validate_creator_id
   validate :creator_spotter_same_if_user
+  validate :valid_dom_reproductive_stage
   validate :date_is_date?
 
 
@@ -105,6 +107,14 @@ class Sighting < ActiveRecord::Base
     if !self.creator_id.nil? && User.exists?(self.creator_id) && !self.spotter_id.nil? && User.exists?(self.spotter_id)
       if self.creator.role == "user"
         errors.add(:base, "A creator can not be different to spotter when creator is user") if self.creator != self.spotter
+      end
+    end
+  end
+
+  def valid_dom_reproductive_stage
+    if !self.dom_reproductive_stage.blank?
+      if !Settings.dom_reproductive_stage.include?(self.dom_reproductive_stage)
+        errors.add(:base, "This is not a valid choice for Dominant Reproductive Stage")
       end
     end
   end
