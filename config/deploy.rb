@@ -6,18 +6,18 @@ set :repository,  "git@github.com:gdevine/speciesTracker.git"
 set :deploy_to, "/var/www/html/speciestracker"
 set :scm, :git
 set :branch, "master"
-set :user, "30036712"
-set :group, "deployers"
-set :use_sudo, false
+set :user, "gerry"
+set :group, "gerry"
+set :use_sudo, true
 set :rails_env, "production"
 set :deploy_via, :copy
 set :ssh_options, { :forward_agent => true}
 set :keep_releases, 5
 default_run_options[:pty] = true
-server "u0177.uws.edu.au", :app, :web, :db, :primary => true
+server "http://137.92.56.23", :app, :web, :db, :primary => true
 
 namespace :deploy do
-  
+
   #
   # Make a symbolic link to where database.yml is stored
   #
