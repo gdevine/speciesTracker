@@ -35,6 +35,8 @@ group :development do
   gem 'debase'
   gem 'ruby-debug-ide'
   gem 'web-console'
+  gem 'capistrano', '~> 3.6'
+  gem 'capistrano-rails', '~> 1.3'
 end
 
 group :development, :test do
@@ -43,7 +45,7 @@ group :development, :test do
   gem 'database_cleaner'
   gem 'byebug'
   gem 'spring'
-  gem 'capistrano'
+  # gem 'capistrano'
 end
 
 group :test do

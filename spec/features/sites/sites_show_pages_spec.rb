@@ -33,12 +33,22 @@ RSpec.describe "Site", type: :feature do
         it { should have_title('Research Site View') }
         it { should have_selector('h2', text: "Research Site " + @site.id.to_s) }
         it { should_not have_title('| Home') }
+
         it { should have_content('Name') }
-        it { should have_content('Street') }
-        it { should have_content('Suburb') }
-        it { should have_content('Comments') }
         it { should have_content(@site.name) }
+
+        it { should have_content('Street') }
+        it { should have_content(@site.street) }
+
+        it { should have_content('Suburb') }
         it { should have_content(@site.suburb) }
+
+        it { should have_content('Comments') }
+        it { should have_content(@site.comments) }
+
+        it { should have_content('Number of Sightings') }
+        it { should have_css("p#sightings_count", text: @site.sightings.count)}
+
         let!(:centrelat) { "%10.6f" % @site.centre_lat }
         let!(:centrelon) { "%10.6f" % @site.centre_lon }
         let!(:centrealt) { "%3.1f" % @site.centre_alt }
@@ -60,13 +70,21 @@ RSpec.describe "Site", type: :feature do
         end
         it { should have_title('Research Site View') }
         it { should have_selector('h2', text: "Research Site " + @site.id.to_s) }
-        it { should_not have_title('| Home') }
+
         it { should have_content('Name') }
-        it { should have_content('Street') }
-        it { should have_content('Suburb') }
-        it { should have_content('Comments') }
         it { should have_content(@site.name) }
+
+        it { should have_content('Street') }
+        it { should have_content(@site.street) }
+
+        it { should have_content('Suburb') }
         it { should have_content(@site.suburb) }
+
+        it { should have_content('Comments') }
+        it { should have_content(@site.comments) }
+
+        it { should have_content('Number of Sightings') }
+        it { should have_css("p#sightings_count", text: @site.sightings.count)}
         let!(:centrelat) { "%10.6f" % @site.centre_lat }
         let!(:centrelon) { "%10.6f" % @site.centre_lon }
         let!(:centrealt) { "%3.1f" % @site.centre_alt }
@@ -113,12 +131,22 @@ RSpec.describe "Site", type: :feature do
         it { should have_title('Research Site View') }
         it { should have_selector('h2', text: "Research Site " + @site.id.to_s) }
         it { should_not have_title('| Home') }
+
         it { should have_content('Name') }
-        it { should have_content('Street') }
-        it { should have_content('Suburb') }
-        it { should have_content('Comments') }
         it { should have_content(@site.name) }
+
+        it { should have_content('Street') }
+        it { should have_content(@site.street) }
+
+        it { should have_content('Suburb') }
         it { should have_content(@site.suburb) }
+
+        it { should have_content('Comments') }
+        it { should have_content(@site.comments) }
+
+        it { should have_content('Number of Sightings') }
+        it { should have_css("p#sightings_count", text: @site.sightings.count)}
+
         let!(:centrelat) { "%10.6f" % @site.centre_lat }
         let!(:centrelon) { "%10.6f" % @site.centre_lon }
         let!(:centrealt) { "%3.1f" % @site.centre_alt }

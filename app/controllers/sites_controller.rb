@@ -33,6 +33,7 @@ class SitesController < ApplicationController
   end
 
   def show
+    @sightings_count = @site.sightings.count
     @hash = Gmaps4rails.build_markers(@site) do |site, marker|
       marker.lat @site.centre_lat
       marker.lng @site.centre_lon
