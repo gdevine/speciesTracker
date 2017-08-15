@@ -1,20 +1,20 @@
 # require 'rvm/capistrano'
 # require 'bundler/capistrano'
 
-set :application, "SpeciesTracker"
+set :application, "speciesTracker"
 set :repository,  "git@github.com:gdevine/speciesTracker.git"
 set :deploy_to, "/var/www/html/speciestracker"
 set :scm, :git
 set :branch, "master"
-set :user, "gerry"
-set :group, "gerry"
-set :use_sudo, true
+set :user, "deploy"
+set :group, "deploy"
+set :use_sudo, false
 set :rails_env, "production"
 set :deploy_via, :copy
 set :ssh_options, { :forward_agent => true}
 set :keep_releases, 5
 default_run_options[:pty] = true
-server "http://137.92.56.23", :app, :web, :db, :primary => true
+server "137.92.56.23", :app, :web, :db, :primary => true
 
 namespace :deploy do
 
