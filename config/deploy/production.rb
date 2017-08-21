@@ -59,3 +59,10 @@
 #     auth_methods: %w(publickey password)
 #     # password: 'please use keys'
 #   }
+
+
+set :stage, :production
+set :rails_env, :production
+set :branch, "master"
+
+server "137.92.56.23", user: "deploy", roles: %w{app db web}
