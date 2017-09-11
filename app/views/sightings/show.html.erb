@@ -9,8 +9,12 @@
       handler.getMap().setZoom(9);
     });
   </script>
-  <script type="text/javascript">
+  <script>
+  </script>
+  <script>
+    $(document).ready(function() {
       $("a.fancybox").fancybox();
+    });
   </script>
 <% end %>
 
@@ -156,7 +160,7 @@
   <!--  Photo -->
   <div class="col-md-3 topspace20 center">
 	  <% if @sighting.photo.file? %>
-	    <%= link_to image_tag(@sighting.photo.url(:medium), class:"img-fluid"), image_path(@sighting.photo.url(:large)), class:"fancybox img-thumbnail" %>
+	    <%= link_to image_tag(@sighting.photo.url(:medium)), image_path(@sighting.photo.url(:large)), class:"img-thumbnail fancybox" %>
     <% else %>
 	    <%= image_tag("no_image.gif", size: "200x200", alt: "No Image Available") %>
     <% end %>
@@ -182,7 +186,3 @@
 		</div>
   </div>
 </div>
-
-<script type="text/javascript">
-
-</script>

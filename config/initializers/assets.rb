@@ -13,3 +13,6 @@ Rails.application.config.assets.version = '1.0'
 # %w( sites, species, sightings ).each do |controller|
   # Rails.application.config.assets.precompile += ["#{controller}.js.coffee", "#{controller}.css.scss"]
 # end
+
+# Rails.application.config.assets.precompile << /\.(?:svg|eot|woff|ttf)\z/
+

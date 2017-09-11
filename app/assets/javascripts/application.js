@@ -12,6 +12,7 @@
 //
 //= require turbolinks
 //= require jquery
+//= require fancybox
 //= require jquery_ujs
 //= require bootstrap
 //= require dataTables/jquery.dataTables
@@ -22,5 +23,4 @@
 //= require moment
 //= require bootstrap-datetimepicker
 //= require geolocation
-//= require fancybox
 //= require jasny-bootstrap
