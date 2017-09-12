@@ -228,9 +228,10 @@ background-color: rgba(200,220,255,0.2); // I don't know the .well color, so I u
 
 /* dashboard button border */
 
-#dashboard_button {
-  border: 1px solid;
-  border-color: #67a4fe;
+#toggleButton {
+  border-width: 3px;
+  border-color: #FFF;
+  border-radius: 10px;
 }
 
 
