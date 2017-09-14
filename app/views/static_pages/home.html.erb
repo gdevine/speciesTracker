@@ -1,14 +1,14 @@
 <% provide(:title, 'Home') %>
-<% provide(:pageheading, "Species Tracker") %>
+<% provide(:pageheading, "PEAS Tracker") %>
 
 <% if user_signed_in? %>
 	<div class="center hero-unit">
-
     <div class="row topspace50">
-    	<div class="col-md-6">
-        <div class="col-md-12">
-          Welcome to Species Tracker
-        </div>
+      <div class="col-md-12">
+        <p style="text-align: justify;">The PEAS Citizen Science project enables people from all walks of life to contribute their
+          valuable observations to climate change science, and importantly provides a mechanism for scientists to
+          engage with the public to develop an understanding of broader issues and applications.
+        </p>
       </div>
     </div>
   </div>
@@ -20,15 +20,18 @@
     <div class="row topspace50">
       <div class="col-md-6">
         <div class="col-md-12">
-          Welcome to Species Tracker
+          <p style="text-align: justify;">The PEAS Citizen Science project enables people from all walks of life to contribute their
+            valuable observations to climate change science, and importantly provides a mechanism for scientists to
+            engage with the public to develop an understanding of broader issues and applications.
+          </p>
         </div>
       </div>
 
       <div class="col-md-6">
-        <div class="col-md-6 col-md-offset-2 topspace20">
+        <div class="col-md-6 col-md-offset-3 topspace20">
           <%= link_to "Register", new_user_registration_path, class: "btn btn-large btn-block btn-primary" %>
         </div>
-        <div class="col-md-6 col-md-offset-2 topspace20">
+        <div class="col-md-6 col-md-offset-3 topspace20">
           <%= link_to "Sign in", new_user_session_path, class: "btn btn-large btn-block btn-default" %>
         </div>
       </div>

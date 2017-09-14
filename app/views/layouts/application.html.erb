@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Species tracker at Hawkesbury Institute for the Environment" />
+    <meta name="description" content="Peas tracker at Hawkesbury Institute for the Environment" />
     <title><%= full_title(yield(:title)) %></title>
     <%= stylesheet_link_tag "application", media: "all", "data-turbolinks-track" => true %>
     <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
@@ -36,6 +36,9 @@
     </div>
 
     <%= yield :page_scripts %>
+    <script>
+      $('.dropdown').dropdown();
+    </script>
     <script>
       $('.dropdown-toggle').dropdown();
     </script>

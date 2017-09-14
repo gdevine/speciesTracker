@@ -2,14 +2,14 @@
   <%= render 'shared/error_messages', object: f.object %>
 
   <div class="form-group topspace20">
-    <%= f.label :species_id, "<i class='glyphicon glyphicon-info-sign' data-toggle='tooltip' data-placement='auto' data-original-title='Help text for filling out Species'></i> Species *".html_safe, :class => "col-md-3 control-label" %>
+    <%= f.label :species_id, "<i class='glyphicon glyphicon-info-sign' data-toggle='tooltip' data-placement='auto' data-original-title='Record the species name. Type the genus and species to select from the list of known species in the research sites. If the species is not on the list or you are not sure of the species name, select “NOT LISTED”, upload a photo and add a comment.'></i> Species *".html_safe, :class => "col-md-3 control-label" %>
     <div class="col-md-6">
       <%= collection_select(:sighting, :species_id, Species.all, :id, :fullname, {include_blank: 'None selected'}, {:class=>"form-control multiselect", :id=>'species', :multiple=> false} ) %>
     </div>
   </div>
 
   <div class="form-group">
-    <%= f.label :datetime_sighted, "<i class='glyphicon glyphicon-info-sign' data-toggle='tooltip' data-placement='auto' data-original-title='Help text for filling out Date/Time'></i> Date/Time of Sighting *".html_safe, :class => "col-md-3 control-label" %>
+    <%= f.label :datetime_sighted, "<i class='glyphicon glyphicon-info-sign' data-toggle='tooltip' data-placement='auto' data-original-title='Default is the time of entry. If the sighting was made prior to the entry time you can select the date/time corresponding to the sighting'></i> Date/Time of Sighting *".html_safe, :class => "col-md-3 control-label" %>
     <div class="col-md-6">
     	<% if mobile_device? %>
         <%= f.datetime_local_field :datetime_sighted, :class => "form-control" %>
@@ -21,7 +21,7 @@
 
   <% if current_user.role != 'user' %>
     <div class="form-group">
-    <%= f.label :spotter_id, "<i class='glyphicon glyphicon-info-sign' data-toggle='tooltip' data-placement='auto' data-original-title='Help text for filling out Spotter'></i> Sighted by *".html_safe, :class => "col-md-3 control-label" %>
+    <%= f.label :spotter_id, "<i class='glyphicon glyphicon-info-sign' data-toggle='tooltip' data-placement='auto' data-original-title='Person making the entry'></i> Sighted by *".html_safe, :class => "col-md-3 control-label" %>
       <div class="col-md-6">
         <%= collection_select(:sighting, :spotter_id, User.all, :id, :fullname, {:selected => current_user.id}, {:class=>"form-control multiselect", :id=>'spotters', :multiple=> false} ) %>
       </div>
@@ -29,7 +29,7 @@
   <% end %>
 
   <div class="form-group">
-    <%= f.label :site_id, "<i class='glyphicon glyphicon-info-sign' data-toggle='tooltip' data-placement='auto' data-original-title='Help text for filling out Research Site'></i> Research Site *".html_safe, :class => "col-md-3 control-label" %>
+    <%= f.label :site_id, "<i class='glyphicon glyphicon-info-sign' data-toggle='tooltip' data-placement='auto' data-original-title='Research sites are locations that researchers have established vegetation plots, log climate and study native plants and animals. The sites include the Biodiversity and Adaptation Transect Sydney (BATS) and Phenology Ecology Adaptation Science (PEAS). If the observation is associated with a known research site select from the list. If not “Add Specific Location” and “Get My Location” while making the sighting or enter the latitude longitude manually.'></i> Research Site *".html_safe, :class => "col-md-3 control-label" %>
     <div class="col-md-6">
       <%= collection_select(:sighting, :site_id, Site.all, :id, :listname, {include_blank: 'None selected'}, {:class=>"form-control multiselect", :id=>'sites', :multiple=> false} ) %>
     </div>
@@ -82,7 +82,7 @@
   </div>
 
   <div class="form-group">
-    <%= f.label :dom_reproductive_stage, "<i class='glyphicon glyphicon-info-sign' data-toggle='tooltip' data-placement='auto' data-original-title='Help text for filling out Dominant Reproductive Stage'></i> Dominant Reproductive Stage *".html_safe, :class => "col-md-3 control-label" %>
+    <%= f.label :dom_reproductive_stage, "<i class='glyphicon glyphicon-info-sign' data-toggle='tooltip' data-placement='auto' data-original-title='Help text'></i> Dominant Reproductive Stage *".html_safe, :class => "col-md-3 control-label" %>
     <div class="col-md-6">
       <%= f.select(:dom_reproductive_stage, Settings.dom_reproductive_stage, {:include_blank => true}, {:class => "form-control"}) %>
     </div>
@@ -90,7 +90,7 @@
 
 
   <div class="form-group">
-    <%= f.label :healthy_flowers, "<i class='glyphicon glyphicon-info-sign' data-toggle='tooltip' data-placement='auto' data-original-title='Help text for filling out Healthy Flowers'></i> Healthy Flowers".html_safe, :class => "col-md-3 control-label" %>
+    <%= f.label :healthy_flowers, "<i class='glyphicon glyphicon-info-sign' data-toggle='tooltip' data-placement='auto' data-original-title='Help text'></i> Healthy Flowers".html_safe, :class => "col-md-3 control-label" %>
     <div class="col-md-6">
       <%= f.select(:healthy_flowers, Settings.healthy_flowers, {:include_blank => true}, {:class => "form-control"}) %>
     </div>
@@ -98,7 +98,7 @@
 
 
   <div class="form-group">
-    <%= f.label :healthy_pods, "<i class='glyphicon glyphicon-info-sign' data-toggle='tooltip' data-placement='auto' data-original-title='Help text for filling out Healthy Pods'></i> Healthy Pods".html_safe, :class => "col-md-3 control-label" %>
+    <%= f.label :healthy_pods, "<i class='glyphicon glyphicon-info-sign' data-toggle='tooltip' data-placement='auto' data-original-title='Help text'></i> Healthy Pods".html_safe, :class => "col-md-3 control-label" %>
     <div class="col-md-6">
       <%= f.select(:healthy_pods, Settings.healthy_pods, {:include_blank => true}, {:class => "form-control"}) %>
     </div>
@@ -106,7 +106,7 @@
 
 
   <div class="form-group">
-    <%= f.label :adult_abundance, "<i class='glyphicon glyphicon-info-sign' data-toggle='tooltip' data-placement='auto' data-original-title='Help text for filling out Adult Abundance'></i> Adult Abundance".html_safe, :class => "col-md-3 control-label" %>
+    <%= f.label :adult_abundance, "<i class='glyphicon glyphicon-info-sign' data-toggle='tooltip' data-placement='auto' data-original-title='Enter the number of plants observed'></i> Adult Abundance".html_safe, :class => "col-md-3 control-label" %>
 	  <div class="col-md-6">
 	    <%= f.number_field :adult_abundance, :min => 0, :max => 1000, :class => "form-control" %>
 	  </div>

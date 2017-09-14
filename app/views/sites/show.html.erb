@@ -25,7 +25,7 @@
 <% if can? :crud, @site %>
 	<div class="row bottomspace">
 	  <div class="col-xs-12 col-sm-2 col-sm-push-10">
-			<a class="btn btn-block btn-info" data-toggle="dropdown" href="#" id="options_button">
+			<a class="btn btn-block btn-info dropdown" data-toggle="dropdown" href="#" id="options_button">
 			  Options
 			  <span class="caret"></span>
 			</a>
@@ -107,7 +107,7 @@
 		    <p class="text-left">Centre Altitude</p>
 		  </div>
 		  <div class="col-md-7">
-		    <p class="text-muted"><%= number_with_precision(@site.centre_alt, :precision => 6)%></p>
+		    <p class="text-muted"><%= number_with_precision(@site.centre_alt, :precision => 2)%></p>
 		  </div>
 		</div>
 

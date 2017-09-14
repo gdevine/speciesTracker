@@ -1,0 +1,121 @@
+name,street,suburb,comments,centre_lat,centre_lon
+RZ,Wattamolla Road,Royal NP  (replicate),BATS,-34.13574,151.08574
+RY,Wattamolla Rd,Royal NP,BATS,-34.13492,151.08601
+GLB-BE,The Oaks Fire Trail,Glenbrook,PEAS,-33.80669,150.58775
+GLB-MAYBE7,The Oaks Fire Trail,Glenbrook,PEAS,-33.788793,150.610752
+GLB-PO,Mount Portal Lookout,Glenbrook,PEAS,-33.78148,150.63777
+LAP-EMU,Emu Rd,Lapstone,PEAS,-33.77932,150.62778
+GLB-DRK,Darks Common,Glenbrook,PEAS,-33.77296,150.63451
+GLB-NS,Napp Sack Reserve,Glenbrook,PEAS,-33.764722,150.623611
+WEN-IFT,Ingar Fire Trail,Wentworth Falls,PEAS,-33.74335,150.38637
+LAW-AB,Albert Rd,Lawson,PEAS,-33.74171,150.431758
+KAT-NNL,Glenraphael Drv,Katoomba,PEAS,-33.74006,150.28027
+WEN-MAYBE8,Little Switzerland Drv,Wentworth Falls,PEAS,-33.738206,150.37283
+WOD-WO,The Oaks Fire Trail,Woodford,PEAS,-33.736617,150.490556
+WOD-WV,Wide View Ave,Woodford,PEAS,-33.735535,150.471533
+WEN-KT,Chester Rd,Wentworth Falls,PEAS,-33.73409,150.37929
+VAH-MA,Martins Lookout,Valley Heights,PEAS,-33.73406,150.57611
+LAW-RS,Ridge St,Lawson,PEAS,-33.731814,150.429093
+BUL-BU,Cottle Rd,Bullaburra,PEAS,-33.72982,150.41081
+WOD-WEL,Wellesley Rd,Woodford,PEAS,-33.72921,150.47635
+LAW-BR,Baths Rd,Lawson,PEAS,-33.72878,150.44498
+KAT-CD,Cliff Drive,Katoomba,PEAS,-33.72842,150.24437
+WOD-BCR,Bulls Camp Reserve,Woodford,PEAS,-33.72441,150.48946
+LEU-SL,Spencer St,Leura,PEAS,-33.719633,150.33501
+HAZ-CLR,Clear View Parade,Hazelbrook,PEAS,-33.71915,150.46625
+SPR-YO,Yondell Ave,Springwood,PEAS,-33.71848,150.55775
+BUL-BOO,Booth Rd,Bullaburra,PEAS,-33.71692732,150.4070029
+LAW-SJ,San Jose Ave,Lawson,PEAS,-33.714529,150.430838
+HAZ-ALX,Alexander Ave,Hazelbrook,PEAS,-33.71315608,150.4569315
+VAH-SS,Spring St,Valley Heights,PEAS,-33.70947,150.56857
+LAW-QR2,Queens Road,Lawson,PEAS,-33.70936379,150.4393947
+LAW-QR1,Queens Road,Lawson,PEAS,-33.70876607,150.4433112
+LAW-FER,Fern Ave,Lawson,PEAS,-33.70861,150.45532
+LIN-WEE,Weemala Ave,Linden,PEAS,-33.7065,150.51527
+LAW-HAL,Hall Parade,Lawson,PEAS BATS,-33.70516,150.45677
+LX,Oaklands Road,Lawson,BATS,-33.70464,150.45656
+LAW-HTC,Hilltop Cres,Lawson,PEAS,-33.70547523,150.4446253
+LAW-BIN,Binnowee Dr,Lawson,PEAS,-33.70402464,150.44683
+KAT-NEG,Nellies Glen Rd,Katoomba,PEAS,-33.703765,150.288644
+FLC-HR,Highland Rd,Faulconbridge,PEAS,-33.69913,150.52635
+FLC-DA,Davies Ave,Faulconbridge,PEAS,-33.69708,150.54773
+SPR-LP,Lomatia Park,Springwood,PEAS,-33.69443,150.56725
+WEN-EDW,Edward Parade,Wentworth Falls,PEAS,-33.68839484,150.3694607
+VAH-SW,Fairways Cres,Valley Heights,PEAS,-33.687062,150.574583
+KAT-MER,Michael Eades Reserve,Katoomba,PEAS,-33.6868,150.3175
+KAT-MFR,Minnehaha Falls Reserve,Katoomba,PEAS,-33.685547,150.32819
+WIN-SDR,Shakespeare Drive Reserve,Winmalee,PEAS,-33.678139,150.617856
+FLC-CP,Chapman Parade,Faulconbridge,PEAS,-33.6769,150.56682
+MED-CON,Connell Rd,Medlow Bath,PEAS,-33.675657,150.292055
+KC,Powerline Fire Trail Ku-Ring-Gai Chase Road,Ku ring Gai Chase,BATS,-33.67424,151.1358
+DF,Perimeter track Boorigal road,Duffys Forest,BATS,-33.67367,151.20856
+MED-AF,Katoomba Airport,Medlow Bath,PEAS,-33.668394,150.316464
+HWH-HH,Hawkesbury Lookout,Hawkesbury Heights,PEAS,-33.666907,150.651612
+VAH-CP,Redheap Rd,Valley Heights,PEAS,-33.66393,150.574516
+WIN-WB,White Cross Rd,Winmalee,PEAS,-33.66268,150.61148
+HWH-BK,Booker Rd,Hawkesbury Heights,PEAS,-33.660206,150.642809
+MED-PP,Grand Canyon Rd,Medlow Bath,PEAS,-33.655253,150.330992
+MED-KIN,KIN-GER fire trail (The Falls Road),Medlow Bath,PEAS,-33.6543,150.32175
+LEU-HAY,Mt Hay,Leura,PEAS,-33.6517,150.37889
+MED-EL,Evans Lookout Rd,Medlow Bath,PEAS BATS,-33.6489,150.32042
+BL,Evans Lookout Rd,Blackheath,BATS,-33.64788,150.31958
+BLH-SUE,Govetts Leap Rd,Blackheath,PEAS,-33.62884,150.30711
+BLH-MAYBE6,Hat Hill Rd,Blackheath,PEAS,-33.615937,150.319771
+RCH-UWS,Science Rd,Richmond,PEAS,-33.612725,150.74996
+GRO-CTR,Cabbage Tree Rd,Grose Wold,PEAS,-33.609448,150.638589
+BLH-PL,Perrys Lookdown,Blackheath,PEAS,-33.59975,150.34464
+BOW-BM,Lieutenant Bowen Dr,Bowen Mountain,PEAS BATS,-33.59348,150.62476
+WH,West Head Road,West Head,BATS,-33.58846,151.28337
+MBK-MB,Mount Banks Picnic Area,Mount Banks,PEAS BATS,-33.57912,150.36555
+BLM-WL,Pierces Pass Picnic Area,Blue Mountains,PEAS,-33.56758,150.34369
+BOW-LBR,Lieutenant Bowen Rd,Bowen Mountain,PEAS,-33.563732,150.623123
+MYO-MY,Mount York Rd,Mount York,PEAS,-33.553093,150.220086
+BLM-MN,Bells Line of Road,Blue Mountains,PEAS,-33.551316,150.382309
+TOM-MAYBE5,Bells Line of Road,Mount Tomah,PEAS,-33.548996,150.396401
+KUR-BUR,Burralow Rd,Kurrajong,PEAS,-33.54729825,150.6157904
+MWL-MW,Mount Wilson Rd,Mount Wilson,PEAS BATS,-33.54279,150.34393
+HRT-DC2,Darling Causeway,Hartley Vale,PEAS,-33.542309,150.259246
+HRT-DC,Darling Causeway,Hartley Vale,PEAS,-33.541547,150.259673
+P,Patonga Drive. Great North Walk ,Patonga ,BATS,-33.53835,151.2827
+BER-BB,Bells Line of Road,Berambing,PEAS,-33.53717,150.43765
+BER-BB2,Berambing Picnic Area,Berambing,PEAS,-33.53672142,150.43701
+BER-MAYBE4,Valley Ridges Rd,Berambing,PEAS,-33.534293,150.469851
+HRT-DC3,Darling Causeway,Hartley Vale,PEAS,-33.5337218,150.2729487
+MTO-MT,Bells Line of Road,Mount Tomah,PEAS BATS,-33.52851,150.42021
+BIL-PF,Patersons Range Fire Trail,Bilpin,PEAS BATS,-33.52659,150.56592
+BLM-BL,Bells Line of Road,Blue Mountains,PEAS,-33.525383,150.310866
+KUR-WH,Warks Hill Rd,Kurrajong Heights,PEAS,-33.520466,150.622098
+KUR-BLR,Bells Line of Road,Bilpin,PEAS,-33.51603963,150.5905597
+KUR-GLE,Glenara Rd,Bilpin,PEAS,-33.51200341,150.5886287
+C,Canoelands Road,Canoelands Rd ,BATS,-33.50815,151.02687
+MIR-IRV,Mount Irvine Rd,Mt Irvine,PEAS,-33.50081737,150.4916072
+BIL-TOO,Mount Tootie Rd,Bilpin,PEAS,-33.4990189,150.4985499
+BIL-BPA,Bilpin Park,Bilpin,PEAS,-33.4940678,150.517576
+BIL-MAYBE3,Mountain Lagoon Rd,Bilpin,PEAS,-33.493579,150.529298
+BIL-BP,Pulp Rd,Bilpin,PEAS,-33.490938,150.550001
+BIL-MAYBE2,Mountain Lagoon Rd,Bilpin,PEAS,-33.474483,150.569061
+BIL-MAYBE1,Mountain Lagoon Rd,Bilpin,PEAS,-33.469633,150.580868
+KUR-CR,Comleroy Rd,Kurrajong,PEAS,-33.465,150.7252
+MLG-NC,Mountain Lagoon Rd,Mountain Lagoon,PEAS,-33.44981,150.65878
+COL-LS,Mountain Lagoon Rd,Upper Colo,PEAS,-33.44925,150.66945
+MLG-ML,Mountain Lagoon Rd,Mountain Lagoon,PEAS,-33.44533,150.68752
+KUR-AN,Comleroy Rd,Kurrajong,PEAS,-33.44344,150.7099
+NJ,Newnes Junction Road,Newnes Junction,BATS,-33.43887,150.23003
+GW,Old Bells Line of Road and Glowworm Tunnel Road,Clarence,BATS,-33.42268,150.20465
+MM,Laughtondale Gully Road,Marramarra ,BATS,-33.4221,150.99316
+LE, Bicentenary Rd Wisemans Ferry,Leets Vale (replicate),BATS,-33.408211,150.944478
+LV, Bicentenary Rd Wisemans Ferry,Leets Vale,BATS,-33.40787,150.94376
+TN,Glowworm Tunnel Road,Telopea Newnes,BATS,-33.39386,150.21893
+WR,Wheelbarrow Ridge Track,Colo Heights,BATS,-33.39216,150.85968
+BF,Blackfellows Hand Trail,Newnes State Forest,BATS,-33.32747,150.13565
+AP,Blackfellows Hand Road Angus Place Colliary,North of Lithgow,BATS,-33.32167,150.12088
+ZM,Gallah mountain,Newnes Plateau,BATS,-33.31012,150.25128
+ZG,Galah Mtn Rd,Galah Mountain (replicate),BATS,-33.3098,150.25072
+GH,Grassy Hill Fire Trail Putty Road,Colo Heights,BATS,-33.26271,150.59424
+PR,Grassy Hill Fire Trail Putty Road,Colo Heights  (replicate),BATS,-33.26152,150.64104
+CT,Culoul Range Fire Trail Putty Road.,Grassy Hill (replicate),BATS,-33.23444,150.63646
+FT,Culoul Range Fire Trail Putty road,Fire Trail,BATS,-33.20335,150.59
+GS,Glen Davis Road,Capertee,BATS,-33.1377,150.06998
+GD,Glen Davis Road,Glen Davis,BATS,-33.13691,150.05344
+AM,Binalong Glen Alice Road,Glen Davis,BATS,-33.08303,150.22821
+BI,Binalong Glen Alice Road,Glen Davis  (replicate),BATS,-33.07954,150.22719

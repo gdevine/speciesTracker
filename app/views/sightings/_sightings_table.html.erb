@@ -6,7 +6,8 @@
     <td>None given</td>
   <% end %>
   <td><%= sighting.species.fullname %> </td>
-  <td><%= sighting.datetime_sighted.to_formatted_s(:long_ordinal) %> </td>
+  <!-- <td><%= sighting.datetime_sighted.to_formatted_s(:long_ordinal) %> </td> -->
+  <td><%= sighting.datetime_sighted.strftime("%Y-%m-%d") %> </td>
   <% if sighting.photo.file? %>
     <td align="center"><%= image_tag(sighting.photo.url(:thumb), class:"img-thumbnail") %></td>
 	<% else %>

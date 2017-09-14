@@ -1,0 +1,733 @@
+datetime_sighted,site,sighted_by,genus,species,adult_abundance,healthy_flowers,healthy_pods,dom_reproductive_stage,latitude,longitude,street,suburb
+9/4/2015,MWL-MW,Desi,Bossiaea,heterophylla,20,25,25,Open Flower,-33.54279,150.34393,Mount Wilson Rd,Mount Wilson
+24/4/2015,BER-BB,Desi,Acacia,obtusifolia,3,25,0,Floral Bud,-33.53717,150.43765,Bells Line of Road,Berambing
+24/4/2015,BER-BB,Desi,Acacia,suaveolens,3,25,0,Open Flower,-33.53717,150.43765,Bells Line of Road,Berambing
+24/4/2015,BER-BB,Desi,Acacia,terminalis,3,25,0,Floral Bud,-33.53717,150.43765,Bells Line of Road,Berambing
+24/4/2015,BER-BB,Desi,Bossiaea,heterophylla,3,25,25,Open Flower,-33.53717,150.43765,Bells Line of Road,Berambing
+24/4/2015,BER-BB,Desi,Dillwynia,retorta,3,0,0,None Seen,-33.53717,150.43765,Bells Line of Road,Berambing
+24/4/2015,BER-BB,Desi,Gompholobium,grandiflorum,10,0,0,None Seen,-33.53717,150.43765,Bells Line of Road,Berambing
+24/4/2015,BER-BB,Desi,Phylotta,squarrosa,10,0,0,None Seen,-33.53717,150.43765,Bells Line of Road,Berambing
+24/4/2015,BER-BB,Desi,Pultenaea,scabra,3,0,0,None Seen,-33.53717,150.43765,Bells Line of Road,Berambing
+24/4/2015,BER-BB,Desi,Pultenaea,tuberculata,20,0,0,None Seen,-33.53717,150.43765,Bells Line of Road,Berambing
+24/4/2015,BIL-BP,Desi,Acacia,suaveolens,3,25,25,Floral Bud,-33.490938,150.550001,Pulp Rd,Bilpin
+24/4/2015,BIL-BP,Desi,Acacia,terminalis,3,50,25,Open Flower,-33.490938,150.550001,Pulp Rd,Bilpin
+24/4/2015,BIL-BP,Desi,Dillwynia,retorta,10,0,0,None Seen,-33.490938,150.550001,Pulp Rd,Bilpin
+24/4/2015,BIL-BP,Desi,Gompholobium,grandiflorum,3,0,0,None Seen,-33.490938,150.550001,Pulp Rd,Bilpin
+24/4/2015,BIL-BP,Desi,Gompholobium,latifolium,3,0,0,None Seen,-33.490938,150.550001,Pulp Rd,Bilpin
+24/4/2015,BIL-BP,Desi,Phylotta,squarrosa,3,0,0,None Seen,-33.490938,150.550001,Pulp Rd,Bilpin
+24/4/2015,BIL-BP,Desi,Pultenaea,scabra,3,0,0,None Seen,-33.490938,150.550001,Pulp Rd,Bilpin
+24/4/2015,BIL-PF,Desi,Acacia,linifolia,3,0,25,Immature Pod,-33.52659,150.56592,Patersons Range Fire Trail,Bilpin
+24/4/2015,BIL-PF,Desi,Acacia,suaveolens,10,50,25,Open Flower,-33.52659,150.56592,Patersons Range Fire Trail,Bilpin
+24/4/2015,BIL-PF,Desi,Acacia,trinervata,10,25,0,Floral Bud,-33.52659,150.56592,Patersons Range Fire Trail,Bilpin
+24/4/2015,BIL-PF,Desi,Bossiaea,heterophylla,10,25,0,Floral Bud,-33.52659,150.56592,Patersons Range Fire Trail,Bilpin
+24/4/2015,BIL-PF,Desi,Daviesia,corymbosa,10,0,0,None Seen,-33.52659,150.56592,Patersons Range Fire Trail,Bilpin
+24/4/2015,BIL-PF,Desi,Gompholobium,latifolium,3,0,25,Old Pod,-33.52659,150.56592,Patersons Range Fire Trail,Bilpin
+24/4/2015,BIL-PF,Desi,Phylotta,squarrosa,10,0,0,None Seen,-33.52659,150.56592,Patersons Range Fire Trail,Bilpin
+24/4/2015,BIL-PF,Desi,Pultenaea,scabra,10,0,0,None Seen,-33.52659,150.56592,Patersons Range Fire Trail,Bilpin
+24/4/2015,BLM-MN,Desi,Acacia,suaveolens,20,25,0,Open Flower,-33.551316,150.382309,Bells Line of Road,Blue Mountains
+24/4/2015,BLM-MN,Desi,Acacia,terminalis,3,25,25,Floral Bud,-33.551316,150.382309,Bells Line of Road,Blue Mountains
+24/4/2015,BLM-MN,Desi,Acacia,trinervata,3,25,0,Floral Bud,-33.551316,150.382309,Bells Line of Road,Blue Mountains
+24/4/2015,BLM-MN,Desi,Bossiaea,ensata,10,25,0,Open Flower,-33.551316,150.382309,Bells Line of Road,Blue Mountains
+24/4/2015,BLM-MN,Desi,Bossiaea,heterophylla,30,50,0,Open Flower,-33.551316,150.382309,Bells Line of Road,Blue Mountains
+24/4/2015,BLM-MN,Desi,Mirbelia,rubiifolia,3,0,25,Old Pod,-33.551316,150.382309,Bells Line of Road,Blue Mountains
+24/4/2015,BLM-MN,Desi,Phylotta,squarrosa,3,0,0,None Seen,-33.551316,150.382309,Bells Line of Road,Blue Mountains
+24/4/2015,BOW-BM,Desi,Acacia,linifolia,3,25,25,Open Flower,-33.59348,150.62476,Lieutenant Bowen Dr,Bowen Mountain
+24/4/2015,BOW-BM,Desi,Acacia,terminalis,3,0,0,None Seen,-33.59348,150.62476,Lieutenant Bowen Dr,Bowen Mountain
+24/4/2015,BOW-BM,Desi,Acacia,ulicifolia,3,25,0,Floral Bud,-33.59348,150.62476,Lieutenant Bowen Dr,Bowen Mountain
+24/4/2015,BOW-BM,Desi,Bossiaea,ensata,3,0,25,Old Pod,-33.59348,150.62476,Lieutenant Bowen Dr,Bowen Mountain
+24/4/2015,BOW-BM,Desi,Bossiaea,heterophylla,10,25,25,Open Flower,-33.59348,150.62476,Lieutenant Bowen Dr,Bowen Mountain
+24/4/2015,BOW-BM,Desi,Bossiaea,rhombifolia,30,0,0,None Seen,-33.59348,150.62476,Lieutenant Bowen Dr,Bowen Mountain
+24/4/2015,BOW-BM,Desi,Dillwynia,retorta,30,0,0,Old Pod,-33.59348,150.62476,Lieutenant Bowen Dr,Bowen Mountain
+24/4/2015,BOW-BM,Desi,Gompholobium,grandiflorum,10,0,0,None Seen,-33.59348,150.62476,Lieutenant Bowen Dr,Bowen Mountain
+24/4/2015,FLC-HR,Desi,Acacia,oxycedrus,3,25,0,Floral Bud,-33.69913,150.52635,Highland Rd,Faulconbridge
+24/4/2015,FLC-HR,Desi,Acacia,suaveolens,3,25,0,Open Flower,-33.69913,150.52635,Highland Rd,Faulconbridge
+24/4/2015,FLC-HR,Desi,Acacia,trinervata,10,0,25,Old Pod,-33.69913,150.52635,Highland Rd,Faulconbridge
+24/4/2015,FLC-HR,Desi,Acacia,ulicifolia,3,25,0,Open Flower,-33.69913,150.52635,Highland Rd,Faulconbridge
+24/4/2015,FLC-HR,Desi,Bossiaea,ensata,3,0,0,None Seen,-33.69913,150.52635,Highland Rd,Faulconbridge
+24/4/2015,FLC-HR,Desi,Bossiaea,rhombifolia,3,0,0,None Seen,-33.69913,150.52635,Highland Rd,Faulconbridge
+24/4/2015,FLC-HR,Desi,Daviesia,corymbosa,3,0,0,None Seen,-33.69913,150.52635,Highland Rd,Faulconbridge
+24/4/2015,FLC-HR,Desi,Daviesia,mimosoides,3,0,0,None Seen,-33.69913,150.52635,Highland Rd,Faulconbridge
+24/4/2015,FLC-HR,Desi,Dillwynia,elegans,3,0,0,None Seen,-33.69913,150.52635,Highland Rd,Faulconbridge
+24/4/2015,FLC-HR,Desi,Dillwynia,retorta,3,0,0,None Seen,-33.69913,150.52635,Highland Rd,Faulconbridge
+24/4/2015,FLC-HR,Desi,Mirbelia,rubiifolia,3,0,25,Old Pod,-33.69913,150.52635,Highland Rd,Faulconbridge
+24/4/2015,FLC-HR,Desi,Pultenaea,tuberculata,10,25,0,Open Flower,-33.69913,150.52635,Highland Rd,Faulconbridge
+24/4/2015,HRT-DC,Desi,Acacia,obtusifolia,3,0,0,None Seen,-33.541547,150.259673,Darling Causeway,Hartley Vale
+24/4/2015,HRT-DC,Desi,Acacia,terminalis,10,50,0,Floral Bud,-33.541547,150.259673,Darling Causeway,Hartley Vale
+24/4/2015,HRT-DC,Desi,Bossiaea,heterophylla,3,25,0,Open Flower,-33.541547,150.259673,Darling Causeway,Hartley Vale
+24/4/2015,HRT-DC,Desi,Daviesia,alata,3,0,0,None Seen,-33.541547,150.259673,Darling Causeway,Hartley Vale
+24/4/2015,HRT-DC,Desi,Mirbelia,platylobioides,3,25,0,Open Flower,-33.541547,150.259673,Darling Causeway,Hartley Vale
+24/4/2015,HRT-DC,Desi,Phylotta,squarrosa,3,0,0,None Seen,-33.541547,150.259673,Darling Causeway,Hartley Vale
+24/4/2015,HWH-HH,Desi,Acacia,linifolia,10,50,25,Open Flower,-33.666907,150.651612,Hawkesbury Lookout,Hawkesbury Heights
+24/4/2015,HWH-HH,Desi,Acacia,trinervata,3,25,0,Open Flower,-33.666907,150.651612,Hawkesbury Lookout,Hawkesbury Heights
+24/4/2015,HWH-HH,Desi,Acacia,ulicifolia,20,25,0,Floral Bud,-33.666907,150.651612,Hawkesbury Lookout,Hawkesbury Heights
+24/4/2015,HWH-HH,Desi,Bossiaea,rhombifolia,10,0,0,None Seen,-33.666907,150.651612,Hawkesbury Lookout,Hawkesbury Heights
+24/4/2015,HWH-HH,Desi,Dillwynia,retorta,3,0,0,None Seen,-33.666907,150.651612,Hawkesbury Lookout,Hawkesbury Heights
+24/4/2015,HWH-HH,Desi,Gompholobium,grandiflorum,10,0,25,Old Pod,-33.666907,150.651612,Hawkesbury Lookout,Hawkesbury Heights
+24/4/2015,KUR-WH,Desi,Acacia,linifolia,3,0,0,None Seen,-33.520466,150.622098,Warks Hill Rd,Kurrajong Heights
+24/4/2015,KUR-WH,Desi,Acacia,obtusifolia,20,0,0,None Seen,-33.520466,150.622098,Warks Hill Rd,Kurrajong Heights
+24/4/2015,KUR-WH,Desi,Acacia,terminalis,3,0,0,None Seen,-33.520466,150.622098,Warks Hill Rd,Kurrajong Heights
+24/4/2015,KUR-WH,Desi,Daviesia,alata,10,0,0,None Seen,-33.520466,150.622098,Warks Hill Rd,Kurrajong Heights
+24/4/2015,KUR-WH,Desi,Dillwynia,retorta,10,0,0,None Seen,-33.520466,150.622098,Warks Hill Rd,Kurrajong Heights
+24/4/2015,KUR-WH,Desi,Gompholobium,latifolium,20,0,25,Old Pod,-33.520466,150.622098,Warks Hill Rd,Kurrajong Heights
+24/4/2015,KUR-WH,Desi,Podolobium,ilicifolium,10,0,0,None Seen,-33.520466,150.622098,Warks Hill Rd,Kurrajong Heights
+24/4/2015,LAW-RS,Desi,Acacia,obtusifolia,3,0,0,None Seen,-33.731814,150.429093,Ridge St,Lawson
+24/4/2015,LAW-RS,Desi,Acacia,ulicifolia,3,0,0,None Seen,-33.731814,150.429093,Ridge St,Lawson
+24/4/2015,LAW-RS,Desi,Daviesia,corymbosa,10,0,25,Old Pod,-33.731814,150.429093,Ridge St,Lawson
+24/4/2015,LAW-RS,Desi,Daviesia,latifolia,10,0,0,None Seen,-33.731814,150.429093,Ridge St,Lawson
+24/4/2015,LAW-RS,Desi,Daviesia,ulicifolia,3,0,0,None Seen,-33.731814,150.429093,Ridge St,Lawson
+24/4/2015,LAW-RS,Desi,Dillwynia,brunioides,10,0,0,None Seen,-33.731814,150.429093,Ridge St,Lawson
+24/4/2015,LAW-RS,Desi,Gompholobium,latifolium,3,0,0,None Seen,-33.731814,150.429093,Ridge St,Lawson
+24/4/2015,LAW-RS,Desi,Phylotta,squarrosa,3,0,0,None Seen,-33.731814,150.429093,Ridge St,Lawson
+24/4/2015,LAW-SJ,Desi,Acacia,suaveolens,3,25,0,Open Flower,-33.714529,150.430838,San Jose Ave,Lawson
+24/4/2015,LAW-SJ,Desi,Acacia,terminalis,10,25,0,Open Flower,-33.714529,150.430838,San Jose Ave,Lawson
+24/4/2015,LAW-SJ,Desi,Acacia,ulicifolia,10,25,0,Floral Bud,-33.714529,150.430838,San Jose Ave,Lawson
+24/4/2015,LAW-SJ,Desi,Bossiaea,heterophylla,30,25,0,Open Flower,-33.714529,150.430838,San Jose Ave,Lawson
+24/4/2015,LAW-SJ,Desi,Daviesia,corymbosa,3,0,0,None Seen,-33.714529,150.430838,San Jose Ave,Lawson
+24/4/2015,LAW-SJ,Desi,Daviesia,ulicifolia,3,0,0,None Seen,-33.714529,150.430838,San Jose Ave,Lawson
+24/4/2015,LAW-SJ,Desi,Gompholobium,grandiflorum,3,0,0,None Seen,-33.714529,150.430838,San Jose Ave,Lawson
+24/4/2015,LAW-SJ,Desi,Phylotta,squarrosa,3,0,0,None Seen,-33.714529,150.430838,San Jose Ave,Lawson
+24/4/2015,LAW-SJ,Desi,Pultenaea,tuberculata,3,0,0,None Seen,-33.714529,150.430838,San Jose Ave,Lawson
+24/4/2015,MBK-MB,Desi,Acacia,suaveolens,20,25,0,Open Flower,-33.57912,150.36555,Mount Banks Picnic Area,Mount Banks
+24/4/2015,MBK-MB,Desi,Acacia,terminalis,10,more,0,Floral Bud,-33.57912,150.36555,Mount Banks Picnic Area,Mount Banks
+24/4/2015,MBK-MB,Desi,Acacia,trinervata,3,25,0,Floral Bud,-33.57912,150.36555,Mount Banks Picnic Area,Mount Banks
+24/4/2015,MBK-MB,Desi,Acacia,ulicifolia,10,25,0,Open Flower,-33.57912,150.36555,Mount Banks Picnic Area,Mount Banks
+24/4/2015,MBK-MB,Desi,Bossiaea,ensata,10,25,0,Open Flower,-33.57912,150.36555,Mount Banks Picnic Area,Mount Banks
+24/4/2015,MBK-MB,Desi,Bossiaea,heterophylla,10,25,0,Open Flower,-33.57912,150.36555,Mount Banks Picnic Area,Mount Banks
+24/4/2015,MBK-MB,Desi,Dillwynia,retorta,3,0,0,None Seen,-33.57912,150.36555,Mount Banks Picnic Area,Mount Banks
+24/4/2015,MBK-MB,Desi,Gompholobium,grandiflorum,20,25,0,Open Flower,-33.57912,150.36555,Mount Banks Picnic Area,Mount Banks
+24/4/2015,MBK-MB,Desi,Phylotta,squarrosa,3,0,0,None Seen,-33.57912,150.36555,Mount Banks Picnic Area,Mount Banks
+24/4/2015,MWL-MW,Desi,Acacia,terminalis,20,more,0,Floral Bud,-33.54279,150.34393,Mount Wilson Rd,Mount Wilson
+24/4/2015,MWL-MW,Desi,Bossiaea,heterophylla,30,25,25,Open Flower,-33.54279,150.34393,Mount Wilson Rd,Mount Wilson
+24/4/2015,MWL-MW,Desi,Daviesia,alata,10,0,0,None Seen,-33.54279,150.34393,Mount Wilson Rd,Mount Wilson
+24/4/2015,MWL-MW,Desi,Daviesia,ulicifolia,3,0,0,None Seen,-33.54279,150.34393,Mount Wilson Rd,Mount Wilson
+24/4/2015,MWL-MW,Desi,Dillwynia,retorta,3,0,0,None Seen,-33.54279,150.34393,Mount Wilson Rd,Mount Wilson
+24/4/2015,MWL-MW,Desi,Gompholobium,grandiflorum,20,0,25,Old Pod,-33.54279,150.34393,Mount Wilson Rd,Mount Wilson
+24/4/2015,MWL-MW,Desi,Phylotta,squarrosa,10,0,0,None Seen,-33.54279,150.34393,Mount Wilson Rd,Mount Wilson
+24/4/2015,VAH-SS,Desi,Acacia,linifolia,3,0,0,None Seen,-33.70947,150.56857,Spring St,Valley Heights
+24/4/2015,VAH-SS,Desi,Acacia,suaveolens,10,25,0,Floral Bud,-33.70947,150.56857,Spring St,Valley Heights
+24/4/2015,VAH-SS,Desi,Acacia,terminalis,3,25,0,Open Flower,-33.70947,150.56857,Spring St,Valley Heights
+24/4/2015,VAH-SS,Desi,Acacia,ulicifolia,10,25,0,Floral Bud,-33.70947,150.56857,Spring St,Valley Heights
+24/4/2015,VAH-SS,Desi,Bossiaea,obcordata,20,0,0,None Seen,-33.70947,150.56857,Spring St,Valley Heights
+24/4/2015,VAH-SS,Desi,Bossiaea,rhombifolia,3,0,0,None Seen,-33.70947,150.56857,Spring St,Valley Heights
+24/4/2015,VAH-SS,Desi,Daviesia,latifolia,10,0,0,None Seen,-33.70947,150.56857,Spring St,Valley Heights
+24/4/2015,VAH-SS,Desi,Dillwynia,retorta,3,0,0,None Seen,-33.70947,150.56857,Spring St,Valley Heights
+24/4/2015,WOD-WO,Desi,Acacia,obtusifolia,3,50,0,Floral Bud,-33.736617,150.490556,The Oaks Fire Trail,Woodford
+24/4/2015,WOD-WO,Desi,Acacia,suaveolens,3,0,0,None Seen,-33.736617,150.490556,The Oaks Fire Trail,Woodford
+24/4/2015,WOD-WO,Desi,Acacia,terminalis,3,50,25,Floral Bud,-33.736617,150.490556,The Oaks Fire Trail,Woodford
+24/4/2015,WOD-WO,Desi,Acacia,ulicifolia,3,25,0,Floral Bud,-33.736617,150.490556,The Oaks Fire Trail,Woodford
+24/4/2015,WOD-WO,Desi,Bossiaea,heterophylla,3,50,0,Open Flower,-33.736617,150.490556,The Oaks Fire Trail,Woodford
+24/4/2015,WOD-WO,Desi,Daviesia,corymbosa,3,25,0,Floral Bud,-33.736617,150.490556,The Oaks Fire Trail,Woodford
+24/4/2015,WOD-WO,Desi,Dillwynia,retorta,3,0,0,None Seen,-33.736617,150.490556,The Oaks Fire Trail,Woodford
+24/4/2015,WOD-WO,Desi,Mirbelia,rubiifolia,3,0,25,Old Pod,-33.736617,150.490556,The Oaks Fire Trail,Woodford
+24/4/2015,WOD-WO,Desi,Pultenaea,tuberculata,3,25,0,Open Flower,-33.736617,150.490556,The Oaks Fire Trail,Woodford
+8/5/2015,BIL-PF,Desi,Acacia,myrtifolia,3,0,0,Floral Bud,-33.52659,150.56592,Patersons Range Fire Trail,Bilpin
+8/5/2015,BIL-PF,Desi,Acacia,suaveolens,3,25,0,Open Flower,-33.52659,150.56592,Patersons Range Fire Trail,Bilpin
+8/5/2015,BIL-PF,Desi,Acacia,ulicifolia,3,0,0,Floral Bud,-33.52659,150.56592,Patersons Range Fire Trail,Bilpin
+8/5/2015,BIL-PF,Desi,Bossiaea,obcordata,20,0,0,None Seen,-33.52659,150.56592,Patersons Range Fire Trail,Bilpin
+8/5/2015,BIL-PF,Desi,Bossiaea,rhombifolia,3,0,0,None Seen,-33.52659,150.56592,Patersons Range Fire Trail,Bilpin
+8/5/2015,BIL-PF,Desi,Daviesia,corymbosa,10,0,0,None Seen,-33.52659,150.56592,Patersons Range Fire Trail,Bilpin
+8/5/2015,BIL-PF,Desi,Gompholobium,grandiflorum,10,0,0,Old Pod,-33.52659,150.56592,Patersons Range Fire Trail,Bilpin
+8/5/2015,BIL-PF,Desi,Phylotta,squarrosa,20,0,0,None Seen,-33.52659,150.56592,Patersons Range Fire Trail,Bilpin
+8/5/2015,BLM-MN,Desi,Acacia,suaveolens,10,25,25,Floral Bud,-33.551316,150.382309,Bells Line of Road,Blue Mountains
+8/5/2015,BLM-MN,Desi,Acacia,terminalis,10,25,25,Floral Bud,-33.551316,150.382309,Bells Line of Road,Blue Mountains
+8/5/2015,BLM-MN,Desi,Acacia,ulicifolia,3,0,0,Floral Bud,-33.551316,150.382309,Bells Line of Road,Blue Mountains
+8/5/2015,BLM-MN,Desi,Bossiaea,ensata,3,0,0,None Seen,-33.551316,150.382309,Bells Line of Road,Blue Mountains
+8/5/2015,BLM-MN,Desi,Bossiaea,heterophylla,30,25,25,Floral Bud,-33.551316,150.382309,Bells Line of Road,Blue Mountains
+8/5/2015,BLM-MN,Desi,Daviesia,alata,3,0,0,None Seen,-33.551316,150.382309,Bells Line of Road,Blue Mountains
+8/5/2015,BLM-MN,Desi,Mirbelia,rubiifolia,3,0,0,Old Pod,-33.551316,150.382309,Bells Line of Road,Blue Mountains
+8/5/2015,BLM-MN,Desi,Phylotta,squarrosa,10,0,0,None Seen,-33.551316,150.382309,Bells Line of Road,Blue Mountains
+8/5/2015,BOW-BM,Desi,Acacia,linifolia,20,25,25,None Seen,-33.59348,150.62476,Lieutenant Bowen Dr,Bowen Mountain
+8/5/2015,BOW-BM,Desi,Acacia,ulicifolia,3,0,0,Floral Bud,-33.59348,150.62476,Lieutenant Bowen Dr,Bowen Mountain
+8/5/2015,BOW-BM,Desi,Bossiaea,heterophylla,3,25,0,Floral Bud,-33.59348,150.62476,Lieutenant Bowen Dr,Bowen Mountain
+8/5/2015,BOW-BM,Desi,Bossiaea,rhombifolia,20,25,25,Old Pod,-33.59348,150.62476,Lieutenant Bowen Dr,Bowen Mountain
+8/5/2015,BOW-BM,Desi,Dillwynia,retorta,30,0,0,None Seen,-33.59348,150.62476,Lieutenant Bowen Dr,Bowen Mountain
+8/5/2015,BOW-BM,Desi,Gompholobium,grandiflorum,10,0,0,None Seen,-33.59348,150.62476,Lieutenant Bowen Dr,Bowen Mountain
+8/5/2015,BOW-BM,Desi,Jacksonia,chappilliae,3,0,0,None Seen,-33.59348,150.62476,Lieutenant Bowen Dr,Bowen Mountain
+8/5/2015,BOW-BM,Desi,Pultenaea,scabra,3,0,0,None Seen,-33.59348,150.62476,Lieutenant Bowen Dr,Bowen Mountain
+8/5/2015,FLC-HR,Desi,Acacia,floribunda,10,0,0,None Seen,-33.69913,150.52635,Highland Rd,Faulconbridge
+8/5/2015,FLC-HR,Desi,Acacia,oxycedrus,20,0,0,Floral Bud,-33.69913,150.52635,Highland Rd,Faulconbridge
+8/5/2015,FLC-HR,Desi,Acacia,suaveolens,10,25,0,Floral Bud,-33.69913,150.52635,Highland Rd,Faulconbridge
+8/5/2015,FLC-HR,Desi,Acacia,terminalis,3,0,0,None Seen,-33.69913,150.52635,Highland Rd,Faulconbridge
+8/5/2015,FLC-HR,Desi,Acacia,trinervata,10,25,0,Floral Bud,-33.69913,150.52635,Highland Rd,Faulconbridge
+8/5/2015,FLC-HR,Desi,Acacia,ulicifolia,3,0,0,Floral Bud,-33.69913,150.52635,Highland Rd,Faulconbridge
+8/5/2015,FLC-HR,Desi,Bossiaea,ensata,10,25,25,Immature Pod,-33.69913,150.52635,Highland Rd,Faulconbridge
+8/5/2015,FLC-HR,Desi,Bossiaea,rhombifolia,3,0,0,None Seen,-33.69913,150.52635,Highland Rd,Faulconbridge
+8/5/2015,FLC-HR,Desi,Mirbelia,rubiifolia,3,0,0,None Seen,-33.69913,150.52635,Highland Rd,Faulconbridge
+8/5/2015,FLC-HR,Desi,Pultenaea,tuberculata,10,25,0,None Seen,-33.69913,150.52635,Highland Rd,Faulconbridge
+8/5/2015,HRT-DC2,Desi,Acacia,gunnii,3,0,0,None Seen,-33.542309,150.259246,Darling Causeway,Hartley Vale
+8/5/2015,HRT-DC2,Desi,Acacia,longifolia,3,0,0,None Seen,-33.542309,150.259246,Darling Causeway,Hartley Vale
+8/5/2015,HRT-DC2,Desi,Acacia,terminalis,20,50,0,Floral Bud,-33.542309,150.259246,Darling Causeway,Hartley Vale
+8/5/2015,HRT-DC2,Desi,Acacia,trinervata,3,0,0,Floral Bud,-33.542309,150.259246,Darling Causeway,Hartley Vale
+8/5/2015,HRT-DC2,Desi,Acacia,ulicifolia,3,0,0,Floral Bud,-33.542309,150.259246,Darling Causeway,Hartley Vale
+8/5/2015,HRT-DC2,Desi,Bossiaea,heterophylla,3,0,0,Floral Bud,-33.542309,150.259246,Darling Causeway,Hartley Vale
+8/5/2015,HRT-DC2,Desi,Daviesia,alata,3,0,0,None Seen,-33.542309,150.259246,Darling Causeway,Hartley Vale
+8/5/2015,HWH-HH,Desi,Acacia,linifolia,20,25,50,Floral Bud,-33.666907,150.651612,Hawkesbury Lookout,Hawkesbury Heights
+8/5/2015,HWH-HH,Desi,Acacia,longifolia,3,0,0,None Seen,-33.666907,150.651612,Hawkesbury Lookout,Hawkesbury Heights
+8/5/2015,HWH-HH,Desi,Acacia,trinervata,10,more,0,Floral Bud,-33.666907,150.651612,Hawkesbury Lookout,Hawkesbury Heights
+8/5/2015,HWH-HH,Desi,Acacia,ulicifolia,10,50,0,Floral Bud,-33.666907,150.651612,Hawkesbury Lookout,Hawkesbury Heights
+8/5/2015,HWH-HH,Desi,Bossiaea,rhombifolia,30,0,0,None Seen,-33.666907,150.651612,Hawkesbury Lookout,Hawkesbury Heights
+8/5/2015,HWH-HH,Desi,Dillwynia,retorta,10,0,0,None Seen,-33.666907,150.651612,Hawkesbury Lookout,Hawkesbury Heights
+8/5/2015,HWH-HH,Desi,Gompholobium,grandiflorum,3,0,0,None Seen,-33.666907,150.651612,Hawkesbury Lookout,Hawkesbury Heights
+8/5/2015,HWH-HH,Desi,Podolobium,ilicifolium,3,0,0,None Seen,-33.666907,150.651612,Hawkesbury Lookout,Hawkesbury Heights
+8/5/2015,LAW-SJ,Desi,Acacia,obtusifolia,10,0,0,None Seen,-33.714529,150.430838,San Jose Ave,Lawson
+8/5/2015,LAW-SJ,Desi,Acacia,suaveolens,20,0,25,Floral Bud,-33.714529,150.430838,San Jose Ave,Lawson
+8/5/2015,LAW-SJ,Desi,Acacia,terminalis,20,more,0,Floral Bud,-33.714529,150.430838,San Jose Ave,Lawson
+8/5/2015,LAW-SJ,Desi,Acacia,trinervata,3,0,0,Floral Bud,-33.714529,150.430838,San Jose Ave,Lawson
+8/5/2015,LAW-SJ,Desi,Acacia,ulicifolia,3,0,0,Floral Bud,-33.714529,150.430838,San Jose Ave,Lawson
+8/5/2015,LAW-SJ,Desi,Bossiaea,heterophylla,10,25,0,Floral Bud,-33.714529,150.430838,San Jose Ave,Lawson
+8/5/2015,LAW-SJ,Desi,Daviesia,corymbosa,3,0,0,None Seen,-33.714529,150.430838,San Jose Ave,Lawson
+8/5/2015,LAW-SJ,Desi,Daviesia,ulicifolia,10,0,0,None Seen,-33.714529,150.430838,San Jose Ave,Lawson
+8/5/2015,LAW-SJ,Desi,Gompholobium,grandiflorum,3,0,0,None Seen,-33.714529,150.430838,San Jose Ave,Lawson
+8/5/2015,LEU-SL,Desi,Acacia,terminalis,30,50,0,Floral Bud,-33.719633,150.33501,Spencer St,Leura
+8/5/2015,LEU-SL,Desi,Acacia,trinervata,3,0,0,Floral Bud,-33.719633,150.33501,Spencer St,Leura
+8/5/2015,LEU-SL,Desi,Bossiaea,ensata,3,0,0,None Seen,-33.719633,150.33501,Spencer St,Leura
+8/5/2015,LEU-SL,Desi,Bossiaea,heterophylla,20,25,25,Floral Bud,-33.719633,150.33501,Spencer St,Leura
+8/5/2015,LEU-SL,Desi,Daviesia,alata,3,0,0,None Seen,-33.719633,150.33501,Spencer St,Leura
+8/5/2015,LEU-SL,Desi,Daviesia,ulicifolia,20,0,0,None Seen,-33.719633,150.33501,Spencer St,Leura
+8/5/2015,LEU-SL,Desi,Mirbelia,platylobioides,3,0,0,None Seen,-33.719633,150.33501,Spencer St,Leura
+8/5/2015,LEU-SL,Desi,Phylotta,squarrosa,10,0,0,None Seen,-33.719633,150.33501,Spencer St,Leura
+8/5/2015,LEU-SL,Desi,Pultenaea,scabra,10,0,0,Old Flower,-33.719633,150.33501,Spencer St,Leura
+8/5/2015,MBK-MB,Desi,Acacia,trinervata,3,25,0,Floral Bud,-33.57912,150.36555,Mount Banks Picnic Area,Mount Banks
+8/5/2015,MWL-MW,Desi,Acacia,longifolia,3,0,0,None Seen,-33.54279,150.34393,Mount Wilson Rd,Mount Wilson
+8/5/2015,MWL-MW,Desi,Acacia,terminalis,30,25,0,Floral Bud,-33.54279,150.34393,Mount Wilson Rd,Mount Wilson
+8/5/2015,MWL-MW,Desi,Bossiaea,heterophylla,20,0,25,Immature Pod,-33.54279,150.34393,Mount Wilson Rd,Mount Wilson
+8/5/2015,MWL-MW,Desi,Daviesia,alata,10,0,0,None Seen,-33.54279,150.34393,Mount Wilson Rd,Mount Wilson
+8/5/2015,MWL-MW,Desi,Daviesia,ulicifolia,3,0,0,None Seen,-33.54279,150.34393,Mount Wilson Rd,Mount Wilson
+8/5/2015,MWL-MW,Desi,Gompholobium,grandiflorum,20,0,0,None Seen,-33.54279,150.34393,Mount Wilson Rd,Mount Wilson
+8/5/2015,MWL-MW,Desi,Phylotta,squarrosa,20,0,0,None Seen,-33.54279,150.34393,Mount Wilson Rd,Mount Wilson
+8/5/2015,MYO-MY,Desi,Acacia,longifolia,10,0,0,None Seen,-33.553093,150.220086,Mount York Rd,Mount York
+8/5/2015,MYO-MY,Desi,Acacia,terminalis,3,0,0,Floral Bud,-33.553093,150.220086,Mount York Rd,Mount York
+8/5/2015,MYO-MY,Desi,Acacia,trinervata,3,25,0,Floral Bud,-33.553093,150.220086,Mount York Rd,Mount York
+8/5/2015,MYO-MY,Desi,Acacia,ulicifolia,3,0,0,None Seen,-33.553093,150.220086,Mount York Rd,Mount York
+8/5/2015,MYO-MY,Desi,Daviesia,alata,3,0,0,None Seen,-33.553093,150.220086,Mount York Rd,Mount York
+8/5/2015,MYO-MY,Desi,Dillwynia,retorta,20,25,0,None Seen,-33.553093,150.220086,Mount York Rd,Mount York
+8/5/2015,MYO-MY,Desi,Jacksonia,chappilliae,3,0,0,None Seen,-33.553093,150.220086,Mount York Rd,Mount York
+8/5/2015,MYO-MY,Desi,Podolobium,ilicifolium,3,0,0,None Seen,-33.553093,150.220086,Mount York Rd,Mount York
+8/5/2015,MYO-MY,Desi,Pultenaea,scabra,3,0,0,None Seen,-33.553093,150.220086,Mount York Rd,Mount York
+8/5/2015,VAH-SS,Desi,Acacia,linifolia,3,0,25,None Seen,-33.70947,150.56857,Spring St,Valley Heights
+8/5/2015,VAH-SS,Desi,Acacia,terminalis,3,25,0,None Seen,-33.70947,150.56857,Spring St,Valley Heights
+8/5/2015,VAH-SS,Desi,Acacia,ulicifolia,10,0,0,Floral Bud,-33.70947,150.56857,Spring St,Valley Heights
+8/5/2015,VAH-SS,Desi,Bossiaea,obcordata,30,0,0,None Seen,-33.70947,150.56857,Spring St,Valley Heights
+8/5/2015,VAH-SS,Desi,Bossiaea,rhombifolia,10,0,0,None Seen,-33.70947,150.56857,Spring St,Valley Heights
+8/5/2015,VAH-SS,Desi,Daviesia,corymbosa,10,0,0,Old Pod,-33.70947,150.56857,Spring St,Valley Heights
+8/5/2015,VAH-SS,Desi,Dillwynia,retorta,10,0,0,None Seen,-33.70947,150.56857,Spring St,Valley Heights
+8/5/2015,VAH-SS,Desi,Gompholobium,grandiflorum,3,0,0,None Seen,-33.70947,150.56857,Spring St,Valley Heights
+8/5/2015,VAH-SW,Desi,Acacia,linifolia,3,0,0,None Seen,-33.687062,150.574583,Fairways Cres,Valley Heights
+8/5/2015,VAH-SW,Desi,Acacia,obtusifolia,3,0,0,Floral Bud,-33.687062,150.574583,Fairways Cres,Valley Heights
+8/5/2015,VAH-SW,Desi,Acacia,trinervata,10,0,0,Floral Bud,-33.687062,150.574583,Fairways Cres,Valley Heights
+8/5/2015,VAH-SW,Desi,Bossiaea,obcordata,30,0,0,None Seen,-33.687062,150.574583,Fairways Cres,Valley Heights
+8/5/2015,VAH-SW,Desi,Pultenaea,scabra,20,0,0,Old Flower,-33.687062,150.574583,Fairways Cres,Valley Heights
+8/5/2015,WOD-WO,Desi,Acacia,longifolia,3,0,0,Floral Bud,-33.736617,150.490556,The Oaks Fire Trail,Woodford
+8/5/2015,WOD-WO,Desi,Acacia,obtusifolia,3,0,0,None Seen,-33.736617,150.490556,The Oaks Fire Trail,Woodford
+8/5/2015,WOD-WO,Desi,Acacia,suaveolens,3,50,0,Floral Bud,-33.736617,150.490556,The Oaks Fire Trail,Woodford
+8/5/2015,WOD-WO,Desi,Acacia,terminalis,3,0,0,None Seen,-33.736617,150.490556,The Oaks Fire Trail,Woodford
+8/5/2015,WOD-WO,Desi,Bossiaea,ensata,3,0,0,None Seen,-33.736617,150.490556,The Oaks Fire Trail,Woodford
+8/5/2015,WOD-WO,Desi,Bossiaea,heterophylla,10,25,25,Floral Bud,-33.736617,150.490556,The Oaks Fire Trail,Woodford
+8/5/2015,WOD-WO,Desi,Daviesia,corymbosa,3,0,0,None Seen,-33.736617,150.490556,The Oaks Fire Trail,Woodford
+8/5/2015,WOD-WO,Desi,Dillwynia,retorta,3,0,0,None Seen,-33.736617,150.490556,The Oaks Fire Trail,Woodford
+8/5/2015,WOD-WO,Desi,Mirbelia,rubiifolia,3,0,0,Old Pod,-33.736617,150.490556,The Oaks Fire Trail,Woodford
+8/5/2015,WOD-WO,Desi,Phylotta,squarrosa,3,0,0,None Seen,-33.736617,150.490556,The Oaks Fire Trail,Woodford
+21/5/2015,BLH-PL,Desi,Acacia,obtusifolia,10,0,25,None Seen,-33.59975,150.34464,Perrys Lookdown,Blackheath
+21/5/2015,BLH-PL,Desi,Acacia,terminalis,30,25,0,Floral Bud,-33.59975,150.34464,Perrys Lookdown,Blackheath
+21/5/2015,BLH-PL,Desi,Daviesia,alata,3,0,0,None Seen,-33.59975,150.34464,Perrys Lookdown,Blackheath
+21/5/2015,BLH-PL,Desi,Daviesia,ulicifolia,20,0,0,None Seen,-33.59975,150.34464,Perrys Lookdown,Blackheath
+21/5/2015,BLH-PL,Desi,Gompholobium,latifolium,30,0,25,Old Pod,-33.59975,150.34464,Perrys Lookdown,Blackheath
+21/5/2015,BLH-PL,Desi,Pultenaea,scabra,30,0,0,None Seen,-33.59975,150.34464,Perrys Lookdown,Blackheath
+21/5/2015,BLH-SUE,Desi,Acacia,longifolia,3,0,0,Floral Bud,-33.62884,150.30711,Govetts Leap Rd,Blackheath
+21/5/2015,BLH-SUE,Desi,Acacia,terminalis,3,25,0,Floral Bud,-33.62884,150.30711,Govetts Leap Rd,Blackheath
+21/5/2015,BLH-SUE,Desi,Bossiaea,heterophylla,3,25,25,Floral Bud,-33.62884,150.30711,Govetts Leap Rd,Blackheath
+21/5/2015,BLH-SUE,Desi,Daviesia,latifolia,3,0,0,None Seen,-33.62884,150.30711,Govetts Leap Rd,Blackheath
+21/5/2015,BLH-SUE,Desi,Daviesia,ulicifolia,30,0,0,None Seen,-33.62884,150.30711,Govetts Leap Rd,Blackheath
+21/5/2015,BLH-SUE,Desi,Mirbelia,platylobioides,3,0,0,None Seen,-33.62884,150.30711,Govetts Leap Rd,Blackheath
+21/5/2015,BLH-SUE,Desi,Mirbelia,rubiifolia,3,0,0,None Seen,-33.62884,150.30711,Govetts Leap Rd,Blackheath
+21/5/2015,BLH-SUE,Desi,Phylotta,phylicoides,3,0,0,None Seen,-33.62884,150.30711,Govetts Leap Rd,Blackheath
+21/5/2015,BLH-SUE,Desi,Phylotta,squarrosa,30,0,0,None Seen,-33.62884,150.30711,Govetts Leap Rd,Blackheath
+21/5/2015,FLC-DA,Desi,Acacia,hispidula,10,25,25,Floral Bud,-33.69708,150.54773,Davies Ave,Faulconbridge
+21/5/2015,FLC-DA,Desi,Acacia,suaveolens,10,50,0,Open Flower,-33.69708,150.54773,Davies Ave,Faulconbridge
+21/5/2015,FLC-DA,Desi,Acacia,terminalis,3,0,25,Immature Pod,-33.69708,150.54773,Davies Ave,Faulconbridge
+21/5/2015,FLC-DA,Desi,Acacia,ulicifolia,10,25,0,Floral Bud,-33.69708,150.54773,Davies Ave,Faulconbridge
+21/5/2015,FLC-DA,Desi,Bossiaea,obcordata,10,0,0,None Seen,-33.69708,150.54773,Davies Ave,Faulconbridge
+21/5/2015,FLC-DA,Desi,Bossiaea,rhombifolia,10,0,0,None Seen,-33.69708,150.54773,Davies Ave,Faulconbridge
+21/5/2015,FLC-DA,Desi,Dillwynia,retorta,30,0,0,Old Pod,-33.69708,150.54773,Davies Ave,Faulconbridge
+21/5/2015,FLC-DA,Desi,Gompholobium,grandiflorum,10,0,0,None Seen,-33.69708,150.54773,Davies Ave,Faulconbridge
+21/5/2015,FLC-DA,Desi,Pultenaea,tuberculata,3,0,0,Old Flower,-33.69708,150.54773,Davies Ave,Faulconbridge
+21/5/2015,WOD-WV,Desi,Acacia,obtusifolia,10,0,0,None Seen,-33.735535,150.471533,Wide View Ave,Woodford
+21/5/2015,WOD-WV,Desi,Acacia,suaveolens,10,25,0,Open Flower,-33.735535,150.471533,Wide View Ave,Woodford
+21/5/2015,WOD-WV,Desi,Acacia,terminalis,10,0,25,Immature Pod,-33.735535,150.471533,Wide View Ave,Woodford
+21/5/2015,WOD-WV,Desi,Acacia,ulicifolia,20,0,0,Floral Bud,-33.735535,150.471533,Wide View Ave,Woodford
+21/5/2015,WOD-WV,Desi,Bossiaea,obcordata,10,0,0,None Seen,-33.735535,150.471533,Wide View Ave,Woodford
+21/5/2015,WOD-WV,Desi,Daviesia,corymbosa,10,0,0,None Seen,-33.735535,150.471533,Wide View Ave,Woodford
+21/5/2015,WOD-WV,Desi,Daviesia,mimosoides,3,0,0,None Seen,-33.735535,150.471533,Wide View Ave,Woodford
+21/5/2015,WOD-WV,Desi,Dillwynia,elegans,10,0,0,None Seen,-33.735535,150.471533,Wide View Ave,Woodford
+21/5/2015,WOD-WV,Desi,Dillwynia,retorta,10,0,0,Old Pod,-33.735535,150.471533,Wide View Ave,Woodford
+30/5/2015,BIL-PF,Desi,Acacia,linifolia,10,0,25,None Seen,-33.52659,150.56592,Patersons Range Fire Trail,Bilpin
+30/5/2015,BIL-PF,Desi,Acacia,suaveolens,10,25,50,Open Flower,-33.52659,150.56592,Patersons Range Fire Trail,Bilpin
+30/5/2015,BIL-PF,Desi,Acacia,ulicifolia,3,25,0,Floral Bud,-33.52659,150.56592,Patersons Range Fire Trail,Bilpin
+30/5/2015,BIL-PF,Desi,Gompholobium,latifolium,3,0,0,None Seen,-33.52659,150.56592,Patersons Range Fire Trail,Bilpin
+30/5/2015,BIL-PF,Desi,Phylotta,squarrosa,3,0,0,None Seen,-33.52659,150.56592,Patersons Range Fire Trail,Bilpin
+30/5/2015,BIL-PF,Desi,Pultenaea,scabra,30,0,0,None Seen,-33.52659,150.56592,Patersons Range Fire Trail,Bilpin
+30/5/2015,BLM-MN,Desi,Acacia,suaveolens,30,25,25,Old Flower,-33.551316,150.382309,Bells Line of Road,Blue Mountains
+30/5/2015,BLM-MN,Desi,Acacia,terminalis,30,0,50,Immature Pod,-33.551316,150.382309,Bells Line of Road,Blue Mountains
+30/5/2015,BLM-MN,Desi,Acacia,ulicifolia,3,0,0,Floral Bud,-33.551316,150.382309,Bells Line of Road,Blue Mountains
+30/5/2015,BLM-MN,Desi,Bossiaea,ensata,10,0,0,None Seen,-33.551316,150.382309,Bells Line of Road,Blue Mountains
+30/5/2015,BLM-MN,Desi,Bossiaea,heterophylla,20,25,0,Old Flower,-33.551316,150.382309,Bells Line of Road,Blue Mountains
+30/5/2015,BLM-MN,Desi,Daviesia,ulicifolia,10,0,0,None Seen,-33.551316,150.382309,Bells Line of Road,Blue Mountains
+30/5/2015,BLM-MN,Desi,Mirbelia,rubiifolia,3,0,0,None Seen,-33.551316,150.382309,Bells Line of Road,Blue Mountains
+30/5/2015,BOW-BM,Desi,Acacia,linifolia,10,0,25,Immature Pod,-33.59348,150.62476,Lieutenant Bowen Dr,Bowen Mountain
+30/5/2015,BOW-BM,Desi,Acacia,ulicifolia,10,25,0,Floral Bud,-33.59348,150.62476,Lieutenant Bowen Dr,Bowen Mountain
+30/5/2015,BOW-BM,Desi,Bossiaea,heterophylla,3,25,0,Old Flower,-33.59348,150.62476,Lieutenant Bowen Dr,Bowen Mountain
+30/5/2015,BOW-BM,Desi,Bossiaea,rhombifolia,20,0,0,None Seen,-33.59348,150.62476,Lieutenant Bowen Dr,Bowen Mountain
+30/5/2015,BOW-BM,Desi,Dillwynia,retorta,30,0,0,None Seen,-33.59348,150.62476,Lieutenant Bowen Dr,Bowen Mountain
+30/5/2015,BOW-BM,Desi,Gompholobium,grandiflorum,10,0,0,Old Pod,-33.59348,150.62476,Lieutenant Bowen Dr,Bowen Mountain
+30/5/2015,FLC-HR,Desi,Acacia,oxycedrus,20,0,0,Floral Bud,-33.69913,150.52635,Highland Rd,Faulconbridge
+30/5/2015,FLC-HR,Desi,Acacia,suaveolens,10,50,25,Open Flower,-33.69913,150.52635,Highland Rd,Faulconbridge
+30/5/2015,FLC-HR,Desi,Acacia,terminalis,3,0,0,None Seen,-33.69913,150.52635,Highland Rd,Faulconbridge
+30/5/2015,FLC-HR,Desi,Acacia,ulicifolia,10,0,0,Floral Bud,-33.69913,150.52635,Highland Rd,Faulconbridge
+30/5/2015,FLC-HR,Desi,Bossiaea,ensata,10,0,0,Old Pod,-33.69913,150.52635,Highland Rd,Faulconbridge
+30/5/2015,FLC-HR,Desi,Bossiaea,rhombifolia,20,0,0,None Seen,-33.69913,150.52635,Highland Rd,Faulconbridge
+30/5/2015,FLC-HR,Desi,Dillwynia,elegans,3,0,0,None Seen,-33.69913,150.52635,Highland Rd,Faulconbridge
+30/5/2015,FLC-HR,Desi,Dillwynia,retorta,10,0,0,None Seen,-33.69913,150.52635,Highland Rd,Faulconbridge
+30/5/2015,FLC-HR,Desi,Mirbelia,rubiifolia,20,0,0,Old Pod,-33.69913,150.52635,Highland Rd,Faulconbridge
+30/5/2015,FLC-HR,Desi,Pultenaea,tuberculata,30,0,0,None Seen,-33.69913,150.52635,Highland Rd,Faulconbridge
+30/5/2015,HWH-HH,Desi,Acacia,linifolia,20,0,50,Immature Pod,-33.666907,150.651612,Hawkesbury Lookout,Hawkesbury Heights
+30/5/2015,HWH-HH,Desi,Acacia,longifolia,3,0,0,Floral Bud,-33.666907,150.651612,Hawkesbury Lookout,Hawkesbury Heights
+30/5/2015,HWH-HH,Desi,Acacia,ulicifolia,20,25,0,Floral Bud,-33.666907,150.651612,Hawkesbury Lookout,Hawkesbury Heights
+30/5/2015,HWH-HH,Desi,Bossiaea,rhombifolia,30,0,0,None Seen,-33.666907,150.651612,Hawkesbury Lookout,Hawkesbury Heights
+30/5/2015,HWH-HH,Desi,Dillwynia,retorta,10,0,0,None Seen,-33.666907,150.651612,Hawkesbury Lookout,Hawkesbury Heights
+30/5/2015,KUR-WH,Desi,Acacia,linifolia,3,0,0,None Seen,-33.520466,150.622098,Warks Hill Rd,Kurrajong Heights
+30/5/2015,KUR-WH,Desi,Acacia,obtusifolia,20,0,0,None Seen,-33.520466,150.622098,Warks Hill Rd,Kurrajong Heights
+30/5/2015,KUR-WH,Desi,Daviesia,alata,30,0,0,None Seen,-33.520466,150.622098,Warks Hill Rd,Kurrajong Heights
+30/5/2015,KUR-WH,Desi,Dillwynia,retorta,10,0,0,None Seen,-33.520466,150.622098,Warks Hill Rd,Kurrajong Heights
+30/5/2015,KUR-WH,Desi,Gompholobium,latifolium,30,0,0,None Seen,-33.520466,150.622098,Warks Hill Rd,Kurrajong Heights
+30/5/2015,KUR-WH,Desi,Podolobium,ilicifolium,10,0,0,None Seen,-33.520466,150.622098,Warks Hill Rd,Kurrajong Heights
+30/5/2015,LAW-SJ,Desi,Acacia,obtusifolia,20,0,0,None Seen,-33.714529,150.430838,San Jose Ave,Lawson
+30/5/2015,LAW-SJ,Desi,Acacia,suaveolens,10,25,25,Floral Bud,-33.714529,150.430838,San Jose Ave,Lawson
+30/5/2015,LAW-SJ,Desi,Acacia,terminalis,30,50,0,Open Flower,-33.714529,150.430838,San Jose Ave,Lawson
+30/5/2015,LAW-SJ,Desi,Acacia,ulicifolia,3,0,0,Floral Bud,-33.714529,150.430838,San Jose Ave,Lawson
+30/5/2015,LAW-SJ,Desi,Bossiaea,heterophylla,10,25,25,Open Flower,-33.714529,150.430838,San Jose Ave,Lawson
+30/5/2015,LAW-SJ,Desi,Daviesia,alata,3,0,0,None Seen,-33.714529,150.430838,San Jose Ave,Lawson
+30/5/2015,LAW-SJ,Desi,Daviesia,latifolia,3,0,0,None Seen,-33.714529,150.430838,San Jose Ave,Lawson
+30/5/2015,LAW-SJ,Desi,Daviesia,ulicifolia,10,0,0,None Seen,-33.714529,150.430838,San Jose Ave,Lawson
+30/5/2015,LAW-SJ,Desi,Gompholobium,grandiflorum,10,0,0,None Seen,-33.714529,150.430838,San Jose Ave,Lawson
+30/5/2015,LEU-SL,Desi,Acacia,terminalis,30,50,0,Floral Bud,-33.719633,150.33501,Spencer St,Leura
+30/5/2015,LEU-SL,Desi,Acacia,trinervata,10,0,0,Floral Bud,-33.719633,150.33501,Spencer St,Leura
+30/5/2015,LEU-SL,Desi,Daviesia,alata,10,0,0,None Seen,-33.719633,150.33501,Spencer St,Leura
+30/5/2015,LEU-SL,Desi,Daviesia,ulicifolia,10,0,0,None Seen,-33.719633,150.33501,Spencer St,Leura
+30/5/2015,LEU-SL,Desi,Phylotta,squarrosa,3,0,0,None Seen,-33.719633,150.33501,Spencer St,Leura
+30/5/2015,MED-EL,Desi,Acacia,obtusifolia,10,0,0,Floral Bud,-33.6489,150.32042,Evans Lookout Rd,Medlow Bath
+30/5/2015,MED-EL,Desi,Acacia,terminalis,10,25,0,Floral Bud,-33.6489,150.32042,Evans Lookout Rd,Medlow Bath
+30/5/2015,MED-EL,Desi,Acacia,ulicifolia,10,25,0,Floral Bud,-33.6489,150.32042,Evans Lookout Rd,Medlow Bath
+30/5/2015,MED-EL,Desi,Bossiaea,ensata,3,0,0,None Seen,-33.6489,150.32042,Evans Lookout Rd,Medlow Bath
+30/5/2015,MED-EL,Desi,Bossiaea,heterophylla,3,25,25,Open Flower,-33.6489,150.32042,Evans Lookout Rd,Medlow Bath
+30/5/2015,MED-EL,Desi,Daviesia,ulicifolia,20,0,0,None Seen,-33.6489,150.32042,Evans Lookout Rd,Medlow Bath
+30/5/2015,MED-EL,Desi,Mirbelia,platylobioides,3,0,0,None Seen,-33.6489,150.32042,Evans Lookout Rd,Medlow Bath
+30/5/2015,MED-EL,Desi,Phylotta,squarrosa,10,0,0,None Seen,-33.6489,150.32042,Evans Lookout Rd,Medlow Bath
+30/5/2015,MWL-MW,Desi,Acacia,terminalis,20,50,0,Open Flower,-33.54279,150.34393,Mount Wilson Rd,Mount Wilson
+30/5/2015,MWL-MW,Desi,Bossiaea,heterophylla,10,25,25,Floral Bud,-33.54279,150.34393,Mount Wilson Rd,Mount Wilson
+30/5/2015,MWL-MW,Desi,Daviesia,alata,20,0,0,None Seen,-33.54279,150.34393,Mount Wilson Rd,Mount Wilson
+30/5/2015,MWL-MW,Desi,Daviesia,ulicifolia,3,0,0,None Seen,-33.54279,150.34393,Mount Wilson Rd,Mount Wilson
+30/5/2015,MWL-MW,Desi,Gompholobium,grandiflorum,10,0,0,None Seen,-33.54279,150.34393,Mount Wilson Rd,Mount Wilson
+30/5/2015,MWL-MW,Desi,Gompholobium,latifolium,3,0,0,None Seen,-33.54279,150.34393,Mount Wilson Rd,Mount Wilson
+30/5/2015,MWL-MW,Desi,Mirbelia,platylobioides,10,0,0,None Seen,-33.54279,150.34393,Mount Wilson Rd,Mount Wilson
+30/5/2015,MWL-MW,Desi,Phylotta,squarrosa,10,0,0,None Seen,-33.54279,150.34393,Mount Wilson Rd,Mount Wilson
+30/5/2015,VAH-SS,Desi,Acacia,linifolia,3,0,0,None Seen,-33.70947,150.56857,Spring St,Valley Heights
+30/5/2015,VAH-SS,Desi,Acacia,suaveolens,3,25,0,Open Flower,-33.70947,150.56857,Spring St,Valley Heights
+30/5/2015,VAH-SS,Desi,Acacia,terminalis,3,25,25,Immature Pod,-33.70947,150.56857,Spring St,Valley Heights
+30/5/2015,VAH-SS,Desi,Acacia,ulicifolia,10,25,0,Floral Bud,-33.70947,150.56857,Spring St,Valley Heights
+30/5/2015,VAH-SS,Desi,Bossiaea,obcordata,10,0,0,None Seen,-33.70947,150.56857,Spring St,Valley Heights
+30/5/2015,VAH-SS,Desi,Bossiaea,rhombifolia,20,0,0,None Seen,-33.70947,150.56857,Spring St,Valley Heights
+30/5/2015,VAH-SS,Desi,Daviesia,corymbosa,3,0,0,None Seen,-33.70947,150.56857,Spring St,Valley Heights
+30/5/2015,VAH-SS,Desi,Dillwynia,retorta,20,0,0,Old Pod,-33.70947,150.56857,Spring St,Valley Heights
+30/5/2015,VAH-SS,Desi,Gompholobium,grandiflorum,3,0,0,Old Pod,-33.70947,150.56857,Spring St,Valley Heights
+3/6/2015,BLH-PL,Anon,Acacia,terminalis,20,50,0,Open Flower,-33.59975,150.34464,Perrys Lookdown,Blackheath
+3/6/2015,BLH-PL,Anon,Daviesia,ulicifolia,30,0,0,None Seen,-33.59975,150.34464,Perrys Lookdown,Blackheath
+3/6/2015,BLH-PL,Anon,Gompholobium,latifolium,30,0,0,None Seen,-33.59975,150.34464,Perrys Lookdown,Blackheath
+3/6/2015,BLH-PL,Anon,Acacia,obtusifolia,10,0,0,None Seen,-33.59975,150.34464,Perrys Lookdown,Blackheath
+3/6/2015,BLH-PL,Anon,Pultenaea,scabra,20,0,0,None Seen,-33.59975,150.34464,Perrys Lookdown,Blackheath
+3/6/2015,BLH-PL,Anon,Bossiaea,heterophylla,3,0,more,Old Flower,-33.59975,150.34464,Perrys Lookdown,Blackheath
+3/6/2015,BLH-SUE,Sue,Daviesia,ulicifolia,30,0,0,None Seen,-33.62884,150.30711,Govetts Leap Rd,Blackheath
+3/6/2015,BLH-SUE,Sue,Acacia,terminalis,10,50,0,Open Flower,-33.62884,150.30711,Govetts Leap Rd,Blackheath
+3/6/2015,BLH-SUE,Sue,Bossiaea,heterophylla,3,0,more,Immature Pod,-33.62884,150.30711,Govetts Leap Rd,Blackheath
+3/6/2015,BLH-SUE,Sue,Acacia,ulicifolia,3,25,0,Floral Bud,-33.62884,150.30711,Govetts Leap Rd,Blackheath
+3/6/2015,BLH-SUE,Sue,Phylotta,squarrosa,30,0,0,None Seen,-33.62884,150.30711,Govetts Leap Rd,Blackheath
+3/6/2015,BLH-SUE,Sue,Mirbelia,platylobioides,10,0,0,None Seen,-33.62884,150.30711,Govetts Leap Rd,Blackheath
+3/6/2015,GLB-NS,Glenbrook Reserve Group,Acacia,linifolia,3,0,25,Immature Pod,-33.764722,150.623611,Napp Sack Reserve,Glenbrook
+3/6/2015,GLB-NS,Glenbrook Reserve Group,Acacia,ulicifolia,10,25,0,Open Flower,-33.764722,150.623611,Napp Sack Reserve,Glenbrook
+3/6/2015,GLB-NS,Glenbrook Reserve Group,Bossiaea,obcordata,10,0,0,None Seen,-33.764722,150.623611,Napp Sack Reserve,Glenbrook
+3/6/2015,GLB-NS,Glenbrook Reserve Group,Bossiaea,rhombifolia,10,25,0,Open Flower,-33.764722,150.623611,Napp Sack Reserve,Glenbrook
+3/6/2015,GLB-NS,Glenbrook Reserve Group,Podolobium,ilicifolium,10,25,0,None Seen,-33.764722,150.623611,Napp Sack Reserve,Glenbrook
+3/6/2015,VAH-MA,Rod,Acacia,hispidula,3,25,0,Old Pod,-33.73406,150.57611,Martins Lookout,Valley Heights
+3/6/2015,VAH-MA,Rod,Acacia,linifolia,3,0,25,Immature Pod,-33.73406,150.57611,Martins Lookout,Valley Heights
+3/6/2015,VAH-MA,Rod,Acacia,ulicifolia,10,25,0,Open Flower,-33.73406,150.57611,Martins Lookout,Valley Heights
+3/6/2015,VAH-MA,Rod,Bossiaea,obcordata,3,0,0,None Seen,-33.73406,150.57611,Martins Lookout,Valley Heights
+3/6/2015,VAH-MA,Rod,Bossiaea,rhombifolia,20,0,0,None Seen,-33.73406,150.57611,Martins Lookout,Valley Heights
+3/6/2015,VAH-MA,Rod,Dillwynia,retorta,20,0,0,None Seen,-33.73406,150.57611,Martins Lookout,Valley Heights
+3/6/2015,VAH-MA,Rod,Gompholobium,grandiflorum,10,0,0,None Seen,-33.73406,150.57611,Martins Lookout,Valley Heights
+11/6/2015,BOW-BM,Desi,Acacia,linifolia,3,0,0,None Seen,-33.59348,150.62476,Lieutenant Bowen Dr,Bowen Mountain
+11/6/2015,BOW-BM,Desi,Acacia,parramattensis,3,0,25,None Seen,-33.59348,150.62476,Lieutenant Bowen Dr,Bowen Mountain
+11/6/2015,BOW-BM,Desi,Acacia,trinervata,3,0,0,None Seen,-33.59348,150.62476,Lieutenant Bowen Dr,Bowen Mountain
+11/6/2015,BOW-BM,Desi,Acacia,ulicifolia,10,0,0,None Seen,-33.59348,150.62476,Lieutenant Bowen Dr,Bowen Mountain
+11/6/2015,BOW-BM,Desi,Bossiaea,heterophylla,3,25,0,None Seen,-33.59348,150.62476,Lieutenant Bowen Dr,Bowen Mountain
+11/6/2015,BOW-BM,Desi,Bossiaea,rhombifolia,30,0,0,Old Pod,-33.59348,150.62476,Lieutenant Bowen Dr,Bowen Mountain
+11/6/2015,BOW-BM,Desi,Dillwynia,retorta,20,0,0,Old Pod,-33.59348,150.62476,Lieutenant Bowen Dr,Bowen Mountain
+11/6/2015,BOW-BM,Desi,Gompholobium,grandiflorum,3,0,0,None Seen,-33.59348,150.62476,Lieutenant Bowen Dr,Bowen Mountain
+11/6/2015,BOW-BM,Desi,Gompholobium,latifolium,3,0,0,None Seen,-33.59348,150.62476,Lieutenant Bowen Dr,Bowen Mountain
+11/6/2015,BOW-BM,Desi,Pultenaea,scabra,10,0,0,None Seen,-33.59348,150.62476,Lieutenant Bowen Dr,Bowen Mountain
+11/6/2015,BOW-LBR,Desi,Acacia,obtusifolia,3,0,0,None Seen,-33.563732,150.623123,Lieutenant Bowen Rd,Bowen Mountain
+11/6/2015,BOW-LBR,Desi,Acacia,parramattensis,3,0,25,Immature Pod,-33.563732,150.623123,Lieutenant Bowen Rd,Bowen Mountain
+11/6/2015,BOW-LBR,Desi,Acacia,suaveolens,3,25,50,Old Flower,-33.563732,150.623123,Lieutenant Bowen Rd,Bowen Mountain
+11/6/2015,BOW-LBR,Desi,Acacia,terminalis,10,25,25,Old Flower,-33.563732,150.623123,Lieutenant Bowen Rd,Bowen Mountain
+11/6/2015,BOW-LBR,Desi,Acacia,trinervata,10,0,0,Floral Bud,-33.563732,150.623123,Lieutenant Bowen Rd,Bowen Mountain
+11/6/2015,BOW-LBR,Desi,Acacia,ulicifolia,30,25,0,Floral Bud,-33.563732,150.623123,Lieutenant Bowen Rd,Bowen Mountain
+11/6/2015,BOW-LBR,Desi,Bossiaea,ensata,3,0,0,Old Pod,-33.563732,150.623123,Lieutenant Bowen Rd,Bowen Mountain
+11/6/2015,BOW-LBR,Desi,Bossiaea,rhombifolia,30,0,0,None Seen,-33.563732,150.623123,Lieutenant Bowen Rd,Bowen Mountain
+11/6/2015,BOW-LBR,Desi,Dillwynia,retorta,10,0,0,Old Pod,-33.563732,150.623123,Lieutenant Bowen Rd,Bowen Mountain
+11/6/2015,BOW-LBR,Desi,Gompholobium,latifolium,10,0,0,None Seen,-33.563732,150.623123,Lieutenant Bowen Rd,Bowen Mountain
+11/6/2015,BOW-LBR,Desi,Pultenaea,scabra,3,0,0,None Seen,-33.563732,150.623123,Lieutenant Bowen Rd,Bowen Mountain
+11/6/2015,GRO-CTR,Desi,Acacia,linifolia,10,0,0,None Seen,-33.609448,150.638589,Cabbage Tree Rd,Grose Wold
+11/6/2015,GRO-CTR,Desi,Acacia,ulicifolia,10,25,0,Floral Bud,-33.609448,150.638589,Cabbage Tree Rd,Grose Wold
+11/6/2015,GRO-CTR,Desi,Bossiaea,heterophylla,3,0,0,None Seen,-33.609448,150.638589,Cabbage Tree Rd,Grose Wold
+11/6/2015,GRO-CTR,Desi,Bossiaea,rhombifolia,30,0,0,Old Pod,-33.609448,150.638589,Cabbage Tree Rd,Grose Wold
+11/6/2015,GRO-CTR,Desi,Dillwynia,retorta,3,0,0,Old Pod,-33.609448,150.638589,Cabbage Tree Rd,Grose Wold
+11/6/2015,GRO-CTR,Desi,Gompholobium,latifolium,20,0,0,None Seen,-33.609448,150.638589,Cabbage Tree Rd,Grose Wold
+11/6/2015,GRO-CTR,Desi,Podolobium,ilicifolium,20,0,0,None Seen,-33.609448,150.638589,Cabbage Tree Rd,Grose Wold
+12/6/2015,BER-BB,Desi,Acacia,longifolia,20,0,0,Floral Bud,-33.53717,150.43765,Bells Line of Road,Berambing
+12/6/2015,BER-BB,Desi,Acacia,myrtifolia,10,0,0,Floral Bud,-33.53717,150.43765,Bells Line of Road,Berambing
+12/6/2015,BER-BB,Desi,Acacia,obtusifolia,10,0,0,None Seen,-33.53717,150.43765,Bells Line of Road,Berambing
+12/6/2015,BER-BB,Desi,Acacia,parramattensis,3,0,0,None Seen,-33.53717,150.43765,Bells Line of Road,Berambing
+12/6/2015,BER-BB,Desi,Acacia,terminalis,10,50,0,Open Flower,-33.53717,150.43765,Bells Line of Road,Berambing
+12/6/2015,BER-BB,Desi,Pultenaea,tuberculata,10,0,0,None Seen,-33.53717,150.43765,Bells Line of Road,Berambing
+12/6/2015,BIL-BP,Desi,Acacia,terminalis,20,more,0,Open Flower,-33.490938,150.550001,Pulp Rd,Bilpin
+12/6/2015,BIL-BP,Desi,Acacia,ulicifolia,3,50,0,Floral Bud,-33.490938,150.550001,Pulp Rd,Bilpin
+12/6/2015,BIL-BP,Desi,Bossiaea,heterophylla,3,25,0,None Seen,-33.490938,150.550001,Pulp Rd,Bilpin
+12/6/2015,BIL-BP,Desi,Dillwynia,retorta,20,0,0,None Seen,-33.490938,150.550001,Pulp Rd,Bilpin
+12/6/2015,BIL-BP,Desi,Gompholobium,grandiflorum,20,0,0,None Seen,-33.490938,150.550001,Pulp Rd,Bilpin
+12/6/2015,BIL-BP,Desi,Phylotta,squarrosa,10,25,0,Floral Bud,-33.490938,150.550001,Pulp Rd,Bilpin
+12/6/2015,BIL-BP,Desi,Pultenaea,scabra,20,0,0,None Seen,-33.490938,150.550001,Pulp Rd,Bilpin
+12/6/2015,BIL-PF,Desi,Acacia,myrtifolia,10,0,0,Floral Bud,-33.52659,150.56592,Patersons Range Fire Trail,Bilpin
+12/6/2015,BIL-PF,Desi,Acacia,suaveolens,3,25,0,Open Flower,-33.52659,150.56592,Patersons Range Fire Trail,Bilpin
+12/6/2015,BIL-PF,Desi,Acacia,terminalis,10,25,0,Floral Bud,-33.52659,150.56592,Patersons Range Fire Trail,Bilpin
+12/6/2015,BIL-PF,Desi,Acacia,ulicifolia,20,25,0,Floral Bud,-33.52659,150.56592,Patersons Range Fire Trail,Bilpin
+12/6/2015,BIL-PF,Desi,Bossiaea,obcordata,30,0,0,None Seen,-33.52659,150.56592,Patersons Range Fire Trail,Bilpin
+12/6/2015,BIL-PF,Desi,Daviesia,corymbosa,10,0,0,None Seen,-33.52659,150.56592,Patersons Range Fire Trail,Bilpin
+12/6/2015,BIL-PF,Desi,Gompholobium,grandiflorum,10,0,0,Old Pod,-33.52659,150.56592,Patersons Range Fire Trail,Bilpin
+12/6/2015,BIL-PF,Desi,Phylotta,squarrosa,30,25,0,Floral Bud,-33.52659,150.56592,Patersons Range Fire Trail,Bilpin
+12/6/2015,BLM-MN,Desi,Acacia,suaveolens,30,25,50,Old Flower,-33.551316,150.382309,Bells Line of Road,Blue Mountains
+12/6/2015,BLM-MN,Desi,Acacia,terminalis,20,0,0,Floral Bud,-33.551316,150.382309,Bells Line of Road,Blue Mountains
+12/6/2015,BLM-MN,Desi,Acacia,ulicifolia,3,0,0,None Seen,-33.551316,150.382309,Bells Line of Road,Blue Mountains
+12/6/2015,BLM-MN,Desi,Bossiaea,ensata,20,0,0,None Seen,-33.551316,150.382309,Bells Line of Road,Blue Mountains
+12/6/2015,BLM-MN,Desi,Bossiaea,heterophylla,10,25,25,Floral Bud,-33.551316,150.382309,Bells Line of Road,Blue Mountains
+12/6/2015,BLM-MN,Desi,Daviesia,alata,3,0,0,None Seen,-33.551316,150.382309,Bells Line of Road,Blue Mountains
+12/6/2015,BLM-MN,Desi,Daviesia,ulicifolia,10,0,0,None Seen,-33.551316,150.382309,Bells Line of Road,Blue Mountains
+12/6/2015,BLM-MN,Desi,Gompholobium,grandiflorum,3,0,0,None Seen,-33.551316,150.382309,Bells Line of Road,Blue Mountains
+12/6/2015,BLM-MN,Desi,Mirbelia,rubiifolia,3,0,0,None Seen,-33.551316,150.382309,Bells Line of Road,Blue Mountains
+12/6/2015,FLC-HR,Desi,Acacia,oxycedrus,20,0,0,Floral Bud,-33.69913,150.52635,Highland Rd,Faulconbridge
+12/6/2015,FLC-HR,Desi,Acacia,suaveolens,10,50,0,Open Flower,-33.69913,150.52635,Highland Rd,Faulconbridge
+12/6/2015,FLC-HR,Desi,Acacia,ulicifolia,3,25,0,Old Flower,-33.69913,150.52635,Highland Rd,Faulconbridge
+12/6/2015,FLC-HR,Desi,Bossiaea,ensata,10,0,25,None Seen,-33.69913,150.52635,Highland Rd,Faulconbridge
+12/6/2015,FLC-HR,Desi,Bossiaea,rhombifolia,20,0,0,None Seen,-33.69913,150.52635,Highland Rd,Faulconbridge
+12/6/2015,FLC-HR,Desi,Daviesia,mimosoides,3,0,0,None Seen,-33.69913,150.52635,Highland Rd,Faulconbridge
+12/6/2015,FLC-HR,Desi,Dillwynia,elegans,10,0,0,None Seen,-33.69913,150.52635,Highland Rd,Faulconbridge
+12/6/2015,FLC-HR,Desi,Dillwynia,retorta,10,0,0,Floral Bud,-33.69913,150.52635,Highland Rd,Faulconbridge
+12/6/2015,FLC-HR,Desi,Mirbelia,rubiifolia,10,0,0,None Seen,-33.69913,150.52635,Highland Rd,Faulconbridge
+12/6/2015,FLC-HR,Desi,Pultenaea,tuberculata,30,0,0,None Seen,-33.69913,150.52635,Highland Rd,Faulconbridge
+12/6/2015,HWH-HH,Desi,Acacia,conferta,3,0,0,None Seen,-33.666907,150.651612,Hawkesbury Lookout,Hawkesbury Heights
+12/6/2015,HWH-HH,Desi,Acacia,linifolia,30,0,more,Immature Pod,-33.666907,150.651612,Hawkesbury Lookout,Hawkesbury Heights
+12/6/2015,HWH-HH,Desi,Acacia,longifolia,10,0,0,Floral Bud,-33.666907,150.651612,Hawkesbury Lookout,Hawkesbury Heights
+12/6/2015,HWH-HH,Desi,Acacia,parramattensis,3,0,0,None Seen,-33.666907,150.651612,Hawkesbury Lookout,Hawkesbury Heights
+12/6/2015,HWH-HH,Desi,Acacia,ulicifolia,20,25,0,Old Flower,-33.666907,150.651612,Hawkesbury Lookout,Hawkesbury Heights
+12/6/2015,HWH-HH,Desi,Bossiaea,rhombifolia,30,0,0,None Seen,-33.666907,150.651612,Hawkesbury Lookout,Hawkesbury Heights
+12/6/2015,HWH-HH,Desi,Dillwynia,retorta,3,0,0,Old Pod,-33.666907,150.651612,Hawkesbury Lookout,Hawkesbury Heights
+12/6/2015,HWH-HH,Desi,Gompholobium,grandiflorum,3,0,0,Old Pod,-33.666907,150.651612,Hawkesbury Lookout,Hawkesbury Heights
+12/6/2015,KUR-WH,Desi,Acacia,linifolia,3,0,0,None Seen,-33.520466,150.622098,Warks Hill Rd,Kurrajong Heights
+12/6/2015,KUR-WH,Desi,Acacia,longifolia,3,0,0,None Seen,-33.520466,150.622098,Warks Hill Rd,Kurrajong Heights
+12/6/2015,KUR-WH,Desi,Acacia,obtusifolia,30,0,0,None Seen,-33.520466,150.622098,Warks Hill Rd,Kurrajong Heights
+12/6/2015,KUR-WH,Desi,Daviesia,alata,30,0,0,None Seen,-33.520466,150.622098,Warks Hill Rd,Kurrajong Heights
+12/6/2015,KUR-WH,Desi,Dillwynia,retorta,20,0,0,None Seen,-33.520466,150.622098,Warks Hill Rd,Kurrajong Heights
+12/6/2015,KUR-WH,Desi,Gompholobium,latifolium,30,0,0,None Seen,-33.520466,150.622098,Warks Hill Rd,Kurrajong Heights
+12/6/2015,KUR-WH,Desi,Podolobium,ilicifolium,10,0,0,None Seen,-33.520466,150.622098,Warks Hill Rd,Kurrajong Heights
+12/6/2015,LAW-SJ,Desi,Acacia,obtusifolia,30,0,0,None Seen,-33.714529,150.430838,San Jose Ave,Lawson
+12/6/2015,LAW-SJ,Desi,Acacia,suaveolens,10,more,25,Open Flower,-33.714529,150.430838,San Jose Ave,Lawson
+12/6/2015,LAW-SJ,Desi,Acacia,terminalis,30,more,0,Open Flower,-33.714529,150.430838,San Jose Ave,Lawson
+12/6/2015,LAW-SJ,Desi,Acacia,ulicifolia,10,0,0,Floral Bud,-33.714529,150.430838,San Jose Ave,Lawson
+12/6/2015,LAW-SJ,Desi,Bossiaea,heterophylla,3,0,25,Immature Pod,-33.714529,150.430838,San Jose Ave,Lawson
+12/6/2015,LAW-SJ,Desi,Daviesia,alata,20,0,0,None Seen,-33.714529,150.430838,San Jose Ave,Lawson
+12/6/2015,LAW-SJ,Desi,Daviesia,corymbosa,10,0,0,None Seen,-33.714529,150.430838,San Jose Ave,Lawson
+12/6/2015,LAW-SJ,Desi,Daviesia,ulicifolia,10,0,0,None Seen,-33.714529,150.430838,San Jose Ave,Lawson
+12/6/2015,LAW-SJ,Desi,Gompholobium,grandiflorum,10,0,0,None Seen,-33.714529,150.430838,San Jose Ave,Lawson
+12/6/2015,LAW-SJ,Desi,Phylotta,squarrosa,3,0,0,None Seen,-33.714529,150.430838,San Jose Ave,Lawson
+12/6/2015,LAW-SJ,Desi,Pultenaea,tuberculata,3,0,0,None Seen,-33.714529,150.430838,San Jose Ave,Lawson
+12/6/2015,LEU-SL,Desi,Acacia,terminalis,30,25,0,Floral Bud,-33.719633,150.33501,Spencer St,Leura
+12/6/2015,LEU-SL,Desi,Acacia,trinervata,10,0,0,Floral Bud,-33.719633,150.33501,Spencer St,Leura
+12/6/2015,LEU-SL,Desi,Bossiaea,ensata,3,0,0,None Seen,-33.719633,150.33501,Spencer St,Leura
+12/6/2015,LEU-SL,Desi,Bossiaea,heterophylla,10,0,0,None Seen,-33.719633,150.33501,Spencer St,Leura
+12/6/2015,LEU-SL,Desi,Daviesia,alata,3,0,0,None Seen,-33.719633,150.33501,Spencer St,Leura
+12/6/2015,LEU-SL,Desi,Daviesia,ulicifolia,20,0,0,None Seen,-33.719633,150.33501,Spencer St,Leura
+12/6/2015,LEU-SL,Desi,Mirbelia,platylobioides,10,0,0,None Seen,-33.719633,150.33501,Spencer St,Leura
+12/6/2015,LEU-SL,Desi,Phylotta,squarrosa,3,0,0,None Seen,-33.719633,150.33501,Spencer St,Leura
+12/6/2015,MBK-MB,Desi,Acacia,myrtifolia,3,0,0,Floral Bud,-33.57912,150.36555,Mount Banks Picnic Area,Mount Banks
+12/6/2015,MBK-MB,Desi,Acacia,obtusifolia,3,0,0,None Seen,-33.57912,150.36555,Mount Banks Picnic Area,Mount Banks
+12/6/2015,MBK-MB,Desi,Acacia,suaveolens,30,50,0,Open Flower,-33.57912,150.36555,Mount Banks Picnic Area,Mount Banks
+12/6/2015,MBK-MB,Desi,Acacia,terminalis,30,50,0,Floral Bud,-33.57912,150.36555,Mount Banks Picnic Area,Mount Banks
+12/6/2015,MBK-MB,Desi,Acacia,ulicifolia,10,25,0,None Seen,-33.57912,150.36555,Mount Banks Picnic Area,Mount Banks
+12/6/2015,MBK-MB,Desi,Bossiaea,ensata,3,0,0,None Seen,-33.57912,150.36555,Mount Banks Picnic Area,Mount Banks
+12/6/2015,MBK-MB,Desi,Dillwynia,retorta,3,0,0,None Seen,-33.57912,150.36555,Mount Banks Picnic Area,Mount Banks
+12/6/2015,MBK-MB,Desi,Gompholobium,grandiflorum,20,0,0,None Seen,-33.57912,150.36555,Mount Banks Picnic Area,Mount Banks
+12/6/2015,MBK-MB,Desi,Mirbelia,platylobioides,10,0,0,None Seen,-33.57912,150.36555,Mount Banks Picnic Area,Mount Banks
+12/6/2015,MBK-MB,Desi,Phylotta,squarrosa,3,25,0,Floral Bud,-33.57912,150.36555,Mount Banks Picnic Area,Mount Banks
+12/6/2015,MED-AF,Desi,Acacia,obtusifolia,3,0,0,None Seen,-33.668394,150.316464,Katoomba Airport,Medlow Bath
+12/6/2015,MED-AF,Desi,Acacia,terminalis,30,50,0,Floral Bud,-33.668394,150.316464,Katoomba Airport,Medlow Bath
+12/6/2015,MED-AF,Desi,Acacia,trinervata,3,25,0,Floral Bud,-33.668394,150.316464,Katoomba Airport,Medlow Bath
+12/6/2015,MED-AF,Desi,Bossiaea,ensata,3,0,0,None Seen,-33.668394,150.316464,Katoomba Airport,Medlow Bath
+12/6/2015,MED-AF,Desi,Bossiaea,heterophylla,10,0,25,Immature Pod,-33.668394,150.316464,Katoomba Airport,Medlow Bath
+12/6/2015,MED-AF,Desi,Daviesia,alata,3,0,0,None Seen,-33.668394,150.316464,Katoomba Airport,Medlow Bath
+12/6/2015,MED-AF,Desi,Daviesia,ulicifolia,30,0,0,None Seen,-33.668394,150.316464,Katoomba Airport,Medlow Bath
+12/6/2015,MED-AF,Desi,Phylotta,squarrosa,10,0,0,None Seen,-33.668394,150.316464,Katoomba Airport,Medlow Bath
+12/6/2015,MED-EL,Desi,Acacia,longifolia,10,0,0,Floral Bud,-33.6489,150.32042,Evans Lookout Rd,Medlow Bath
+12/6/2015,MED-EL,Desi,Acacia,obtusifolia,3,0,0,None Seen,-33.6489,150.32042,Evans Lookout Rd,Medlow Bath
+12/6/2015,MED-EL,Desi,Acacia,terminalis,30,50,0,Open Flower,-33.6489,150.32042,Evans Lookout Rd,Medlow Bath
+12/6/2015,MED-EL,Desi,Acacia,ulicifolia,3,25,0,Floral Bud,-33.6489,150.32042,Evans Lookout Rd,Medlow Bath
+12/6/2015,MED-EL,Desi,Daviesia,ulicifolia,30,0,0,None Seen,-33.6489,150.32042,Evans Lookout Rd,Medlow Bath
+12/6/2015,MED-EL,Desi,Mirbelia,platylobioides,3,0,0,None Seen,-33.6489,150.32042,Evans Lookout Rd,Medlow Bath
+12/6/2015,MED-EL,Desi,Phylotta,squarrosa,30,0,0,None Seen,-33.6489,150.32042,Evans Lookout Rd,Medlow Bath
+12/6/2015,MED-PP,Desi,Acacia,obtusifolia,3,0,0,None Seen,-33.655253,150.330992,Grand Canyon Rd,Medlow Bath
+12/6/2015,MED-PP,Desi,Acacia,terminalis,30,25,0,Floral Bud,-33.655253,150.330992,Grand Canyon Rd,Medlow Bath
+12/6/2015,MED-PP,Desi,Acacia,trinervata,3,0,0,Floral Bud,-33.655253,150.330992,Grand Canyon Rd,Medlow Bath
+12/6/2015,MED-PP,Desi,Daviesia,ulicifolia,20,0,0,None Seen,-33.655253,150.330992,Grand Canyon Rd,Medlow Bath
+12/6/2015,MED-PP,Desi,Dillwynia,retorta,30,25,0,None Seen,-33.655253,150.330992,Grand Canyon Rd,Medlow Bath
+12/6/2015,MWL-MW,Desi,Acacia,obtusifolia,3,0,0,None Seen,-33.54279,150.34393,Mount Wilson Rd,Mount Wilson
+12/6/2015,MWL-MW,Desi,Acacia,terminalis,30,more,0,Open Flower,-33.54279,150.34393,Mount Wilson Rd,Mount Wilson
+12/6/2015,MWL-MW,Desi,Bossiaea,heterophylla,30,0,50,Immature Pod,-33.54279,150.34393,Mount Wilson Rd,Mount Wilson
+12/6/2015,MWL-MW,Desi,Daviesia,alata,30,0,0,None Seen,-33.54279,150.34393,Mount Wilson Rd,Mount Wilson
+12/6/2015,MWL-MW,Desi,Daviesia,ulicifolia,3,0,0,None Seen,-33.54279,150.34393,Mount Wilson Rd,Mount Wilson
+12/6/2015,MWL-MW,Desi,Gompholobium,grandiflorum,30,0,0,None Seen,-33.54279,150.34393,Mount Wilson Rd,Mount Wilson
+12/6/2015,MWL-MW,Desi,Mirbelia,platylobioides,3,0,0,None Seen,-33.54279,150.34393,Mount Wilson Rd,Mount Wilson
+12/6/2015,MWL-MW,Desi,Phylotta,squarrosa,20,0,0,None Seen,-33.54279,150.34393,Mount Wilson Rd,Mount Wilson
+12/6/2015,VAH-SS,Desi,Acacia,hispidula,3,0,0,None Seen,-33.70947,150.56857,Spring St,Valley Heights
+12/6/2015,VAH-SS,Desi,Acacia,linifolia,10,0,25,Immature Pod,-33.70947,150.56857,Spring St,Valley Heights
+12/6/2015,VAH-SS,Desi,Acacia,suaveolens,10,50,0,Open Flower,-33.70947,150.56857,Spring St,Valley Heights
+12/6/2015,VAH-SS,Desi,Acacia,terminalis,10,0,0,None Seen,-33.70947,150.56857,Spring St,Valley Heights
+12/6/2015,VAH-SS,Desi,Acacia,ulicifolia,10,0,0,Floral Bud,-33.70947,150.56857,Spring St,Valley Heights
+12/6/2015,VAH-SS,Desi,Bossiaea,obcordata,30,0,0,Old Pod,-33.70947,150.56857,Spring St,Valley Heights
+12/6/2015,VAH-SS,Desi,Bossiaea,rhombifolia,20,0,0,None Seen,-33.70947,150.56857,Spring St,Valley Heights
+12/6/2015,VAH-SS,Desi,Daviesia,mimosoides,10,0,0,None Seen,-33.70947,150.56857,Spring St,Valley Heights
+12/6/2015,VAH-SS,Desi,Dillwynia,retorta,30,0,0,None Seen,-33.70947,150.56857,Spring St,Valley Heights
+12/6/2015,VAH-SS,Desi,Gompholobium,grandiflorum,3,0,0,None Seen,-33.70947,150.56857,Spring St,Valley Heights
+21/6/2015,KAT-MER,Meredith,Acacia,terminalis,10,more,0,Open Flower,-33.6868,150.3175,Michael Eades Reserve,Katoomba
+21/6/2015,KAT-MER,Meredith,Mirbelia,platylobioides,30,25,0,Floral Bud,-33.6868,150.3175,Michael Eades Reserve,Katoomba
+21/6/2015,KAT-MER,Meredith,Daviesia,ulicifolia,10,0,0,Floral Bud,-33.6868,150.3175,Michael Eades Reserve,Katoomba
+21/6/2015,KAT-MER,Meredith,Phylotta,squarrosa,10,0,0,Old Flower,-33.6868,150.3175,Michael Eades Reserve,Katoomba
+21/6/2015,KAT-MER,Meredith,Hovea,linearis,3,0,0,None Seen,-33.6868,150.3175,Michael Eades Reserve,Katoomba
+21/6/2015,KAT-MER,Meredith,Acacia,ulicifolia,10,0,0,None Seen,-33.6868,150.3175,Michael Eades Reserve,Katoomba
+21/6/2015,KAT-MER,Meredith,Mirbelia,rubiifolia,3,0,0,Old Pod,-33.6868,150.3175,Michael Eades Reserve,Katoomba
+21/6/2015,KAT-MFR,Meredith,Mirbelia,platylobioides,20,25,0,Floral Bud,-33.685547,150.32819,Minnehaha Falls Reserve,Katoomba
+21/6/2015,KAT-MFR,Meredith,Phylotta,squarrosa,10,0,0,Open Flower,-33.685547,150.32819,Minnehaha Falls Reserve,Katoomba
+21/6/2015,KAT-MFR,Meredith,Daviesia,ulicifolia,10,0,0,Floral Bud,-33.685547,150.32819,Minnehaha Falls Reserve,Katoomba
+21/6/2015,KAT-MFR,Meredith,Acacia,brownii,3,25,0,Floral Bud,-33.685547,150.32819,Minnehaha Falls Reserve,Katoomba
+21/6/2015,KAT-MFR,Meredith,Bossiaea,heterophylla,3,0,25,Immature Pod,-33.685547,150.32819,Minnehaha Falls Reserve,Katoomba
+21/6/2015,KAT-MFR,Meredith,Mirbelia,rubiifolia,3,0,0,Old Pod,-33.685547,150.32819,Minnehaha Falls Reserve,Katoomba
+22/6/2015,BLH-PL,Anon,Acacia,terminalis,30,more,25,Open Flower,-33.59975,150.34464,Perrys Lookdown,Blackheath
+22/6/2015,BLH-PL,Anon,Daviesia,ulicifolia,30,0,0,None Seen,-33.59975,150.34464,Perrys Lookdown,Blackheath
+22/6/2015,BLH-PL,Anon,Pultenaea,scabra,3,0,0,None Seen,-33.59975,150.34464,Perrys Lookdown,Blackheath
+22/6/2015,BLH-PL,Anon,Bossiaea,heterophylla,3,0,more,Immature Pod,-33.59975,150.34464,Perrys Lookdown,Blackheath
+22/6/2015,BLH-PL,Anon,Gompholobium,latifolium,30,0,0,None Seen,-33.59975,150.34464,Perrys Lookdown,Blackheath
+22/6/2015,BLH-PL,Anon,Acacia,obtusifolia,10,0,25,Immature Pod,-33.59975,150.34464,Perrys Lookdown,Blackheath
+22/6/2015,BLH-SUE,Sue,Daviesia,ulicifolia,30,0,0,None Seen,-33.62884,150.30711,Govetts Leap Rd,Blackheath
+22/6/2015,BLH-SUE,Sue,Acacia,longifolia,3,0,0,Floral Bud,-33.62884,150.30711,Govetts Leap Rd,Blackheath
+22/6/2015,BLH-SUE,Sue,Acacia,terminalis,20,50,0,Open Flower,-33.62884,150.30711,Govetts Leap Rd,Blackheath
+22/6/2015,BLH-SUE,Sue,Phylotta,squarrosa,30,0,0,None Seen,-33.62884,150.30711,Govetts Leap Rd,Blackheath
+22/6/2015,BLH-SUE,Sue,Mirbelia,platylobioides,20,25,0,Floral Bud,-33.62884,150.30711,Govetts Leap Rd,Blackheath
+22/6/2015,BLH-SUE,Sue,Bossiaea,heterophylla,3,0,25,Immature Pod,-33.62884,150.30711,Govetts Leap Rd,Blackheath
+23/6/2015,GLB-DRK,Dick,Acacia,brownii,3,25,0,Floral Bud,-33.77296,150.63451,Darks Common,Glenbrook
+23/6/2015,GLB-DRK,Dick,Acacia,implexa,3,0,0,None Seen,-33.77296,150.63451,Darks Common,Glenbrook
+23/6/2015,GLB-DRK,Dick,Acacia,parvifolia,3,0,0,None Seen,-33.77296,150.63451,Darks Common,Glenbrook
+23/6/2015,GLB-DRK,Dick,Acacia,terminalis,3,more,0,Open Flower,-33.77296,150.63451,Darks Common,Glenbrook
+23/6/2015,GLB-DRK,Dick,Bossiaea,obcordata,10,0,0,None Seen,-33.77296,150.63451,Darks Common,Glenbrook
+23/6/2015,GLB-DRK,Dick,Dillwynia,retorta,10,0,0,Floral Bud,-33.77296,150.63451,Darks Common,Glenbrook
+23/6/2015,GLB-DRK,Dick,Glycine,clandestina,3,0,0,None Seen,-33.77296,150.63451,Darks Common,Glenbrook
+23/6/2015,GLB-DRK,Dick,Hardenbergia,violacea,3,0,0,Floral Bud,-33.77296,150.63451,Darks Common,Glenbrook
+23/6/2015,GLB-DRK,Dick,Podolobium,ilicifolium,3,0,25,Ripe Pod,-33.77296,150.63451,Darks Common,Glenbrook
+23/6/2015,GLB-DRK,Dick,Pultenaea,ferruginea,3,0,0,None Seen,-33.77296,150.63451,Darks Common,Glenbrook
+23/6/2015,KAT-MER,Meredith,Acacia,terminalis,10,50,0,Open Flower,-33.6868,150.3175,Michael Eades Reserve,Katoomba
+23/6/2015,KAT-MER,Meredith,Acacia,ulicifolia,3,0,0,Floral Bud,-33.6868,150.3175,Michael Eades Reserve,Katoomba
+23/6/2015,KAT-MER,Meredith,Daviesia,ulicifolia,10,0,0,None Seen,-33.6868,150.3175,Michael Eades Reserve,Katoomba
+23/6/2015,KAT-MER,Meredith,Hovea,linearis,3,0,0,None Seen,-33.6868,150.3175,Michael Eades Reserve,Katoomba
+23/6/2015,KAT-MER,Meredith,Mirbelia,platylobioides,20,25,0,Floral Bud,-33.6868,150.3175,Michael Eades Reserve,Katoomba
+23/6/2015,KAT-MER,Meredith,Phylotta,squarrosa,10,0,0,None Seen,-33.6868,150.3175,Michael Eades Reserve,Katoomba
+23/6/2015,KAT-MFR,Meredith,Acacia,brownii,3,0,0,Floral Bud,-33.685547,150.32819,Minnehaha Falls Reserve,Katoomba
+23/6/2015,KAT-MFR,Meredith,Bossiaea,ensata,3,0,0,None Seen,-33.685547,150.32819,Minnehaha Falls Reserve,Katoomba
+23/6/2015,KAT-MFR,Meredith,Bossiaea,heterophylla,3,0,25,Immature Pod,-33.685547,150.32819,Minnehaha Falls Reserve,Katoomba
+23/6/2015,KAT-MFR,Meredith,Daviesia,ulicifolia,3,0,0,Floral Bud,-33.685547,150.32819,Minnehaha Falls Reserve,Katoomba
+23/6/2015,KAT-MFR,Meredith,Mirbelia,platylobioides,30,0,0,Floral Bud,-33.685547,150.32819,Minnehaha Falls Reserve,Katoomba
+23/6/2015,KAT-MFR,Meredith,Phylotta,squarrosa,20,0,0,Old Flower,-33.685547,150.32819,Minnehaha Falls Reserve,Katoomba
+23/6/2015,SPR-YO,Helen Yoxall,Acacia,linifolia,20,0,50,Immature Pod,-33.71848,150.55775,Yondell Ave,Springwood
+23/6/2015,SPR-YO,Helen Yoxall,Acacia,suaveolens,10,25,50,Old Flower,-33.71848,150.55775,Yondell Ave,Springwood
+23/6/2015,SPR-YO,Helen Yoxall,Acacia,terminalis,3,0,25,Immature Pod,-33.71848,150.55775,Yondell Ave,Springwood
+23/6/2015,SPR-YO,Helen Yoxall,Acacia,ulicifolia,3,25,0,Open Flower,-33.71848,150.55775,Yondell Ave,Springwood
+23/6/2015,SPR-YO,Helen Yoxall,Bossiaea,obcordata,10,0,0,None Seen,-33.71848,150.55775,Yondell Ave,Springwood
+23/6/2015,SPR-YO,Helen Yoxall,Bossiaea,rhombifolia,10,25,0,Floral Bud,-33.71848,150.55775,Yondell Ave,Springwood
+23/6/2015,SPR-YO,Helen Yoxall,Dillwynia,retorta,20,0,0,None Seen,-33.71848,150.55775,Yondell Ave,Springwood
+23/6/2015,SPR-YO,Helen Yoxall,Gompholobium,grandiflorum,10,0,0,None Seen,-33.71848,150.55775,Yondell Ave,Springwood
+23/6/2015,SPR-YO,Helen Yoxall,Pultenaea,scabra,10,0,0,None Seen,-33.71848,150.55775,Yondell Ave,Springwood
+24/6/2015,VAH-MA,Rod,Acacia,floribunda,3,0,0,None Seen,-33.73406,150.57611,Martins Lookout,Valley Heights
+24/6/2015,VAH-MA,Rod,Acacia,linifolia,3,0,more,Immature Pod,-33.73406,150.57611,Martins Lookout,Valley Heights
+24/6/2015,VAH-MA,Rod,Acacia,ulicifolia,3,50,0,Open Flower,-33.73406,150.57611,Martins Lookout,Valley Heights
+24/6/2015,VAH-MA,Rod,Bossiaea,obcordata,10,0,0,None Seen,-33.73406,150.57611,Martins Lookout,Valley Heights
+24/6/2015,VAH-MA,Rod,Bossiaea,rhombifolia,10,0,0,None Seen,-33.73406,150.57611,Martins Lookout,Valley Heights
+24/6/2015,VAH-MA,Rod,Dillwynia,retorta,10,more,more,Floral Bud,-33.73406,150.57611,Martins Lookout,Valley Heights
+3/7/2015,BIL-BP,Desi,Acacia,suaveolens,3,0,more,Old Flower,-33.490938,150.550001,Pulp Rd,Bilpin
+3/7/2015,BIL-BP,Desi,Acacia,terminalis,3,25,0,Floral Bud,-33.490938,150.550001,Pulp Rd,Bilpin
+3/7/2015,BIL-BP,Desi,Acacia,trinervata,10,25,0,Old Flower,-33.490938,150.550001,Pulp Rd,Bilpin
+3/7/2015,BIL-BP,Desi,Bossiaea,heterophylla,3,0,50,Floral Bud,-33.490938,150.550001,Pulp Rd,Bilpin
+3/7/2015,BIL-BP,Desi,Daviesia,alata,3,0,0,None Seen,-33.490938,150.550001,Pulp Rd,Bilpin
+3/7/2015,BIL-BP,Desi,Dillwynia,retorta,10,0,0,None Seen,-33.490938,150.550001,Pulp Rd,Bilpin
+3/7/2015,BIL-BP,Desi,Phylotta,phylicoides,10,0,0,None Seen,-33.490938,150.550001,Pulp Rd,Bilpin
+3/7/2015,BIL-BP,Desi,Phylotta,squarrosa,10,0,0,None Seen,-33.490938,150.550001,Pulp Rd,Bilpin
+3/7/2015,BLM-MN,Desi,Acacia,suaveolens,20,50,25,Open Flower,-33.551316,150.382309,Bells Line of Road,Blue Mountains
+3/7/2015,BLM-MN,Desi,Acacia,terminalis,30,0,50,Immature Pod,-33.551316,150.382309,Bells Line of Road,Blue Mountains
+3/7/2015,BLM-MN,Desi,Acacia,ulicifolia,10,25,0,Open Flower,-33.551316,150.382309,Bells Line of Road,Blue Mountains
+3/7/2015,BLM-MN,Desi,Bossiaea,ensata,20,0,0,None Seen,-33.551316,150.382309,Bells Line of Road,Blue Mountains
+3/7/2015,BLM-MN,Desi,Bossiaea,heterophylla,20,0,50,Immature Pod,-33.551316,150.382309,Bells Line of Road,Blue Mountains
+3/7/2015,BLM-MN,Desi,Mirbelia,rubiifolia,10,0,0,None Seen,-33.551316,150.382309,Bells Line of Road,Blue Mountains
+3/7/2015,BOW-BM,Desi,Acacia,linifolia,20,0,25,Immature Pod,-33.59348,150.62476,Lieutenant Bowen Dr,Bowen Mountain
+3/7/2015,BOW-BM,Desi,Acacia,suaveolens,3,25,25,Old Flower,-33.59348,150.62476,Lieutenant Bowen Dr,Bowen Mountain
+3/7/2015,BOW-BM,Desi,Acacia,trinervata,3,more,0,Open Flower,-33.59348,150.62476,Lieutenant Bowen Dr,Bowen Mountain
+3/7/2015,BOW-BM,Desi,Acacia,ulicifolia,3,more,0,Open Flower,-33.59348,150.62476,Lieutenant Bowen Dr,Bowen Mountain
+3/7/2015,BOW-BM,Desi,Bossiaea,ensata,3,0,0,None Seen,-33.59348,150.62476,Lieutenant Bowen Dr,Bowen Mountain
+3/7/2015,BOW-BM,Desi,Bossiaea,rhombifolia,30,0,0,None Seen,-33.59348,150.62476,Lieutenant Bowen Dr,Bowen Mountain
+3/7/2015,BOW-BM,Desi,Dillwynia,retorta,30,0,0,None Seen,-33.59348,150.62476,Lieutenant Bowen Dr,Bowen Mountain
+3/7/2015,BOW-BM,Desi,Gompholobium,grandiflorum,10,0,0,None Seen,-33.59348,150.62476,Lieutenant Bowen Dr,Bowen Mountain
+3/7/2015,BOW-LBR,Desi,Acacia,longifolia,3,0,0,Floral Bud,-33.563732,150.623123,Lieutenant Bowen Rd,Bowen Mountain
+3/7/2015,BOW-LBR,Desi,Acacia,obtusifolia,3,0,0,None Seen,-33.563732,150.623123,Lieutenant Bowen Rd,Bowen Mountain
+3/7/2015,BOW-LBR,Desi,Acacia,suaveolens,3,0,0,None Seen,-33.563732,150.623123,Lieutenant Bowen Rd,Bowen Mountain
+3/7/2015,BOW-LBR,Desi,Acacia,terminalis,3,0,25,Floral Bud,-33.563732,150.623123,Lieutenant Bowen Rd,Bowen Mountain
+3/7/2015,BOW-LBR,Desi,Acacia,trinervata,10,25,0,Floral Bud,-33.563732,150.623123,Lieutenant Bowen Rd,Bowen Mountain
+3/7/2015,BOW-LBR,Desi,Bossiaea,heterophylla,20,25,25,Floral Bud,-33.563732,150.623123,Lieutenant Bowen Rd,Bowen Mountain
+3/7/2015,BOW-LBR,Desi,Bossiaea,rhombifolia,20,0,0,None Seen,-33.563732,150.623123,Lieutenant Bowen Rd,Bowen Mountain
+3/7/2015,BOW-LBR,Desi,Daviesia,alata,3,0,0,None Seen,-33.563732,150.623123,Lieutenant Bowen Rd,Bowen Mountain
+3/7/2015,BOW-LBR,Desi,Dillwynia,retorta,20,0,0,None Seen,-33.563732,150.623123,Lieutenant Bowen Rd,Bowen Mountain
+3/7/2015,BOW-LBR,Desi,Acacia,suaveolens,3,0,0,None Seen,-33.563732,150.623123,Lieutenant Bowen Rd,Bowen Mountain
+3/7/2015,GRO-CTR,Desi,Acacia,linifolia,10,0,25,Immature Pod,-33.609448,150.638589,Cabbage Tree Rd,Grose Wold
+3/7/2015,GRO-CTR,Desi,Acacia,trinervata,20,25,25,Old Flower,-33.609448,150.638589,Cabbage Tree Rd,Grose Wold
+3/7/2015,GRO-CTR,Desi,Bossiaea,rhombifolia,30,0,0,None Seen,-33.609448,150.638589,Cabbage Tree Rd,Grose Wold
+3/7/2015,GRO-CTR,Desi,Dillwynia,retorta,30,0,0,Old Pod,-33.609448,150.638589,Cabbage Tree Rd,Grose Wold
+3/7/2015,GRO-CTR,Desi,Gompholobium,latifolium,20,0,0,None Seen,-33.609448,150.638589,Cabbage Tree Rd,Grose Wold
+3/7/2015,GRO-CTR,Desi,Podolobium,ilicifolium,3,0,0,Old Pod,-33.609448,150.638589,Cabbage Tree Rd,Grose Wold
+3/7/2015,GRO-CTR,Desi,Hovea,heterophylla,3,0,25,Immature Pod,-33.609448,150.638589,Cabbage Tree Rd,Grose Wold
+3/7/2015,HWH-HH,Desi,Acacia,conferta,3,0,0,Floral Bud,-33.666907,150.651612,Hawkesbury Lookout,Hawkesbury Heights
+3/7/2015,HWH-HH,Desi,Acacia,linifolia,30,0,50,Immature Pod,-33.666907,150.651612,Hawkesbury Lookout,Hawkesbury Heights
+3/7/2015,HWH-HH,Desi,Acacia,longifolia,3,0,0,Floral Bud,-33.666907,150.651612,Hawkesbury Lookout,Hawkesbury Heights
+3/7/2015,HWH-HH,Desi,Acacia,trinervata,20,50,25,Old Flower,-33.666907,150.651612,Hawkesbury Lookout,Hawkesbury Heights
+3/7/2015,HWH-HH,Desi,Bossiaea,rhombifolia,20,0,0,None Seen,-33.666907,150.651612,Hawkesbury Lookout,Hawkesbury Heights
+3/7/2015,HWH-HH,Desi,Dillwynia,retorta,3,0,0,None Seen,-33.666907,150.651612,Hawkesbury Lookout,Hawkesbury Heights
+3/7/2015,HWH-HH,Desi,Gompholobium,grandiflorum,3,0,0,Floral Bud,-33.666907,150.651612,Hawkesbury Lookout,Hawkesbury Heights
+3/7/2015,KUR-WH,Desi,Acacia,linifolia,3,0,0,None Seen,-33.520466,150.622098,Warks Hill Rd,Kurrajong Heights
+3/7/2015,KUR-WH,Desi,Acacia,longifolia,3,50,0,Open Flower,-33.520466,150.622098,Warks Hill Rd,Kurrajong Heights
+3/7/2015,KUR-WH,Desi,Acacia,obtusifolia,30,0,0,None Seen,-33.520466,150.622098,Warks Hill Rd,Kurrajong Heights
+3/7/2015,KUR-WH,Desi,Daviesia,alata,30,0,0,None Seen,-33.520466,150.622098,Warks Hill Rd,Kurrajong Heights
+3/7/2015,KUR-WH,Desi,Dillwynia,retorta,10,0,0,None Seen,-33.520466,150.622098,Warks Hill Rd,Kurrajong Heights
+3/7/2015,KUR-WH,Desi,Gompholobium,latifolium,20,0,0,None Seen,-33.520466,150.622098,Warks Hill Rd,Kurrajong Heights
+3/7/2015,KUR-WH,Desi,Podolobium,ilicifolium,10,0,more,Immature Pod,-33.520466,150.622098,Warks Hill Rd,Kurrajong Heights
+3/7/2015,LAW-AB,Desi,Acacia,longifolia,20,0,0,None Seen,-33.74171,150.431758,Albert Rd,Lawson
+3/7/2015,LAW-AB,Desi,Acacia,terminalis,3,50,0,Open Flower,-33.74171,150.431758,Albert Rd,Lawson
+3/7/2015,LAW-AB,Desi,Acacia,trinervata,3,25,0,Open Flower,-33.74171,150.431758,Albert Rd,Lawson
+3/7/2015,LAW-AB,Desi,Daviesia,alata,10,0,0,None Seen,-33.74171,150.431758,Albert Rd,Lawson
+3/7/2015,LAW-AB,Desi,Dillwynia,retorta,30,25,0,Floral Bud,-33.74171,150.431758,Albert Rd,Lawson
+3/7/2015,LAW-AB,Desi,Gompholobium,latifolium,3,25,more,Floral Bud,-33.74171,150.431758,Albert Rd,Lawson
+3/7/2015,LAW-BR,Desi,Acacia,obtusifolia,3,0,0,None Seen,-33.72878,150.44498,Baths Rd,Lawson
+3/7/2015,LAW-BR,Desi,Acacia,terminalis,3,more,25,Open Flower,-33.72878,150.44498,Baths Rd,Lawson
+3/7/2015,LAW-BR,Desi,Acacia,ulicifolia,3,25,0,Floral Bud,-33.72878,150.44498,Baths Rd,Lawson
+3/7/2015,LAW-BR,Desi,Bossiaea,ensata,3,0,0,None Seen,-33.72878,150.44498,Baths Rd,Lawson
+3/7/2015,LAW-BR,Desi,Bossiaea,heterophylla,10,0,more,Old Flower,-33.72878,150.44498,Baths Rd,Lawson
+3/7/2015,LAW-BR,Desi,Daviesia,alata,3,0,0,None Seen,-33.72878,150.44498,Baths Rd,Lawson
+3/7/2015,LAW-BR,Desi,Daviesia,corymbosa,3,0,0,None Seen,-33.72878,150.44498,Baths Rd,Lawson
+3/7/2015,LAW-BR,Desi,Daviesia,mimosoides,10,0,0,None Seen,-33.72878,150.44498,Baths Rd,Lawson
+3/7/2015,LAW-BR,Desi,Daviesia,ulicifolia,10,0,0,None Seen,-33.72878,150.44498,Baths Rd,Lawson
+3/7/2015,LAW-BR,Desi,Dillwynia,elegans,20,50,0,Floral Bud,-33.72878,150.44498,Baths Rd,Lawson
+3/7/2015,LAW-BR,Desi,Pultenaea,tuberculata,10,0,0,None Seen,-33.72878,150.44498,Baths Rd,Lawson
+3/7/2015,LEU-SL,Desi,Acacia,terminalis,30,more,25,Open Flower,-33.719633,150.33501,Spencer St,Leura
+3/7/2015,LEU-SL,Desi,Acacia,trinervata,10,25,0,Floral Bud,-33.719633,150.33501,Spencer St,Leura
+3/7/2015,LEU-SL,Desi,Bossiaea,ensata,3,0,0,None Seen,-33.719633,150.33501,Spencer St,Leura
+3/7/2015,LEU-SL,Desi,Bossiaea,heterophylla,10,0,25,Immature Pod,-33.719633,150.33501,Spencer St,Leura
+3/7/2015,LEU-SL,Desi,Daviesia,ulicifolia,20,0,0,None Seen,-33.719633,150.33501,Spencer St,Leura
+3/7/2015,LEU-SL,Desi,Mirbelia,platylobioides,10,0,0,None Seen,-33.719633,150.33501,Spencer St,Leura
+3/7/2015,MBK-MB,Desi,Acacia,myrtifolia,10,0,0,Floral Bud,-33.57912,150.36555,Mount Banks Picnic Area,Mount Banks
+3/7/2015,MBK-MB,Desi,Acacia,obtusifolia,3,0,0,None Seen,-33.57912,150.36555,Mount Banks Picnic Area,Mount Banks
+3/7/2015,MBK-MB,Desi,Acacia,suaveolens,10,50,0,Open Flower,-33.57912,150.36555,Mount Banks Picnic Area,Mount Banks
+3/7/2015,MBK-MB,Desi,Acacia,terminalis,20,more,0,Open Flower,-33.57912,150.36555,Mount Banks Picnic Area,Mount Banks
+3/7/2015,MBK-MB,Desi,Acacia,trinervata,3,25,0,Floral Bud,-33.57912,150.36555,Mount Banks Picnic Area,Mount Banks
+3/7/2015,MBK-MB,Desi,Bossiaea,heterophylla,3,0,25,Immature Pod,-33.57912,150.36555,Mount Banks Picnic Area,Mount Banks
+3/7/2015,MBK-MB,Desi,Dillwynia,retorta,3,0,0,None Seen,-33.57912,150.36555,Mount Banks Picnic Area,Mount Banks
+3/7/2015,MBK-MB,Desi,Gompholobium,grandiflorum,20,0,0,None Seen,-33.57912,150.36555,Mount Banks Picnic Area,Mount Banks
+3/7/2015,MBK-MB,Desi,Mirbelia,platylobioides,10,25,0,None Seen,-33.57912,150.36555,Mount Banks Picnic Area,Mount Banks
+3/7/2015,MED-EL,Desi,Acacia,longifolia,10,0,0,Floral Bud,-33.6489,150.32042,Evans Lookout Rd,Medlow Bath
+3/7/2015,MED-EL,Desi,Acacia,terminalis,10,more,25,Open Flower,-33.6489,150.32042,Evans Lookout Rd,Medlow Bath
+3/7/2015,MED-EL,Desi,Acacia,trinervata,3,0,0,None Seen,-33.6489,150.32042,Evans Lookout Rd,Medlow Bath
+3/7/2015,MED-EL,Desi,Bossiaea,ensata,3,0,0,None Seen,-33.6489,150.32042,Evans Lookout Rd,Medlow Bath
+3/7/2015,MED-EL,Desi,Bossiaea,heterophylla,3,0,0,None Seen,-33.6489,150.32042,Evans Lookout Rd,Medlow Bath
+3/7/2015,MED-EL,Desi,Daviesia,ulicifolia,30,0,0,None Seen,-33.6489,150.32042,Evans Lookout Rd,Medlow Bath
+3/7/2015,MED-EL,Desi,Mirbelia,platylobioides,3,0,0,None Seen,-33.6489,150.32042,Evans Lookout Rd,Medlow Bath
+3/7/2015,MED-EL,Desi,Phylotta,squarrosa,10,0,0,None Seen,-33.6489,150.32042,Evans Lookout Rd,Medlow Bath
+3/7/2015,MWL-MW,Desi,Acacia,obtusifolia,3,0,25,Immature Pod,-33.54279,150.34393,Mount Wilson Rd,Mount Wilson
+3/7/2015,MWL-MW,Desi,Acacia,terminalis,30,more,0,Open Flower,-33.54279,150.34393,Mount Wilson Rd,Mount Wilson
+3/7/2015,MWL-MW,Desi,Bossiaea,ensata,3,0,0,None Seen,-33.54279,150.34393,Mount Wilson Rd,Mount Wilson
+3/7/2015,MWL-MW,Desi,Bossiaea,heterophylla,30,0,25,Immature Pod,-33.54279,150.34393,Mount Wilson Rd,Mount Wilson
+3/7/2015,MWL-MW,Desi,Daviesia,alata,20,0,25,Immature Pod,-33.54279,150.34393,Mount Wilson Rd,Mount Wilson
+3/7/2015,MWL-MW,Desi,Daviesia,ulicifolia,10,0,0,None Seen,-33.54279,150.34393,Mount Wilson Rd,Mount Wilson
+3/7/2015,MWL-MW,Desi,Gompholobium,grandiflorum,20,0,0,None Seen,-33.54279,150.34393,Mount Wilson Rd,Mount Wilson
+3/7/2015,MWL-MW,Desi,Mirbelia,platylobioides,10,0,50,Immature Pod,-33.54279,150.34393,Mount Wilson Rd,Mount Wilson
+3/7/2015,VAH-SS,Desi,Acacia,hispidula,3,0,0,None Seen,-33.70947,150.56857,Spring St,Valley Heights
+3/7/2015,VAH-SS,Desi,Acacia,linifolia,3,0,0,None Seen,-33.70947,150.56857,Spring St,Valley Heights
+3/7/2015,VAH-SS,Desi,Acacia,suaveolens,3,more,0,Open Flower,-33.70947,150.56857,Spring St,Valley Heights
+3/7/2015,VAH-SS,Desi,Acacia,terminalis,3,0,0,None Seen,-33.70947,150.56857,Spring St,Valley Heights
+3/7/2015,VAH-SS,Desi,Acacia,ulicifolia,20,more,0,Open Flower,-33.70947,150.56857,Spring St,Valley Heights
+3/7/2015,VAH-SS,Desi,Bossiaea,obcordata,20,0,0,None Seen,-33.70947,150.56857,Spring St,Valley Heights
+3/7/2015,VAH-SS,Desi,Bossiaea,rhombifolia,10,0,0,Floral Bud,-33.70947,150.56857,Spring St,Valley Heights
+3/7/2015,VAH-SS,Desi,Daviesia,mimosoides,3,0,0,None Seen,-33.70947,150.56857,Spring St,Valley Heights
+3/7/2015,VAH-SS,Desi,Dillwynia,elegans,3,0,0,None Seen,-33.70947,150.56857,Spring St,Valley Heights
+3/7/2015,VAH-SS,Desi,Dillwynia,retorta,3,0,0,Old Pod,-33.70947,150.56857,Spring St,Valley Heights
+3/7/2015,VAH-SS,Desi,Gompholobium,grandiflorum,3,0,0,None Seen,-33.70947,150.56857,Spring St,Valley Heights
+3/7/2015,VAH-SW,Desi,Acacia,parramattensis,3,0,0,None Seen,-33.687062,150.574583,Fairways Cres,Valley Heights
+3/7/2015,VAH-SW,Desi,Acacia,ulicifolia,10,0,0,Floral Bud,-33.687062,150.574583,Fairways Cres,Valley Heights
+3/7/2015,VAH-SW,Desi,Bossiaea,obcordata,20,0,0,None Seen,-33.687062,150.574583,Fairways Cres,Valley Heights
+3/7/2015,VAH-SW,Desi,Pultenaea,scabra,20,0,0,None Seen,-33.687062,150.574583,Fairways Cres,Valley Heights
+3/7/2015,WOD-WO,Desi,Acacia,suaveolens,3,50,0,Open Flower,-33.736617,150.490556,The Oaks Fire Trail,Woodford
+3/7/2015,WOD-WO,Desi,Bossiaea,ensata,3,0,0,Floral Bud,-33.736617,150.490556,The Oaks Fire Trail,Woodford
+3/7/2015,WOD-WO,Desi,Dillwynia,retorta,3,0,0,None Seen,-33.736617,150.490556,The Oaks Fire Trail,Woodford
+3/7/2015,WOD-WO,Desi,Mirbelia,rubiifolia,3,0,0,None Seen,-33.736617,150.490556,The Oaks Fire Trail,Woodford
+7/7/2015,KAT-MER,Meredith,Acacia,terminalis,10,more,0,Open Flower,-33.6868,150.3175,Michael Eades Reserve,Katoomba
+7/7/2015,KAT-MER,Meredith,Mirbelia,platylobioides,30,0,0,Floral Bud,-33.6868,150.3175,Michael Eades Reserve,Katoomba
+7/7/2015,KAT-MER,Meredith,Daviesia,ulicifolia,20,0,0,Floral Bud,-33.6868,150.3175,Michael Eades Reserve,Katoomba
+7/7/2015,KAT-MER,Meredith,Phylotta,squarrosa,20,0,0,Old Flower,-33.6868,150.3175,Michael Eades Reserve,Katoomba
+7/7/2015,KAT-MER,Meredith,Hovea,linearis,10,0,0,None Seen,-33.6868,150.3175,Michael Eades Reserve,Katoomba
+23/10/2015,KUR-BUR,Desi,Acacia,parramattensis,3,0,more,Immature Pod,-33.54729825,150.6157904,Burralow Rd,Kurrajong
+23/10/2015,KUR-BUR,Desi,Dillwynia,retorta,20,0,25,Old Flower,-33.54729825,150.6157904,Burralow Rd,Kurrajong
+23/10/2015,KUR-BUR,Desi,Gompholobium,latifolium,10,0,more,Immature Pod,-33.54729825,150.6157904,Burralow Rd,Kurrajong
+23/10/2015,KUR-BUR,Desi,Bossiaea,heterophylla,10,0,25,Immature Pod,-33.54729825,150.6157904,Burralow Rd,Kurrajong
+23/10/2015,KUR-BUR,Desi,Acacia,ulicifolia,10,0,25,Immature Pod,-33.54729825,150.6157904,Burralow Rd,Kurrajong
+23/10/2015,KUR-BUR,Desi,Hardenbergia,violacea,3,25,0,None Seen,-33.54729825,150.6157904,Burralow Rd,Kurrajong
+23/10/2015,KUR-BUR,Desi,Acacia,terminalis,3,0,0,None Seen,-33.54729825,150.6157904,Burralow Rd,Kurrajong
+23/10/2015,KUR-BUR,Desi,Acacia,obtusifolia,3,0,0,Floral Bud,-33.54729825,150.6157904,Burralow Rd,Kurrajong
+23/10/2015,LAW-BR,Desi,Mirbelia,rubiifolia,10,more,0,Open Flower,-33.72878,150.44498,Baths Rd,Lawson
+23/10/2015,LAW-BR,Desi,Acacia,terminalis,10,0,more,Immature Pod,-33.72878,150.44498,Baths Rd,Lawson
+23/10/2015,LAW-BR,Desi,Bossiaea,ensata,20,25,0,Open Flower,-33.72878,150.44498,Baths Rd,Lawson
+23/10/2015,LAW-BR,Desi,Hovea,heterophylla,10,0,more,Immature Pod,-33.72878,150.44498,Baths Rd,Lawson
+23/10/2015,LAW-BR,Desi,Daviesia,latifolia,3,0,more,Immature Pod,-33.72878,150.44498,Baths Rd,Lawson
+23/10/2015,LAW-BR,Desi,Dillwynia,elegans,10,0,25,Immature Pod,-33.72878,150.44498,Baths Rd,Lawson
+23/10/2015,LAW-BR,Desi,Gompholobium,glabratum,3,0,0,None Seen,-33.72878,150.44498,Baths Rd,Lawson
+23/10/2015,MED-EL,Desi,Acacia,terminalis,30,0,more,Immature Pod,-33.6489,150.32042,Evans Lookout Rd,Medlow Bath
+23/10/2015,MED-EL,Desi,Phylotta,squarrosa,30,0,0,None Seen,-33.6489,150.32042,Evans Lookout Rd,Medlow Bath
+23/10/2015,MED-EL,Desi,Bossiaea,ensata,10,0,more,Immature Pod,-33.6489,150.32042,Evans Lookout Rd,Medlow Bath
+23/10/2015,MED-EL,Desi,Acacia,obtusifolia,3,0,0,Floral Bud,-33.6489,150.32042,Evans Lookout Rd,Medlow Bath
+23/10/2015,MED-EL,Desi,Pultenaea,scabra,3,0,more,Immature Pod,-33.6489,150.32042,Evans Lookout Rd,Medlow Bath
+23/10/2015,MED-EL,Desi,Daviesia,alata,3,0,0,Floral Bud,-33.6489,150.32042,Evans Lookout Rd,Medlow Bath
+23/10/2015,MED-KIN,Desi,Daviesia,ulicifolia,20,0,0,None Seen,-33.6543,150.32175,KIN-GER fire trail (The Falls Road),Medlow Bath
+23/10/2015,MED-KIN,Desi,Dillwynia,retorta,30,more,0,Open Flower,-33.6543,150.32175,KIN-GER fire trail (The Falls Road),Medlow Bath
+23/10/2015,MED-KIN,Desi,Acacia,obtusifolia,20,0,0,Floral Bud,-33.6543,150.32175,KIN-GER fire trail (The Falls Road),Medlow Bath
+23/10/2015,MED-KIN,Desi,Acacia,terminalis,3,0,more,Immature Pod,-33.6543,150.32175,KIN-GER fire trail (The Falls Road),Medlow Bath
+23/10/2015,MED-KIN,Desi,Phylotta,squarrosa,20,0,0,None Seen,-33.6543,150.32175,KIN-GER fire trail (The Falls Road),Medlow Bath
+23/10/2015,MED-KIN,Desi,Daviesia,alata,10,0,0,Floral Bud,-33.6543,150.32175,KIN-GER fire trail (The Falls Road),Medlow Bath
+23/10/2015,MED-KIN,Desi,Mirbelia,rubiifolia,3,0,0,None Seen,-33.6543,150.32175,KIN-GER fire trail (The Falls Road),Medlow Bath
+23/10/2015,BLM-MN,Desi,Acacia,obtusifolia,3,0,0,Floral Bud,-33.551316,150.382309,Bells Line of Road,Blue Mountains
+23/10/2015,BLM-MN,Desi,Mirbelia,rubiifolia,20,more,0,Open Flower,-33.551316,150.382309,Bells Line of Road,Blue Mountains
+23/10/2015,BLM-MN,Desi,Daviesia,ulicifolia,10,0,0,None Seen,-33.551316,150.382309,Bells Line of Road,Blue Mountains
